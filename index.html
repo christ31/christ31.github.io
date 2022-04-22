@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portofolio Dengan Tailwind CSS </title>
+	<link href="dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+	<!-- Unique things I do -->
+	<!-- Header Start -->
+	<header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+		<div class="container">
+			<div class="flex item-center justify-between relative">
+				<div class="px-4">
+					<a href="#home" class="font-bold text-lg text-primary block py-6">My Website</a>
+				</div>
+				<div class="flex items-center px-4">
+					<button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+						<span class="origin-top-left hamburger-line transition duration-300 ease-in-out"></span>
+						<span class="hamburger-line transition duration-300 ease-in-out"></span>
+						<span class="origin-bottom-left hamburger-line transition duration-300 ease-in-out"></span>
+					</button>
+
+					<nav id="nav-menu"
+						class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+						<ul class="block lg:flex">
+							<li class="group">
+								<a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Beranda</a>
+							</li>
+							<li class="group">
+								<a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Tentang Saya</a>
+							</li>
+							<li class="group">
+								<a href="#portfolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Portfolio</a>
+							</li>
+							<li class="group">
+								<a href="#clients" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Clients</a>
+							</li>
+							<li class="group">
+								<a href="#blog" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Blog</a>
+							</li>
+							<li class="group">
+								<a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Contact</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Header End -->
+
+	<!-- Hero Section Start -->
+	<section id="home" class="pt-36 ">
+		<div class="container">
+			<div class="flex flex-wrap">
+				<div class="w-full self-center px-4 lg:w-1/2">
+					<h1 class="text-base font-semibold text-primary md:text-xl">Halo semua 👋, saya <span
+							class="block font-bold text-dark text-4xl">--</span></h1>
+					<h2 class="font-medium text-secondary text-lg mb-5">Human & Student</h2>
+					<p class="font-medium text-secondary mb-10 leading-relaxed">Keep learning and be better slowly everyday</p>
+
+					<a href="#"
+						class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 duration-200 ease-in-out">Hubungi
+						Saya</a>
+				</div>
+				<div class="w-full self-end px-4 lg:w-1/2">
+					<!-- lg:w-1/2 digunakan apabila ukuran layar = lg (large), maka w-1/2 dan self-end (Taruh di kanan)-->
+					<div class="relative mt-20 lg:mt-9 lg:right-0">
+						<!-- Untuk container parent, apabila terdapat child Absolute, jangan lupa parent dikasih Relative -->
+						<img src="dist/img/HM Inside.jpeg" alt="Image HM Inside" class="max-w-full mx-auto z-10" />
+						<span class="absolute -bottom-20 -z-10 left-1/2 -translate-x-1/2">
+							<svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+								<path fill="#14b8a6"
+									d="M49.1,-61.6C57,-52,52,-30.1,52.2,-11.7C52.5,6.7,58,21.7,54.7,35.5C51.4,49.4,39.3,62.1,25.4,65.3C11.4,68.6,-4.5,62.2,-17.9,54.9C-31.4,47.6,-42.4,39.2,-49,28.1C-55.6,17,-57.9,3.2,-55.6,-9.8C-53.3,-22.8,-46.4,-35,-36.4,-44.2C-26.4,-53.5,-13.2,-59.7,3.7,-64.2C20.6,-68.6,41.3,-71.2,49.1,-61.6Z"
+									transform="translate(100 100) scale(1.4)">
+							</svg>
+						</span>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- Hero Section End -->
+
+	<!-- About Section Start -->
+	<section id="about" class="pt-36 pb-32 ">
+		<div class="container">
+			<div class="flex flex-wrap">
+				<div class="w-full px-4 mb-10 lg:w-1/2">
+					<h4 class="font-bold text-primary mb-3">Tentang Saya</h4>
+					<h2 class="font-bold text-dark text-3xl mb-5 max-w-lg lg:text-4xl">Mencoba web programming di Youtube WPU</h2>
+					<p class="font-medium text-base text-secondary lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing
+						elit. Beatae voluptas consequuntur aspernatur quo sapiente repellendus repellat!</p>
+				</div>
+				<div class="w-full px-4 lg:w-1/2">
+					<h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">Mari berteman</h3>
+					<p class="font-medium text-base text-secondary mb-6 lg:text-lg">Lorem ipsum dolor sit amet consectetur
+						adipisicing elit. Numquam molestiae perferendis adipisci reiciendis odit odio tempora dignissimos
+						recusandae!</p>
+					<div class="flex items-center">
+						<a class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-[#0B57A4] hover:text-[#0B57A4] duration-100"
+							href="https://getfedora.org/" target="blank">
+							<svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+								<title>Fedora</title>
+								<path
+									d="M12.001 0C5.376 0 .008 5.369.004 11.992H.002v9.287h.002A2.726 2.726 0 0 0 2.73 24h9.275c6.626-.004 11.993-5.372 11.993-11.997C23.998 5.375 18.628 0 12 0zm2.431 4.94c2.015 0 3.917 1.543 3.917 3.671 0 .197.001.395-.03.619a1.002 1.002 0 0 1-1.137.893 1.002 1.002 0 0 1-.842-1.175 2.61 2.61 0 0 0 .013-.337c0-1.207-.987-1.672-1.92-1.672-.934 0-1.775.784-1.777 1.672.016 1.027 0 2.046 0 3.07l1.732-.012c1.352-.028 1.368 2.009.016 1.998l-1.748.013c-.004.826.006.677.002 1.093 0 0 .015 1.01-.016 1.776-.209 2.25-2.124 4.046-4.424 4.046-2.438 0-4.448-1.993-4.448-4.437.073-2.515 2.078-4.492 4.603-4.469l1.409-.01v1.996l-1.409.013h-.007c-1.388.04-2.577.984-2.6 2.47a2.438 2.438 0 0 0 2.452 2.439c1.356 0 2.441-.987 2.441-2.437l-.001-7.557c0-.14.005-.252.02-.407.23-1.848 1.883-3.256 3.754-3.256z" />
+							</svg>
+						</a>
+						<a class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-[#FF0000] hover:text-[#FF0000] duration-100"
+							href="https://youtu.be/8Ea4oq8qFtM" target="blank">
+							<svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+								<title>YouTube</title>
+								<path
+									d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+							</svg>
+						</a>
+						<a class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-[#E95420] hover:text-[#E95420] duration-100"
+							href="https://youtu.be/8Ea4oq8qFtM" target="blank">
+							<svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+								<title>Ubuntu</title>
+								<path
+									d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12S0 18.623 0 12 5.377 0 12 0zm3.279 17.68c-.766.441-1.029 1.422-.586 2.189.441.765 1.422 1.028 2.188.584.766-.441 1.029-1.422.585-2.189-.441-.765-1.421-1.028-2.187-.584zm-3.279-1c-.705 0-1.373-.157-1.971-.435L8.916 18.24c.93.459 1.978.721 3.084.721.646 0 1.268-.091 1.86-.256.104-.643.485-1.234 1.095-1.587.609-.351 1.313-.386 1.92-.156 1.186-1.163 1.957-2.749 2.07-4.515l-2.285-.033c-.21 2.391-2.215 4.266-4.66 4.266zM7.32 12c0-1.583.787-2.981 1.99-3.83L8.14 6.209c-1.404.93-2.445 2.369-2.881 4.035.506.404.83 1.034.83 1.74 0 .704-.324 1.319-.83 1.739.436 1.665 1.477 3.104 2.881 4.034l1.17-1.965C8.107 14.97 7.32 13.574 7.32 12zm-3.48-1.602c-.885 0-1.602.717-1.602 1.602s.717 1.602 1.602 1.602S5.441 12.885 5.441 12s-.716-1.602-1.601-1.602zM12 7.32c2.445 0 4.45 1.875 4.66 4.265l2.285-.034c-.113-1.765-.885-3.35-2.07-4.516-.609.232-1.313.194-1.92-.154-.609-.352-.99-.945-1.095-1.591-.594-.16-1.214-.25-1.86-.25-1.11 0-2.155.26-3.084.72l1.113 1.995c.6-.279 1.268-.435 1.971-.435zm3.279-1.001c.765.442 1.746.181 2.189-.585.441-.765.181-1.746-.588-2.19-.765-.44-1.746-.179-2.189.589-.441.764-.18 1.744.588 2.186z" />
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- About Section End -->
+
+	<!-- Portfolio Section Start -->
+	<section id="utilities" class="pt-36 pb-16 bg-slate-100">
+		<div class="container">
+			<div class="w-full px-4">
+				<div class="mx-auto text-center mb-16">
+					<h4 class="font-semibold text-lg text-primary mb-2">Utilities</h4>
+					<h2 class="font-bold text-dark text-3xl mb-4 sm:text-xl lg:text-5xl">Website yang Worth IT untuk dilihat</h2>
+					<p class="font-medium text-md text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing
+						elit. Saepe
+						eos ad architecto dicta aliquam?</p>
+				</div>
+			</div>
+
+			<div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+				<div class=" mb-12 p-4 md:w-1/2">
+					<div class="rounded-md shadow-md overflow-hidden">
+						<img src="dist/img/utilities/1-l.png" alt="Gambar Website no.1" width="w-full">
+					</div>
+					<h3 class="font-semibold text-xl text-dark mt-5 mb-3">Website blobmaker.app</h3>
+					<p class="font-medium text-base text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+						Nisi, aspernatur!</p>
+				</div>
+
+				<div class="mb-12 p-4 md:w-1/2">
+					<div class="rounded-md shadow-md overflow-hidden">
+						<img src="dist/img/utilities/2.png" alt="Gambar Website no.2" width="w-full">
+					</div>
+					<h3 class="font-semibold text-xl text-dark mt-5 mb-3">Website simpleicons.org</h3>
+					<p class="font-medium text-base text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+						Nisi, aspernatur!</p>
+				</div>
+
+				<div class="mb-12 p-4 md:w-1/2">
+					<div class="rounded-md shadow-md overflow-hidden">
+						<img src="dist/img/utilities/3.png" alt="Gambar Website no.3" width="w-full">
+					</div>
+					<h3 class="font-semibold text-xl text-dark mt-5 mb-3">Website remove.bg</h3>
+					<p class="font-medium text-base text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+						Nisi, aspernatur!</p>
+				</div>
+
+				<div class="mb-12 p-4 md:w-1/2">
+					<div class="rounded-md shadow-md overflow-hidden">
+						<img src="dist/img/utilities/4.png" alt="Gambar Website no.4" width="w-full">
+					</div>
+					<h3 class="font-semibold text-xl text-dark mt-5 mb-3">Website schemecolor.com</h3>
+					<p class="font-medium text-base text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+						Nisi, aspernatur!</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Portfolio Section End -->
+
+	<!-- Hardware Section Start -->
+	<section id="hardware" class="pt-36 pb-32 bg-slate-800">
+		<div class="container">
+			<div class="w-full px-4">
+				<div class="max-w-xl mx-auto text-center mb-16">
+					<h4 class="font-semibold text-lg text-primary mb-2">Hardware</h4>
+					<h2 class="font-bold text-white text-3xl mb-4 sm:text-xl lg:text-5xl">Spesifikasi Komputer yang digunakan</h2>
+					<p class="font-medium text-md text-secondary">Menggunakan laptop ROG GL553V yang ditenagai oleh Intel® Core™
+						i7 Generasi 7 dengan kinerja grafis dari Nvidia GeForce® GTX 10 series. Mendukung operating sistem Fedora.
+					</p>
+					<p class="mt-2 font-medium text-md text-secondary">Perangkat Logitech G series memberikan pengalaman yang
+						optimal dan layar impresif dan tajam dari Samsung 24" FHD monitor dengan desain bezel-less</p>
+				</div>
+			</div>
+
+			<div class="w-full px-4">
+				<div class="flex flex-wrap items-center justify-center">
+					<a href="www.google.com"
+						class="max-w-[120px] mx-4 py-4 grayscale opacity-70 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+						<img src="dist/img/hardware/ROG.svg" class="h-[60px]" alt="Google">
+					</a>
+					<a href="www.google.com"
+						class="max-w-[120px] mx-4 py-4 grayscale opacity-70 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+						<img src="dist/img/hardware/intel.svg" class="h-[60px]" alt="Google">
+					</a>
+					<a href="www.google.com"
+						class="max-w-[120px] mx-4 py-4 grayscale opacity-70 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+						<img src="dist/img/hardware/Nvidia_logo.svg" class="h-[60px]" alt="Google">
+					</a>
+					<a href="www.google.com"
+						class="max-w-[120px] mx-4 py-4 grayscale opacity-70 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+						<img src="dist/img/hardware/Fedora_logo.svg" class="h-[60px]" alt="Google">
+					</a>
+					<a href="https://www.google.com" target="blank"
+						class="max-w-[120px] mx-4 py-4 grayscale opacity-70 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+						<img src="dist/img/hardware/logitechG.svg" class="h-[60px]" alt="Google">
+					</a>
+					<a href="www.google.com"
+						class="max-w-[120px]  mx-4 py-4 grayscale opacity-70 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+						<img src="dist/img/hardware/samsung.svg" class="h-[60px]" alt="Google">
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Hardware Section Stop -->
+
+	<!-- Blog Section Start -->
+	<section id="blog" class="pt-36 pb-32 bg-slate-100">
+		<div class="container">
+			<div class="w-full px-4">
+				<div class="mx-auto text-center mb-16">
+					<h4 class="font-semibold text-lg text-primary mb-2">Blog</h4>
+					<h2 class="font-bold text-dark text-3xl mb-4 sm:text-xl lg:text-5xl">Tulisan Saya</h2>
+					<p class="font-medium text-md text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing
+						elit. Minus animi veritatis, perspiciatis nesciunt consequatur rem optio ut.</p>
+				</div>
+			</div>
+
+			<div class="flex flex-wrap justify-center">
+				<div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+					<div class="bg-white rounded-xl shadow-xl overflow-hidden mb-10">
+						<img src="https://source.unsplash.com/360x200?gaming" alt="programming" class="w-full" />
+						<div class="py-8 px-6">
+							<h3>
+								<a href="https://c31project.wordpress.com/2020/03/01/apa-itu-emulator/"
+									class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate transition duration-100">Apa
+									itu Emulator?</a> <!-- Truncate = biar kalau judulnya panjang gak di flow ke bawah-->
+							</h3>
+							<p class="font-medium text-base text-secondary mb-4 ">Lorem ipsum dolor, sit amet consectetur adipisicing
+								elit. Fuga, delectus.</p>
+							<a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Baca
+								Selengkapnya</a>
+						</div>
+					</div>
+				</div>
+				<div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+					<div class="bg-white rounded-xl shadow-xl overflow-hidden mb-10">
+						<img src="https://source.unsplash.com/360x200?gamepad" alt="programming" class="w-full" />
+						<div class="py-8 px-6">
+							<h3>
+								<a href="https://c31project.wordpress.com/2020/03/01/apa-itu-emulator/"
+									class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate transition duration-100">Review
+									Gamepad Logitech F710</a> <!-- Truncate = biar kalau judulnya panjang gak di flow ke bawah-->
+							</h3>
+							<p class="font-medium text-base text-secondary mb-4 ">Lorem ipsum dolor, sit amet consectetur adipisicing
+								elit. Fuga, delectus.</p>
+							<a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Baca
+								Selengkapnya</a>
+						</div>
+					</div>
+				</div>
+				<div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+					<div class="bg-white rounded-xl shadow-xl overflow-hidden mb-10">
+						<img src="https://source.unsplash.com/360x200?tutorial" alt="programming" class="w-full" />
+						<div class="py-8 px-6">
+							<h3>
+								<a href="https://c31project.wordpress.com/2020/03/01/apa-itu-emulator/"
+									class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate transition duration-100">Tutorial
+									Menghilangkan Garis Merah di Word 2016 </a>
+								<!-- Truncate = biar kalau judulnya panjang gak di flow ke bawah-->
+							</h3>
+							<p class="font-medium text-base text-secondary mb-4 ">Lorem ipsum dolor, sit amet consectetur adipisicing
+								elit. Fuga, delectus.</p>
+							<a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Baca
+								Selengkapnya</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Blog Section Stop -->
+
+	<!-- Contact Section Start -->
+	<section id="contact" class="pt-36 pb-32 bg-primary">
+		<div class="container">
+			<div class="w-full px4 lg:w-2/3 lg:mx-auto">
+				<div class="mx-auto text-center mb-16">
+					<h4 class="font-semibold text-lg text-primary mb-2">Blog</h4>
+					<h2 class="font-bold text-white text-3xl mb-4 sm:text-xl lg:text-5xl">Hubungi Saya</h2>
+					<p class="font-medium text-md text-gray-200 md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing
+						elit. Minus animi veritatis, perspiciatis nesciunt consequatur rem optio ut.</p>
+				</div>
+			</div>
+
+			<form>
+				<div class="w-full lg:w-2/3 lg:mx-auto">
+					<div class="w-full px-4 mb-8">
+						<label for="name" class="text-base text-white font-bold">Nama</label>
+						<input type="text" id="name"
+							class="w-full bg-white p-3 rounded-md focus:outline-none focus:ring-orange-400 focus:ring-1 focus:border-orange-400">
+					</div>
+					<div class="w-full px-4 mb-8">
+						<label for="email" class="text-base text-white font-bold">Email</label>
+						<input type="email" id="email"
+							class="w-full bg-white p-3 rounded-md focus:outline-none focus:ring-orange-400 focus:ring-1 focus:border-orange-400">
+					</div>
+					<div class="w-full px-4 mb-8">
+						<label for="message" class="text-base text-white font-bold">Pesan</label>
+						<textarea type="email" id="email"
+							class="w-full bg-white p-3 rounded-md focus:outline-none focus:ring-orange-400 focus:ring-1 focus:border-orange-400"></textarea>
+					</div>
+					<div class="w-full px-4">
+						<button
+							class="text-base font-semibold text-white bg-orange-600 py-3 px-8 rounded-full w-full shadow-md hover:brightness-110 transition duration-500">Send</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+	<!-- Contact Section Stop -->
+
+	<!-- Footer Section Start -->
+	<footer class="bg-dark pt-24 pb-12">
+		<div class="container">
+			<div class="flex flex-wrap">
+				<div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
+					<h2 class="font-bold text-4xl text-white mb-5">--</h2>
+					<h3 class="font-bold text-2xl mb-2">Hubungi Saya</h3>
+					<p>xyz@c31.com</p>
+					<p>Jl. Di. mana saja</p>
+					<p>Batam</p>
+				</div>
+
+				<div class="w-full px-4 mb-12 md:w-1/3">
+					<h3 class="font-semibold text-xl text-white mb-5">
+						Support
+					</h3>
+					<ul class="text-slate-300">
+						<li>
+							<a href="#" class="inline-block text-base hover:text-primary mb-3">Web Programming UNPAS (WPU)</a>
+						</li>
+						<li>
+							<a href="#" class="inline-block text-base hover:text-primary mb-3">Tailwindcss</a>
+						</li>
+						<li>
+							<a href="#" class="inline-block text-base hover:text-primary mb-3">Visual Studio Code</a>
+						</li>
+					</ul>
+				</div>
+
+
+				<div class="w-full px-4 mb-12 md:w-1/3">
+					<h3 class="font-semibold text-xl text-white mb-5">
+						Tautan
+					</h3>
+					<ul class="text-slate-300">
+						<li>
+							<a href="#home" class="inline-block text-base hover:text-primary mb-3">Beranda</a>
+						</li>
+						<li>
+							<a href="#about" class="inline-block text-base hover:text-primary mb-3">Tentang Saya</a>
+						</li>
+						<li>
+							<a href="#utilities" class="inline-block text-base hover:text-primary mb-3">Utilities</a>
+						</li>
+						<li>
+							<a href="#hardware" class="inline-block text-base hover:text-primary mb-3">Hardware</a>
+						</li>
+						<li>
+							<a href="#blog" class="inline-block text-base hover:text-primary mb-3">Blog</a>
+						</li>
+						<li>
+							<a href="#contact" class="inline-block text-base hover:text-primary mb-3">Contact</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="w-full pt-10 border-t border-slate-700">
+				<div class="flex items-center justify-center mb-5">
+					<a class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-300 border-slate-300 hover:border-[#0B57A4] hover:text-[#0B57A4] duration-100"
+						href="https://getfedora.org/" target="blank">
+						<svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<title>Fedora</title>
+							<path
+								d="M12.001 0C5.376 0 .008 5.369.004 11.992H.002v9.287h.002A2.726 2.726 0 0 0 2.73 24h9.275c6.626-.004 11.993-5.372 11.993-11.997C23.998 5.375 18.628 0 12 0zm2.431 4.94c2.015 0 3.917 1.543 3.917 3.671 0 .197.001.395-.03.619a1.002 1.002 0 0 1-1.137.893 1.002 1.002 0 0 1-.842-1.175 2.61 2.61 0 0 0 .013-.337c0-1.207-.987-1.672-1.92-1.672-.934 0-1.775.784-1.777 1.672.016 1.027 0 2.046 0 3.07l1.732-.012c1.352-.028 1.368 2.009.016 1.998l-1.748.013c-.004.826.006.677.002 1.093 0 0 .015 1.01-.016 1.776-.209 2.25-2.124 4.046-4.424 4.046-2.438 0-4.448-1.993-4.448-4.437.073-2.515 2.078-4.492 4.603-4.469l1.409-.01v1.996l-1.409.013h-.007c-1.388.04-2.577.984-2.6 2.47a2.438 2.438 0 0 0 2.452 2.439c1.356 0 2.441-.987 2.441-2.437l-.001-7.557c0-.14.005-.252.02-.407.23-1.848 1.883-3.256 3.754-3.256z" />
+						</svg>
+					</a>
+					<a class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-300 border-slate-300 hover:border-[#FF0000] hover:text-[#FF0000] duration-100"
+						href="https://youtu.be/8Ea4oq8qFtM" target="blank">
+						<svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<title>YouTube</title>
+							<path
+								d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+						</svg>
+					</a>
+					<a class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-300 border-slate-300 hover:border-[#E95420] hover:text-[#E95420] duration-100"
+						href="https://youtu.be/8Ea4oq8qFtM" target="blank">
+						<svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<title>Ubuntu</title>
+							<path
+								d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12S0 18.623 0 12 5.377 0 12 0zm3.279 17.68c-.766.441-1.029 1.422-.586 2.189.441.765 1.422 1.028 2.188.584.766-.441 1.029-1.422.585-2.189-.441-.765-1.421-1.028-2.187-.584zm-3.279-1c-.705 0-1.373-.157-1.971-.435L8.916 18.24c.93.459 1.978.721 3.084.721.646 0 1.268-.091 1.86-.256.104-.643.485-1.234 1.095-1.587.609-.351 1.313-.386 1.92-.156 1.186-1.163 1.957-2.749 2.07-4.515l-2.285-.033c-.21 2.391-2.215 4.266-4.66 4.266zM7.32 12c0-1.583.787-2.981 1.99-3.83L8.14 6.209c-1.404.93-2.445 2.369-2.881 4.035.506.404.83 1.034.83 1.74 0 .704-.324 1.319-.83 1.739.436 1.665 1.477 3.104 2.881 4.034l1.17-1.965C8.107 14.97 7.32 13.574 7.32 12zm-3.48-1.602c-.885 0-1.602.717-1.602 1.602s.717 1.602 1.602 1.602S5.441 12.885 5.441 12s-.716-1.602-1.601-1.602zM12 7.32c2.445 0 4.45 1.875 4.66 4.265l2.285-.034c-.113-1.765-.885-3.35-2.07-4.516-.609.232-1.313.194-1.92-.154-.609-.352-.99-.945-1.095-1.591-.594-.16-1.214-.25-1.86-.25-1.11 0-2.155.26-3.084.72l1.113 1.995c.6-.279 1.268-.435 1.971-.435zm3.279-1.001c.765.442 1.746.181 2.189-.585.441-.765.181-1.746-.588-2.19-.765-.44-1.746-.179-2.189.589-.441.764-.18 1.744.588 2.186z" />
+						</svg>
+					</a>
+				</div>
+				<p class="font-medium text-sm text-slate-500 text-center">
+					Template dipelajari dari <span class="text-primary font-semibold">Sandhika Galih (WPU)</span> melalui link <span class="font-semibold text-[#FF0000]">Youtube</span> di atas.
+				</p>
+				<p class="font-medium text-sm text-slate-500 text-center">
+					Website dibuat menggunakan <a href="https://tailwindcss.com" target="blank" class="font-semibold text-[#38bdf8]"> TailwindCSS</a>
+				</p>
+			</div>
+			<p class="mt-5 text-slate-500">Last Updated on April 2022</p>
+			<p class="text-slate-500 font-mono">[christ@fedora portofolio-tailwind-css] $ porto --version</p>
+			<p class="font-extrabold text-slate-500 font-mono">v0.1</p>
+		</div>
+	</footer>
+	<!-- Footer Section Stop -->
+	
+	<!-- Script buat ngehubungi JS -->
+	<script src="dist/js/script.js"></script>
+</body>
+
+</html>
