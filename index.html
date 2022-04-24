@@ -1,50 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title>Portofolio Dengan Tailwind CSS </title>
-	<link href="dist/output.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="dist/css/final.css" /> -->
+	<link rel="stylesheet" href="dist/output.css" />
+	<script>
+		// On page load or when changing themes, best to add inline in `head` to avoid FOUC
+		if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+			document.documentElement.classList.add('dark');
+		} else {
+			document.documentElement.classList.remove('dark');
+		}
+	</script>
 </head>
 
 <body>
 	<!-- Unique things I do -->
 	<!-- Header Start -->
-	<header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+	<header class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
 		<div class="container">
-			<div class="flex item-center justify-between relative">
+			<div class="relative flex items-center justify-between">
 				<div class="px-4">
-					<a href="#home" class="font-bold text-lg text-primary block py-6">My Website</a>
+					<a href="#home" class="font-bold text-lg text-primary block py-6">WPU Template Portfolio</a>
 				</div>
+
 				<div class="flex items-center px-4">
-					<button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+					<button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden ">
 						<span class="origin-top-left hamburger-line transition duration-300 ease-in-out"></span>
 						<span class="hamburger-line transition duration-300 ease-in-out"></span>
 						<span class="origin-bottom-left hamburger-line transition duration-300 ease-in-out"></span>
 					</button>
 
 					<nav id="nav-menu"
-						class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+						class="absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark lg:dark:bg-transparent dark:shadow-orange-900">
 						<ul class="block lg:flex">
 							<li class="group">
-								<a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Beranda</a>
+								<a href="#home"
+									class="items-center text-base text-dark my-auto py-2 mx-8 flex group-hover:text- dark:text-white">Beranda</a>
 							</li>
 							<li class="group">
-								<a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Tentang Saya</a>
+								<a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text- dark:text-white">Tentang
+									Saya</a>
 							</li>
 							<li class="group">
-								<a href="#portfolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Portfolio</a>
+								<a href="#portfolio"
+									class="text-base text-dark py-2 mx-8 flex group-hover:text- dark:text-white">Portfolio</a>
 							</li>
 							<li class="group">
-								<a href="#clients" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Clients</a>
+								<a href="#clients"
+									class="text-base text-dark py-2 mx-8 flex group-hover:text- dark:text-white">Clients</a>
 							</li>
 							<li class="group">
-								<a href="#blog" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Blog</a>
+								<a href="#blog" class="text-base text-dark py-2 mx-8 flex group-hover:text- dark:text-white">Blog</a>
 							</li>
 							<li class="group">
-								<a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Contact</a>
+								<a href="#contact"
+									class="text-base text-dark py-2 mx-8 flex group-hover:text- dark:text-white">Contact</a>
+							</li>
+							<li class="flex items-center justify-center">
+								<div class="flex items-center">
+									<span class="mr-2 text-xl text-black dark:text-white">
+										<svg role="img" width="20px" class="fill-current" viewBox="0 0 24 24"
+											xmlns="http://www.w3.org/2000/svg" aria-labelledby="color-scheme-light">
+											<path
+												d="M12 18c-3.309 0-6-2.691-6-6s2.691-6 6-6 6 2.691 6 6-2.691 6-6 6zm0-10c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4zm0-4a1 1 0 0 1-1-1V1a1 1 0 0 1 2 0v2a1 1 0 0 1-1 1zm0 20a1 1 0 0 1-1-1v-2a1 1 0 1 1 2 0v2a1 1 0 0 1-1 1zM5.64 6.64a.997.997 0 0 1-.707-.293l-1.42-1.42a.999.999 0 1 1 1.414-1.414l1.42 1.42A.999.999 0 0 1 5.64 6.64zm14.139 14.139a.997.997 0 0 1-.707-.293l-1.42-1.42a.999.999 0 1 1 1.414-1.414l1.42 1.42a.999.999 0 0 1-.707 1.707zM3 13H1a1 1 0 1 1 0-2h2a1 1 0 0 1 0 2zm20 0h-2a1 1 0 1 1 0-2h2a1 1 0 1 1 0 2zM4.22 20.779a.999.999 0 0 1-.707-1.707l1.42-1.42a.999.999 0 1 1 1.414 1.414l-1.42 1.42a.993.993 0 0 1-.707.293zM18.359 6.64a.999.999 0 0 1-.707-1.707l1.42-1.42a.999.999 0 1 1 1.414 1.414l-1.42 1.42a.997.997 0 0 1-.707.293z">
+											</path>
+										</svg>
+									</span>
+									<input type="checkbox" class="hidden" id="dark-toggle">
+									<label for="dark-toggle">
+										<div id="dark-toggle-bg"
+											class="flex h-8 w-16 cursor-pointer items-center rounded-full bg-slate-500 p-1 transition duration-300 ease-in-out">
+											<div class="toggle-circle h-7 w-7 rounded-full bg-white transition duration-300 ease-in-out">
+											</div>
+										</div>
+									</label>
+									<span class="ml-2 text-xl dark:text-white">
+										<svg role="img" width="20px" class="fill-current" viewBox="0 0 24 24"
+											xmlns="http://www.w3.org/2000/svg" aria-labelledby="color-scheme-dark">
+											<path
+												d="M12.048 21.963c-.308 0-.618-.015-.93-.043-2.66-.246-5.064-1.513-6.771-3.567s-2.512-4.651-2.266-7.311a10.004 10.004 0 0 1 9.038-9.038 1 1 0 0 1 .896 1.589 6.008 6.008 0 0 0 1.258 8.392c2.078 1.536 5.055 1.536 7.133 0a1 1 0 0 1 1.591.896 9.951 9.951 0 0 1-9.949 9.082zM9.315 4.438a8.006 8.006 0 0 0-5.244 6.787 7.954 7.954 0 0 0 1.813 5.849 7.95 7.95 0 0 0 5.417 2.854 7.95 7.95 0 0 0 8.266-5.243 8.01 8.01 0 0 1-2.729.476 7.946 7.946 0 0 1-4.755-1.565C9.174 11.443 8.145 7.68 9.315 4.438z">
+											</path>
+										</svg>
+									</span>
+								</div>
 							</li>
 						</ul>
 					</nav>
@@ -55,12 +98,12 @@
 	<!-- Header End -->
 
 	<!-- Hero Section Start -->
-	<section id="home" class="pt-36 ">
+	<section id="home" class="pt-36 pb-16 dark:bg-dark">
 		<div class="container">
 			<div class="flex flex-wrap">
 				<div class="w-full self-center px-4 lg:w-1/2">
-					<h1 class="text-base font-semibold text-primary md:text-xl">Halo semua 👋, saya <span
-							class="block font-bold text-dark text-4xl">--</span></h1>
+					<h1 class="text-base font-semibold text-primary md:text-xl ">Code Name <span
+							class="block font-bold text-dark text-4xl dark:text-white">C31</span></h1>
 					<h2 class="font-medium text-secondary text-lg mb-5">Human & Student</h2>
 					<p class="font-medium text-secondary mb-10 leading-relaxed">Keep learning and be better slowly everyday</p>
 
@@ -72,12 +115,12 @@
 					<!-- lg:w-1/2 digunakan apabila ukuran layar = lg (large), maka w-1/2 dan self-end (Taruh di kanan)-->
 					<div class="relative mt-20 lg:mt-9 lg:right-0">
 						<!-- Untuk container parent, apabila terdapat child Absolute, jangan lupa parent dikasih Relative -->
-						<img src="dist/img/HM Inside.jpeg" alt="Image HM Inside" class="max-w-full mx-auto z-10" />
-						<span class="absolute -bottom-20 -z-10 left-1/2 -translate-x-1/2">
+						<img src="dist/img/HM Inside.jpeg" alt="Image HM Inside" class="relative max-w-full mx-auto z-10" />
+						<span class="absolute -bottom-20 left-1/2 -translate-x-1/2">
 							<svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
 								<path fill="#14b8a6"
 									d="M49.1,-61.6C57,-52,52,-30.1,52.2,-11.7C52.5,6.7,58,21.7,54.7,35.5C51.4,49.4,39.3,62.1,25.4,65.3C11.4,68.6,-4.5,62.2,-17.9,54.9C-31.4,47.6,-42.4,39.2,-49,28.1C-55.6,17,-57.9,3.2,-55.6,-9.8C-53.3,-22.8,-46.4,-35,-36.4,-44.2C-26.4,-53.5,-13.2,-59.7,3.7,-64.2C20.6,-68.6,41.3,-71.2,49.1,-61.6Z"
-									transform="translate(100 100) scale(1.4)">
+									transform="translate(100 100) scale(1.3)">
 							</svg>
 						</span>
 					</div>
@@ -89,22 +132,23 @@
 	<!-- Hero Section End -->
 
 	<!-- About Section Start -->
-	<section id="about" class="pt-36 pb-32 ">
+	<section id="about" class="pt-16 pb-32 dark:bg-dark">
 		<div class="container">
 			<div class="flex flex-wrap">
 				<div class="w-full px-4 mb-10 lg:w-1/2">
 					<h4 class="font-bold text-primary mb-3">Tentang Saya</h4>
-					<h2 class="font-bold text-dark text-3xl mb-5 max-w-lg lg:text-4xl">Mencoba web programming di Youtube WPU</h2>
+					<h2 class="font-bold text-dark text-3xl mb-5 max-w-lg lg:text-4xl dark:text-white">Mencoba web programming di
+						Youtube WPU</h2>
 					<p class="font-medium text-base text-secondary lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing
 						elit. Beatae voluptas consequuntur aspernatur quo sapiente repellendus repellat!</p>
 				</div>
 				<div class="w-full px-4 lg:w-1/2">
-					<h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">Mari berteman</h3>
+					<h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10 dark:text-white">Mari berteman</h3>
 					<p class="font-medium text-base text-secondary mb-6 lg:text-lg">Lorem ipsum dolor sit amet consectetur
 						adipisicing elit. Numquam molestiae perferendis adipisci reiciendis odit odio tempora dignissimos
 						recusandae!</p>
-					<div class="flex items-center">
-						<a class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-[#0B57A4] hover:text-[#0B57A4] duration-100"
+					<div class="flex items-center dark:text-white">
+						<a class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-[#0B57A4] hover:text-[#0B57A4] duration-100 "
 							href="https://getfedora.org/" target="blank">
 							<svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 								<title>Fedora</title>
@@ -136,12 +180,13 @@
 	<!-- About Section End -->
 
 	<!-- Portfolio Section Start -->
-	<section id="utilities" class="pt-36 pb-16 bg-slate-100">
+	<section id="utilities" class="pt-36 pb-16 bg-slate-100 dark:bg-slate-800">
 		<div class="container">
 			<div class="w-full px-4">
 				<div class="mx-auto text-center mb-16">
 					<h4 class="font-semibold text-lg text-primary mb-2">Utilities</h4>
-					<h2 class="font-bold text-dark text-3xl mb-4 sm:text-xl lg:text-5xl">Website yang Worth IT untuk dilihat</h2>
+					<h2 class="font-bold text-dark text-3xl mb-4 sm:text-xl lg:text-5xl dark:text-white">Website yang Worth IT
+						untuk dilihat</h2>
 					<p class="font-medium text-md text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing
 						elit. Saepe
 						eos ad architecto dicta aliquam?</p>
@@ -153,7 +198,7 @@
 					<div class="rounded-md shadow-md overflow-hidden">
 						<img src="dist/img/utilities/1-l.png" alt="Gambar Website no.1" width="w-full">
 					</div>
-					<h3 class="font-semibold text-xl text-dark mt-5 mb-3">Website blobmaker.app</h3>
+					<h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Website blobmaker.app</h3>
 					<p class="font-medium text-base text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
 						Nisi, aspernatur!</p>
 				</div>
@@ -162,7 +207,7 @@
 					<div class="rounded-md shadow-md overflow-hidden">
 						<img src="dist/img/utilities/2.png" alt="Gambar Website no.2" width="w-full">
 					</div>
-					<h3 class="font-semibold text-xl text-dark mt-5 mb-3">Website simpleicons.org</h3>
+					<h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Website simpleicons.org</h3>
 					<p class="font-medium text-base text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
 						Nisi, aspernatur!</p>
 				</div>
@@ -171,7 +216,7 @@
 					<div class="rounded-md shadow-md overflow-hidden">
 						<img src="dist/img/utilities/3.png" alt="Gambar Website no.3" width="w-full">
 					</div>
-					<h3 class="font-semibold text-xl text-dark mt-5 mb-3">Website remove.bg</h3>
+					<h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Website remove.bg</h3>
 					<p class="font-medium text-base text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
 						Nisi, aspernatur!</p>
 				</div>
@@ -180,7 +225,7 @@
 					<div class="rounded-md shadow-md overflow-hidden">
 						<img src="dist/img/utilities/4.png" alt="Gambar Website no.4" width="w-full">
 					</div>
-					<h3 class="font-semibold text-xl text-dark mt-5 mb-3">Website schemecolor.com</h3>
+					<h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Website schemecolor.com</h3>
 					<p class="font-medium text-base text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
 						Nisi, aspernatur!</p>
 				</div>
@@ -190,7 +235,7 @@
 	<!-- Portfolio Section End -->
 
 	<!-- Hardware Section Start -->
-	<section id="hardware" class="pt-36 pb-32 bg-slate-800">
+	<section id="hardware" class="bg-slate-800 pt-36 pb-32 dark:bg-slate-600">
 		<div class="container">
 			<div class="w-full px-4">
 				<div class="max-w-xl mx-auto text-center mb-16">
@@ -206,19 +251,19 @@
 
 			<div class="w-full px-4">
 				<div class="flex flex-wrap items-center justify-center">
-					<a href="www.google.com"
+					<a href="#"
 						class="max-w-[120px] mx-4 py-4 grayscale opacity-70 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-						<img src="dist/img/hardware/ROG.svg" class="h-[60px]" alt="Google">
+						<img src="dist/img/hardware/ROG.svg" class="h-[60px] brightness-200" alt="Google">
 					</a>
-					<a href="www.google.com"
+					<a href="#"
 						class="max-w-[120px] mx-4 py-4 grayscale opacity-70 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
 						<img src="dist/img/hardware/intel.svg" class="h-[60px]" alt="Google">
 					</a>
-					<a href="www.google.com"
+					<a href="#"
 						class="max-w-[120px] mx-4 py-4 grayscale opacity-70 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-						<img src="dist/img/hardware/Nvidia_logo.svg" class="h-[60px]" alt="Google">
+						<img src="dist/img/hardware/Nvidia_logo.svg" class="h-[60px] " alt="Google">
 					</a>
-					<a href="www.google.com"
+					<a href="#"
 						class="max-w-[120px] mx-4 py-4 grayscale opacity-70 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
 						<img src="dist/img/hardware/Fedora_logo.svg" class="h-[60px]" alt="Google">
 					</a>
@@ -226,9 +271,9 @@
 						class="max-w-[120px] mx-4 py-4 grayscale opacity-70 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
 						<img src="dist/img/hardware/logitechG.svg" class="h-[60px]" alt="Google">
 					</a>
-					<a href="www.google.com"
+					<a href="#"
 						class="max-w-[120px]  mx-4 py-4 grayscale opacity-70 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-						<img src="dist/img/hardware/samsung.svg" class="h-[60px]" alt="Google">
+						<img src="dist/img/hardware/samsung.svg" class="h-[60px] brightness-200" alt="Google">
 					</a>
 				</div>
 			</div>
@@ -237,12 +282,12 @@
 	<!-- Hardware Section Stop -->
 
 	<!-- Blog Section Start -->
-	<section id="blog" class="pt-36 pb-32 bg-slate-100">
+	<section id="blog" class="pt-36 pb-32 bg-slate-100 dark:bg-slate-700">
 		<div class="container">
 			<div class="w-full px-4">
 				<div class="mx-auto text-center mb-16">
 					<h4 class="font-semibold text-lg text-primary mb-2">Blog</h4>
-					<h2 class="font-bold text-dark text-3xl mb-4 sm:text-xl lg:text-5xl">Tulisan Saya</h2>
+					<h2 class="font-bold text-dark text-3xl mb-4 sm:text-xl lg:text-5xl dark:text-white">Tulisan Saya</h2>
 					<p class="font-medium text-md text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing
 						elit. Minus animi veritatis, perspiciatis nesciunt consequatur rem optio ut.</p>
 				</div>
@@ -428,19 +473,31 @@
 					</a>
 				</div>
 				<p class="font-medium text-sm text-slate-500 text-center">
-					Template dipelajari dari <span class="text-primary font-semibold">Sandhika Galih (WPU)</span> melalui link <span class="font-semibold text-[#FF0000]">Youtube</span> di atas.
+					Desain Website dipelajari dari <span class="text-primary font-semibold">Sandhika Galih (WPU)</span> melalui
+					link
+					<span class="font-semibold text-[#FF0000]">Youtube</span> di atas.
 				</p>
 				<p class="font-medium text-sm text-slate-500 text-center">
-					Website dibuat menggunakan <a href="https://tailwindcss.com" target="blank" class="font-semibold text-[#38bdf8]"> TailwindCSS</a>
+					Website dibuat menggunakan <a href="https://tailwindcss.com" target="blank"
+						class="font-semibold text-[#38bdf8]"> TailwindCSS</a>
 				</p>
 			</div>
 			<p class="mt-5 text-slate-500">Last Updated on April 2022</p>
 			<p class="text-slate-500 font-mono">[christ@fedora portofolio-tailwind-css] $ porto --version</p>
-			<p class="font-extrabold text-slate-500 font-mono">v0.1</p>
+			<p class="font-extrabold text-slate-500 font-mono">v0.2 'Dark Mode'</p>
 		</div>
 	</footer>
 	<!-- Footer Section Stop -->
-	
+
+	<!-- Back to top Start -->
+	<a id="to-top" href="#home"
+		class="flex fixed justify-center items-center z-[9999] -bottom-10 right-4 h-10 w-10 bg-primary rounded-sm hover:bottom-5 duration-300 ease-in-out">
+		<span class="fixed h-5 mx-auto w-5 border-t-4 border-l-4 rotate-45"></span>
+		<span class="fixed h-5 mt-5 w-5 border-t-4 border-l-4 rotate-45"></span>
+	</a>
+	<!-- Back to top End -->
+
+
 	<!-- Script buat ngehubungi JS -->
 	<script src="dist/js/script.js"></script>
 </body>
