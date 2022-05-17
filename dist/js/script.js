@@ -50,14 +50,14 @@ darkToggle.addEventListener('click', function(){
 
 function toggleButton(){
   html.classList.add('dark');
-  darkToggleBG.classList.remove('bg-slate-500');
+  darkToggleBG.classList.remove('bg-slate-300');
   darkToggleBG.classList.add('bg-primary');
   localStorage.theme = 'dark';
 };
 
 function unToggleButton(){
   html.classList.remove('dark');
-    darkToggleBG.classList.add('bg-slate-500');
+    darkToggleBG.classList.add('bg-slate-300');
     darkToggleBG.classList.remove('bg-primary');
     localStorage.theme = 'light';
 }
@@ -71,3 +71,46 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
   darkToggle.checked = false;
   unToggleButton();
 }
+
+// It's show time
+// Thanks to Aaron Farrar https://codepen.io/afarrar/pen/JRaEjP
+function showTime(){
+  var date = new Date();
+  var h = date.getHours(); // 0 - 23
+  var m = date.getMinutes(); // 0 - 59
+  var s = date.getSeconds(); // 0 - 59
+  var session = "AM";
+  const monthNames = ["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"];
+  
+  if(h == 0){
+      h = 12;
+  }
+  
+  if(h > 12){
+      h = h - 12;
+      session = "PM";
+  }
+  
+  h = (h < 10) ? "0" + h : h;
+  m = (m < 10) ? "0" + m : m;
+  s = (s < 10) ? "0" + s : s;
+  
+  var time = h + ":" + m + ":" + s + " " + session;
+
+  var year = date.getFullYear();
+  var day = date.getUTCDate();
+  var month = monthNames[date.getMonth()];
+
+  var fulldate = day + " " + month + " " + year;
+
+  
+
+  // document.getElementById("MyClockDisplay").innerText = date+time;
+  document.getElementById("MyClockDisplay").textContent = fulldate + " | " +time;
+  
+  setTimeout(showTime, 1000);
+  
+}
+
+showTime();

@@ -3,8 +3,8 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Portofolio Dengan Tailwind CSS </title>
 	<!-- <link rel="stylesheet" href="dist/css/final.css" /> -->
 	<link rel="stylesheet" href="dist/output.css" />
@@ -20,12 +20,24 @@
 
 <body>
 	<!-- Unique things I do -->
+
+	<!-- Kickstarter to initialize CSS in JS -->
+	<div class="-bottom-10">
+		<div class="bottom-4"></div>
+	</div>
+
+	<!-- The end of Unuque things I do -->
+
 	<!-- Header Start -->
 	<header class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
 		<div class="container">
 			<div class="relative flex items-center justify-between">
 				<div class="px-4">
-					<a href="#home" class="font-bold text-lg text-primary block py-6">WPU Template Portfolio</a>
+					<a href="#home" class="py-2 font-bold text-md text-primary block ">My Site xD</a>
+				</div>
+
+				<div>
+					<div id="MyClockDisplay" class="clock text-black dark:text-white text-sm" onload="showTime()"></div>
 				</div>
 
 				<div class="flex items-center px-4">
@@ -36,30 +48,26 @@
 					</button>
 
 					<nav id="nav-menu"
-						class="absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark lg:dark:bg-transparent dark:shadow-orange-900">
-						<ul class="block lg:flex">
-							<li class="group">
+						class="hidden absolute py-2 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark lg:dark:bg-transparent dark:shadow-orange-900">
+						<ul class="block lg:flex lg:shadow-md lg:bg-primary dark:lg:bg-darkSecondary lg:rounded-full p-1">
+							<li class="group self-center text-center">
 								<a href="#home"
-									class="items-center text-base text-dark my-auto py-2 mx-8 flex group-hover:text- dark:text-white">Beranda</a>
+									class="items-center c31-text-nav text-dark my-auto font-semibold py-2 mx-3 flex group-hover:text- dark:text-white">Beranda</a>
 							</li>
-							<li class="group">
-								<a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text- dark:text-white">Tentang
+							<li class="group self-center text-center">
+								<a href="#about" class="c31-text-nav text-dark font-semibold py-2 mx-3 flex group-hover:text- dark:text-white">Tentang
 									Saya</a>
 							</li>
-							<li class="group">
+							<li class="group self-center text-center">
 								<a href="#portfolio"
-									class="text-base text-dark py-2 mx-8 flex group-hover:text- dark:text-white">Portfolio</a>
+									class="c31-text-nav text-dark font-semibold py-2 mx-3 flex group-hover:text- dark:text-white">Portfolio</a>
 							</li>
-							<li class="group">
+							<li class="group self-center text-center">
 								<a href="#clients"
-									class="text-base text-dark py-2 mx-8 flex group-hover:text- dark:text-white">Clients</a>
+									class="c31-text-nav text-dark font-semibold py-2 mx-3 flex group-hover:text- dark:text-white">Clients</a>
 							</li>
-							<li class="group">
-								<a href="#blog" class="text-base text-dark py-2 mx-8 flex group-hover:text- dark:text-white">Blog</a>
-							</li>
-							<li class="group">
-								<a href="#contact"
-									class="text-base text-dark py-2 mx-8 flex group-hover:text- dark:text-white">Contact</a>
+							<li class="group self-center text-center">
+								<a href="#blog" class="c31-text-nav text-dark font-semibold py-2 mx-3 flex group-hover:text- dark:text-white">Blog</a>
 							</li>
 							<li class="flex items-center justify-center">
 								<div class="flex items-center">
@@ -74,12 +82,12 @@
 									<input type="checkbox" class="hidden" id="dark-toggle">
 									<label for="dark-toggle">
 										<div id="dark-toggle-bg"
-											class="flex h-8 w-16 cursor-pointer items-center rounded-full bg-slate-500 p-1 transition duration-300 ease-in-out">
+											class="flex h-8 w-16 cursor-pointer items-center rounded-full bg-slate-300 p-1 transition duration-300 ease-in-out">
 											<div class="toggle-circle h-7 w-7 rounded-full bg-white transition duration-300 ease-in-out">
 											</div>
 										</div>
 									</label>
-									<span class="ml-2 text-xl dark:text-white">
+									<span class="ml-2 text-xl dark:text-white mx-3">
 										<svg role="img" width="20px" class="fill-current" viewBox="0 0 24 24"
 											xmlns="http://www.w3.org/2000/svg" aria-labelledby="color-scheme-dark">
 											<path
@@ -100,16 +108,225 @@
 	<!-- Hero Section Start -->
 	<section id="home" class="pt-36 pb-16 dark:bg-dark">
 		<div class="container">
-			<div class="flex flex-wrap">
+			<div class="flex flex-wrap lg:mx-64">
 				<div class="w-full self-center px-4 lg:w-1/2">
-					<h1 class="text-base font-semibold text-primary md:text-xl ">Code Name <span
-							class="block font-bold text-dark text-4xl dark:text-white">C31</span></h1>
-					<h2 class="font-medium text-secondary text-lg mb-5">Human & Student</h2>
-					<p class="font-medium text-secondary mb-10 leading-relaxed">Keep learning and be better slowly everyday</p>
+					<h1 class="text-base font-semibold text-primary md:text-xl">Profil</h1>
+					<span class="font-bold text-dark text-4xl dark:text-white">N. Christ</span>
+					<button class="pl-1 align-bottom">
+						<svg xmlns="http://www.w3.org/2000/svg" class="flex" xmlns:xlink="http://www.w3.org/1999/xlink" width="40"
+							zoomAndPan="magnify" viewBox="0 0 30 30.000001" height="30" preserveAspectRatio="xMidYMid meet"
+							version="1.0">
+							<defs>
+								<clipPath id="id1">
+									<path d="M 2.128906 5.222656 L 27.53125 5.222656 L 27.53125 15 L 2.128906 15 Z M 2.128906 5.222656 "
+										clip-rule="nonzero" />
+								</clipPath>
+								<clipPath id="id2">
+									<path d="M 2.128906 14 L 27.53125 14 L 27.53125 23.371094 L 2.128906 23.371094 Z M 2.128906 14 "
+										clip-rule="nonzero" />
+								</clipPath>
+							</defs>
+							<g clip-path="url(#id1)">
+								<path fill="rgb(86.268616%, 12.159729%, 14.898682%)"
+									d="M 24.703125 5.222656 L 4.957031 5.222656 C 3.398438 5.222656 2.132812 6.472656 2.132812 8.015625 L 2.132812 14.296875 L 27.523438 14.296875 L 27.523438 8.015625 C 27.523438 6.472656 26.261719 5.222656 24.703125 5.222656 Z M 24.703125 5.222656 "
+									fill-opacity="1" fill-rule="nonzero" />
+							</g>
+							<g clip-path="url(#id2)">
+								<path fill="rgb(93.328857%, 93.328857%, 93.328857%)"
+									d="M 27.523438 20.578125 C 27.523438 22.121094 26.261719 23.371094 24.703125 23.371094 L 4.957031 23.371094 C 3.398438 23.371094 2.132812 22.121094 2.132812 20.578125 L 2.132812 14.296875 L 27.523438 14.296875 Z M 27.523438 20.578125 "
+									fill-opacity="1" fill-rule="nonzero" />
+							</g>
+						</svg>
+					</button>
 
-					<a href="#"
-						class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 duration-200 ease-in-out">Hubungi
-						Saya</a>
+					<h2 class="font-medium text-secondary text-lg mb-3">Warga negara Indonesia</h2>
+					<p class="c31-text-base  text-secondary mb-2 leading-relaxed">Suka balapan sim maupun simcade seperti rFactor2,
+						AC:Competizione, dan Codemaster F1 game series</p>
+					<p class="c31-text-base  text-secondary mb-10 leading-relaxed">Suka main game rhythm seperti osu!, Stepmania,
+						dan Project Diva</p>
+
+					<!-- Social Media saya -->
+					<section class="flex w-full">
+						<span class="w-fit h-fit">
+							<a href="https://osu.ppy.sh/users/5167846"
+								class="block mr-2 px-3 py-1 bg-[#e32373] text-white c31-text-base rounded-full max-h-10">
+								<span>
+									<svg xmlns="http://www.w3.org/2000/svg" class="inline-flex align-middle"
+										xmlns:xlink="http://www.w3.org/1999/xlink" height="25" viewBox="25 25 300 300"
+										preserveAspectRatio="xMidYMid meet">
+										<style>
+											.st1 {
+												opacity: .15
+											}
+
+											.st3 {
+												fill: #f1f1f2
+											}
+
+											.st4 {
+												fill: #231f20
+											}
+
+											.st5 {
+												fill: #808184
+											}
+
+											.st8 {
+												fill: #59595c
+											}
+
+											.st9 {
+												fill: #a7a8ab
+											}
+
+											.st10 {
+												fill: #6d6e70
+											}
+
+											.st11 {
+												fill: #221f1f
+											}
+
+											.st12 {
+												fill: #404041
+											}
+
+											.st13 {
+												fill: #58595b
+											}
+
+											.st14 {
+												fill: #bbbdbf
+											}
+
+											.st15 {
+												fill: #fff
+											}
+
+											.st16 {
+												fill: #a6a8ab
+											}
+										</style>
+										<circle cx="175" cy="175" r="143.7" fill="#f6a" />
+										<g class="st1" id="Triangles">
+											<defs>
+												<circle id="a" class="st1" cx="175" cy="175" r="150" />
+											</defs>
+											<clipPath id="b">
+												<use xlink:href="#a" overflow="visible" />
+											</clipPath>
+											<g clip-path="url(#b)">
+												<path class="st3" d="M-81.2 336.9 175-106.9l256.2 443.8z" />
+												<path class="st4" d="M68.8 443.7 325 0l256.2 443.7z" />
+												<path class="st5" d="m-409.8 363.4 256.2-443.7 256.2 443.7z" />
+												<path d="m61.4 158.2 256.2-443.8 256.2 443.8z" fill="#929497" />
+												<path d="M-222.4 380 33.8-63.7 290 380z" fill="#636466" />
+												<path class="st8" d="m-100.1 646.9 256.2-443.8 256.2 443.8z" />
+												<path class="st9" d="m-164.9 147.2 97.3-168.5 97.3 168.5zm81.5 376.6 97.3-168.5 97.3 168.5z" />
+												<path class="st10" d="m134.3 220.8 97.3-168.5 97.3 168.5z" />
+												<path class="st9" d="M298.7 485.7 396 317.2l97.2 168.5z" />
+												<path class="st8" d="m108.4 621.4 48.6-84.2 48.7 84.2z" />
+												<path class="st11" d="m278.7 305.9 48.6-84.2 48.6 84.2zM46.2 400l97.3-168.5L240.8 400z" />
+												<path class="st5"
+													d="M108.8-86.6 36.5 38.6h194.6L158.8-86.6zm213.2 0-23.6 40.9h97.3L372-86.6z" />
+												<path class="st12" d="M35.3 332.5 132.6 164l97.3 168.5z" />
+												<path class="st5" d="m236.1 369.2 97.2-168.5 97.3 168.5z" />
+												<path class="st8" d="m-51.9 428.8 48.1-83.3 48.1 83.3z" />
+												<path class="st13" d="m123.2 104.8 48.1-83.3 48.1 83.3z" />
+												<path class="st11" d="m283 90.2 48.1-83.3 48.1 83.3z" />
+												<path class="st5" d="m-61.9 331.6 24.1-41.7 24 41.7z" />
+												<path class="st8" d="m132.5 621.6 24-41.7 24.1 41.7zm84.2-156 24-41.7 24 41.7z" />
+												<path class="st12" d="m197.1 259.7 48.1-83.3 48.1 83.3z" />
+												<path class="st3" d="m283 239.3 48.1-83.3 48.1 83.3z" />
+												<path class="st9" d="M-49.5 78.8-1.4-4.5l48.1 83.3zm-48.4 146.6 48.1-83.3 48.1 83.3z" />
+												<path class="st5" d="m288.2-20 24-41.6L336.3-20z" />
+												<path class="st14" d="m187.2 116.2 24.1-41.6 24 41.6z" />
+												<path class="st15" d="m231.9 63.8 6.4-11 6.4 11z" />
+												<path class="st10" d="M28.9 117.8 77 34.5l48.1 83.3z" />
+												<path class="st16" d="m110.8 331.9 48.1-83.3 48.1 83.3z" />
+												<path class="st4" d="m107 263.1 18.1-31.4 18 31.4z" />
+												<path class="st9" d="m214 285.3 24-41.7 24.1 41.7zm-5.4-118.1 24-41.6 24.1 41.6z" />
+												<path class="st3" d="m226 102.8 48.1-83.3 48 83.3z" />
+												<path class="st16" d="m1.2 143.6 48.1-83.3 48.1 83.3z" />
+												<path class="st8" d="m14 272.2 18.3-31.8 18.3 31.8z" />
+												<path class="st16" d="m265.4 230.6 18.3-31.8 18.3 31.8z" />
+												<path class="st15" d="M156.7 84.8 175 53.1l18.3 31.7z" />
+												<path class="st13" d="m156.7 282.1 18.3-31.8 18.3 31.8z" />
+												<path class="st8" d="m-19.7 88 18.3-31.8L17 88zm258.1 272.2 18.3-31.7 18.3 31.7z" />
+												<path class="st5" d="m307.5 135.6 18.3-31.8 18.3 31.8z" />
+												<path class="st14" d="m45.3 233.1 18.3-31.8L82 233.1z" />
+												<path class="st3" d="m72.3 295.1 18.3-31.8 18.4 31.8zM27.6 167.7 46 136l18.3 31.7z" />
+												<path class="st8" d="m113.7 123.7 9.1-15.8 9.2 15.8z" />
+												<path class="st14" d="m50.8 152.9 9.1-15.8 9.2 15.8z" />
+												<path d="m107.7 84.4 9.2-15.9 9.2 15.9z" fill="#e6e7e8" />
+												<path class="st11" d="m69 360.2 18.3-31.7 18.3 31.7z" />
+												<path class="st8" d="m112.2 419.2 18.3-31.8 18.3 31.8zm404.5-131.1 18.4-31.8 18.3 31.8z" />
+												<path class="st5" d="M187.7 61.9 206 30.1l18.4 31.8z" />
+												<path class="st15" d="m283.4 128.2 18.3-31.7 18.3 31.7z" />
+												<path class="st8" d="m316.6 622.1 9.2-15.9 9.2 15.9z" />
+												<path class="st9" d="m262.4 411.2 9.2-15.8 9.1 15.8z" />
+												<path class="st8" d="m577.5 394.4 9.2-15.9 9.2 15.9z" />
+												<path class="st5" d="m-97.4 339.9 18.3-31.7 18.4 31.7zm375.1-24.4 18.4-31.8 18.3 31.8z" />
+												<path class="st9" d="m286.9 268.6 9.2-15.9 9.1 15.9z" />
+												<path d="m210.1 128.5 10.9-18.9 10.9 18.9z" fill="#d0d2d3" />
+												<path class="st5" d="M94.9-41.1 104-57l9.2 15.9z" />
+												<path class="st8" d="M386.7 121.9 405 90.2l18.4 31.7zM463 336.8l9.2-15.9 9.2 15.9z" />
+											</g>
+										</g>
+										<path class="st15"
+											d="M100.1 206.4c-4.7 0-8.8-.8-12.3-2.3-3.5-1.5-6.4-3.7-8.6-6.4-2.3-2.7-4-5.9-5.2-9.6-1.2-3.7-1.7-7.6-1.7-11.9 0-4.3.6-8.3 1.7-12 1.2-3.7 2.9-7 5.2-9.7 2.3-2.7 5.2-4.9 8.6-6.5 3.5-1.6 7.6-2.4 12.3-2.4s8.8.8 12.3 2.4c3.5 1.6 6.4 3.7 8.8 6.5 2.3 2.7 4 6 5.2 9.7 1.1 3.7 1.7 7.7 1.7 12s-.6 8.2-1.7 11.9c-1.1 3.7-2.8 6.9-5.2 9.6-2.3 2.7-5.2 4.9-8.8 6.4-3.4 1.6-7.6 2.3-12.3 2.3zm0-12.1c4.2 0 7.2-1.6 9-4.7 1.8-3.1 2.7-7.6 2.7-13.4 0-5.8-.9-10.3-2.7-13.4-1.8-3.1-4.8-4.7-9-4.7-4.1 0-7.1 1.6-8.9 4.7-1.8 3.1-2.8 7.6-2.8 13.4 0 5.8.9 10.3 2.8 13.4 1.8 3.2 4.8 4.7 8.9 4.7zm51.8-14.5c-4.2-1.2-7.5-3-9.8-5.3-2.4-2.4-3.5-5.9-3.5-10.6 0-5.7 2-10.1 6.1-13.4 4.1-3.2 9.6-4.8 16.7-4.8a49.13 49.13 0 0 1 17.2 3.2c-.2 1.9-.5 4-1.1 6.1-.6 2.1-1.3 3.9-2.1 5.5-1.8-.7-3.8-1.4-5.9-2-2.2-.6-4.5-.8-6.8-.8-2.5 0-4.5.4-5.9 1.2-1.4.8-2.1 2-2.1 3.8 0 1.6.5 2.8 1.5 3.5 1 .7 2.4 1.3 4.3 1.9l6.4 1.9c2.1.6 4 1.3 5.7 2.2 1.7.9 3.1 1.9 4.3 3.2 1.2 1.3 2.1 2.8 2.8 4.7.7 1.9 1 4.2 1 6.8 0 2.8-.6 5.3-1.7 7.7a17.6 17.6 0 0 1-5 6.2c-2.2 1.8-4.9 3.1-8 4.2a35 35 0 0 1-10.7 1.5c-1.8 0-3.4-.1-4.9-.2-1.5-.1-2.9-.3-4.3-.6s-2.7-.6-4.1-1c-1.3-.4-2.8-.9-4.4-1.5.1-2 .5-4.1 1.1-6.1.6-2.1 1.3-4.1 2.2-6 2.5 1 4.8 1.7 7 2.2 2.2.5 4.5.7 6.9.7 1 0 2.2-.1 3.4-.3 1.2-.2 2.4-.5 3.4-1s1.9-1.1 2.6-1.9c.7-.8 1.1-1.8 1.1-3.1 0-1.8-.5-3.1-1.6-3.9-1.1-.8-2.6-1.5-4.5-2.1l-7.3-1.9zm39.3-32.7c2.7-.4 5.3-.7 8-.7 2.6 0 5.3.2 8 .7v30.7c0 3.1.2 5.6.7 7.6.5 2 1.2 3.6 2.2 4.7 1 1.2 2.3 2 3.8 2.5s3.3.7 5.3.7c2.8 0 5.1-.3 7-.8v-45.4c2.7-.4 5.3-.7 7.9-.7 2.6 0 5.3.2 8 .7v55.8c-2.4.8-5.6 1.6-9.5 2.4a65.33 65.33 0 0 1-23.3.3c-3.5-.6-6.6-1.9-9.3-3.8-2.7-1.9-4.8-4.8-6.3-8.5-1.6-3.7-2.4-8.7-2.4-14.9v-31.3zm65.9 58c-.4-2.8-.7-5.5-.7-8.2 0-2.7.2-5.5.7-8.3 2.8-.4 5.5-.7 8.2-.7 2.7 0 5.5.2 8.3.7.4 2.8.7 5.6.7 8.2 0 2.8-.2 5.5-.7 8.3-2.8.4-5.6.7-8.2.7-2.8-.1-5.5-.3-8.3-.7zm-.4-80.7c2.9-.4 5.8-.7 8.6-.7 2.9 0 5.8.2 8.8.7l-1.1 54.9c-2.6.4-5.1.7-7.5.7-2.5 0-5.1-.2-7.6-.7l-1.2-54.9z" />
+										<path class="st15"
+											d="M175 25C92.2 25 25 92.2 25 175s67.2 150 150 150 150-67.2 150-150S257.8 25 175 25zm0 285c-74.6 0-135-60.4-135-135S100.4 40 175 40s135 60.4 135 135-60.4 135-135 135z" />
+									</svg>
+								</span>
+								<span class="align-middle">Christ31</span>
+							</a>
+						</span>
+
+						<span class="w-fit h-fit">
+							<a href="https://steamcommunity.com/profiles/76561198154068318/"
+								class="block mr-2 px-3 py-1 bg-[#223246] c31-text-base text-white rounded-full">
+								<span>
+									<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 233 233"
+										class="inline-flex align-middle" height="25" preserveAspectRatio="xMidYMid meet">
+										<defs>
+											<linearGradient id="a" x2="50%" x1="50%" y2="100%">
+												<stop stop-color="#111D2E" offset="0" />
+												<stop stop-color="#051839" offset=".21248" />
+												<stop stop-color="#0A1B48" offset=".40695" />
+												<stop stop-color="#132E62" offset=".58110" />
+												<stop stop-color="#144B7E" offset=".73760" />
+												<stop stop-color="#136497" offset=".87279" />
+												<stop stop-color="#1387B8" offset="1" />
+											</linearGradient>
+										</defs>
+										<path fill="url(#a)"
+											d="m4.8911 150.01c14.393 48.01 58.916 82.99 111.61 82.99 64.34 0 116.5-52.16 116.5-116.5 0-64.341-52.16-116.5-116.5-116.5-61.741 0-112.26 48.029-116.25 108.76 7.5391 12.66 10.481 20.49 4.6411 41.25z" />
+										<path fill="#fff"
+											d="m110.5 87.322c0 0.196 0 0.392 0.01 0.576l-28.508 41.412c-4.618-0.21-9.252 0.6-13.646 2.41-1.937 0.79-3.752 1.76-5.455 2.88l-62.599-25.77c0.00049 0-1.4485 23.83 4.588 41.59l44.254 18.26c2.222 9.93 9.034 18.64 19.084 22.83 16.443 6.87 35.402-0.96 42.242-17.41 1.78-4.3 2.61-8.81 2.49-13.31l40.79-29.15c0.33 0.01 0.67 0.02 1 0.02 24.41 0 44.25-19.9 44.25-44.338 0-24.44-19.84-44.322-44.25-44.322-24.4 0-44.25 19.882-44.25 44.322zm-6.84 83.918c-5.294 12.71-19.9 18.74-32.596 13.45-5.857-2.44-10.279-6.91-12.83-12.24l14.405 5.97c9.363 3.9 20.105-0.54 23.997-9.9 3.904-9.37-0.525-20.13-9.883-24.03l-14.891-6.17c5.746-2.18 12.278-2.26 18.381 0.28 6.153 2.56 10.927 7.38 13.457 13.54s2.52 12.96-0.04 19.1m51.09-54.38c-16.25 0-29.48-13.25-29.48-29.538 0-16.275 13.23-29.529 29.48-29.529 16.26 0 29.49 13.254 29.49 29.529 0 16.288-13.23 29.538-29.49 29.538m-22.09-29.583c0-12.253 9.92-22.191 22.14-22.191 12.23 0 22.15 9.938 22.15 22.191 0 12.254-9.92 22.183-22.15 22.183-12.22 0-22.14-9.929-22.14-22.183z" />
+									</svg>
+								</span>
+								<span class="align-middle">Christ</span>
+							</a>
+						</span>
+
+						<span class="w-fit h-fit">
+							<a href="https://www.youtube.com/channel/UCSFcKGHJO7e5cLtS9nU98Kw"
+								class="block mr-2 px-3 py-1 bg-[#FFFFFF] c31-text-base text-black rounded-full" target="_blank">
+								<span>
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+										id="Layer_1" x="0px" y="0px" viewBox="0 0 461.001 461.001" width="25" class="inline" preserveAspectRatio="xMidYMid meet"
+										style="enable-background:new 0 0 461.001 461.001;" xml:space="preserve">
+										<g>
+											<path style="fill:#F61C0D;"
+												d="M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728   c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137   C461.001,110.259,418.135,67.393,365.257,67.393z M300.506,237.056l-126.06,60.123c-3.359,1.602-7.239-0.847-7.239-4.568V168.607   c0-3.774,3.982-6.22,7.348-4.514l126.06,63.881C304.363,229.873,304.298,235.248,300.506,237.056z" />
+										</g>
+									</svg>
+								</span>
+								<span class="align-middle">Christ31</span>
+							</a>
+						</span>
+					</section>
 				</div>
 				<div class="w-full self-end px-4 lg:w-1/2">
 					<!-- lg:w-1/2 digunakan apabila ukuran layar = lg (large), maka w-1/2 dan self-end (Taruh di kanan)-->
@@ -328,7 +545,7 @@
 				</div>
 				<div class="w-full px-4 lg:w-1/2 xl:w-1/3">
 					<div class="bg-white rounded-xl shadow-xl overflow-hidden mb-10">
-						<img src="https://source.unsplash.com/360x200?tutorial" alt="programming" class="w-full" />
+						<img src="https://source.unsplash.com/360x200?software" alt="programming" class="w-full" />
 						<div class="py-8 px-6">
 							<h3>
 								<a href="https://c31project.wordpress.com/2020/03/01/apa-itu-emulator/"
@@ -348,45 +565,6 @@
 	</section>
 	<!-- Blog Section Stop -->
 
-	<!-- Contact Section Start -->
-	<section id="contact" class="pt-36 pb-32 bg-primary">
-		<div class="container">
-			<div class="w-full px4 lg:w-2/3 lg:mx-auto">
-				<div class="mx-auto text-center mb-16">
-					<h4 class="font-semibold text-lg text-primary mb-2">Blog</h4>
-					<h2 class="font-bold text-white text-3xl mb-4 sm:text-xl lg:text-5xl">Hubungi Saya</h2>
-					<p class="font-medium text-md text-gray-200 md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing
-						elit. Minus animi veritatis, perspiciatis nesciunt consequatur rem optio ut.</p>
-				</div>
-			</div>
-
-			<form>
-				<div class="w-full lg:w-2/3 lg:mx-auto">
-					<div class="w-full px-4 mb-8">
-						<label for="name" class="text-base text-white font-bold">Nama</label>
-						<input type="text" id="name"
-							class="w-full bg-white p-3 rounded-md focus:outline-none focus:ring-orange-400 focus:ring-1 focus:border-orange-400">
-					</div>
-					<div class="w-full px-4 mb-8">
-						<label for="email" class="text-base text-white font-bold">Email</label>
-						<input type="email" id="email"
-							class="w-full bg-white p-3 rounded-md focus:outline-none focus:ring-orange-400 focus:ring-1 focus:border-orange-400">
-					</div>
-					<div class="w-full px-4 mb-8">
-						<label for="message" class="text-base text-white font-bold">Pesan</label>
-						<textarea type="email" id="email"
-							class="w-full bg-white p-3 rounded-md focus:outline-none focus:ring-orange-400 focus:ring-1 focus:border-orange-400"></textarea>
-					</div>
-					<div class="w-full px-4">
-						<button
-							class="text-base font-semibold text-white bg-orange-600 py-3 px-8 rounded-full w-full shadow-md hover:brightness-110 transition duration-500">Send</button>
-					</div>
-				</div>
-			</form>
-		</div>
-	</section>
-	<!-- Contact Section Stop -->
-
 	<!-- Footer Section Start -->
 	<footer class="bg-dark pt-24 pb-12">
 		<div class="container">
@@ -396,7 +574,7 @@
 					<h3 class="font-bold text-2xl mb-2">Hubungi Saya</h3>
 					<p>xyz@c31.com</p>
 					<p>Jl. Di. mana saja</p>
-					<p>Batam</p>
+					<p>Batam, Indonesia</p>
 				</div>
 
 				<div class="w-full px-4 mb-12 md:w-1/3">
@@ -482,16 +660,22 @@
 						class="font-semibold text-[#38bdf8]"> TailwindCSS</a>
 				</p>
 			</div>
-			<p class="mt-5 text-slate-500">Last Updated on April 2022</p>
-			<p class="text-slate-500 font-mono">[christ@fedora portofolio-tailwind-css] $ porto --version</p>
-			<p class="font-extrabold text-slate-500 font-mono">v0.2 'Dark Mode'</p>
+			<div class="mt-20 bg-black">
+				<p class="text-slate-500">v0.3 | Last Updated on May 2022</p>
+				<p class="text-slate-500 font-mono">[christ@fedora portofolio-tailwind-css] $ porto --history-version</p>
+				<p class="font-extrabold text-slate-500 font-mono">v0.1 'Hello World'</p>
+				<p class="font-extrabold text-slate-500 font-mono">v0.2 'Dark Mode'</p>
+				<p class="font-extrabold text-slate-500 font-mono">v0.3 'Content Update'</p>
+			</div>
+
+
 		</div>
 	</footer>
 	<!-- Footer Section Stop -->
 
 	<!-- Back to top Start -->
 	<a id="to-top" href="#home"
-		class="flex fixed justify-center items-center z-[9999] -bottom-10 right-4 h-10 w-10 bg-primary rounded-sm hover:bottom-5 duration-300 ease-in-out">
+		class="flex fixed justify-center items-center z-[9999] bottom-4 right-4 h-10 w-10 bg-primary rounded-sm hover:bottom-5 duration-300 ease-in-out">
 		<span class="fixed h-5 mx-auto w-5 border-t-4 border-l-4 rotate-45"></span>
 		<span class="fixed h-5 mt-5 w-5 border-t-4 border-l-4 rotate-45"></span>
 	</a>
@@ -503,3 +687,55 @@
 </body>
 
 </html>
+
+
+
+<!-- Unused -->
+
+<!-- 
+					<a href="#"
+						class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 duration-200 ease-in-out">Hubungi
+						Saya</a>
+ -->
+
+
+<!-- Contact Section Start -->
+<!--
+	<section id="contact" class="pt-36 pb-32 bg-primary">
+		<div class="container">
+			<div class="w-full px4 lg:w-2/3 lg:mx-auto">
+				<div class="mx-auto text-center mb-16">
+					<h4 class="font-semibold text-lg text-primary mb-2">Blog</h4>
+					<h2 class="font-bold text-white text-3xl mb-4 sm:text-xl lg:text-5xl">Hubungi Saya</h2>
+					<p class="font-medium text-md text-gray-200 md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing
+						elit. Minus animi veritatis, perspiciatis nesciunt consequatur rem optio ut.</p>
+				</div>
+			</div>
+
+			<form>
+				<div class="w-full lg:w-2/3 lg:mx-auto">
+					<div class="w-full px-4 mb-8">
+						<label for="name" class="text-base text-white font-bold">Nama</label>
+						<input type="text" id="name"
+							class="w-full bg-white p-3 rounded-md focus:outline-none focus:ring-orange-400 focus:ring-1 focus:border-orange-400">
+					</div>
+					<div class="w-full px-4 mb-8">
+						<label for="email" class="text-base text-white font-bold">Email</label>
+						<input type="email" id="email"
+							class="w-full bg-white p-3 rounded-md focus:outline-none focus:ring-orange-400 focus:ring-1 focus:border-orange-400">
+					</div>
+					<div class="w-full px-4 mb-8">
+						<label for="message" class="text-base text-white font-bold">Pesan</label>
+						<textarea type="email" id="email"
+							class="w-full bg-white p-3 rounded-md focus:outline-none focus:ring-orange-400 focus:ring-1 focus:border-orange-400"></textarea>
+					</div>
+					<div class="w-full px-4">
+						<button
+							class="text-base font-semibold text-white bg-orange-600 py-3 px-8 rounded-full w-full shadow-md hover:brightness-110 transition duration-500">Send</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+	-->
+<!-- Contact Section Stop -->
