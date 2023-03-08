@@ -1,5 +1,5 @@
 # test-tailwindcss-wpu
-Website ini dibuat hanya sebagai jejak pembelajaran **Tailwindcss* dari channel youtube WPU
+Website ini dibuat hanya sebagai jejak pembelajaran **Tailwindcss** dari channel youtube WPU
 https://www.youtube.com/channel/UCkXmLjEr95LVtGuIm3l2dPg
 
 **Playlist Pembelajaran:** 
