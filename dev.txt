@@ -1,0 +1,5 @@
+Note to self:
+
+1. Run at start
+|$ npm run dev
+

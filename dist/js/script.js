@@ -8,12 +8,12 @@ window.onscroll = function(){
 
   if(window.pageYOffset > fixedNav){
     header.classList.add('navbar-fixed');
-    toTop.classList.remove('-bottom-10');
+    toTop.classList.remove('-bottom-5');
     toTop.classList.add('bottom-4');
   } else {
     header.classList.remove('navbar-fixed');
     toTop.classList.remove('bottom-4');
-    toTop.classList.add('-bottom-10');
+    toTop.classList.add('-bottom-5');
   }
 }
 
@@ -80,6 +80,8 @@ function showTime(){
   var m = date.getMinutes(); // 0 - 59
   var s = date.getSeconds(); // 0 - 59
   var session = "AM";
+  var light = "☀️";
+
   const monthNames = ["January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"];
   
@@ -91,12 +93,16 @@ function showTime(){
       h = h - 12;
       session = "PM";
   }
+
+  if(h>5 && session == "PM"){
+    light = "🌙";
+  }
   
   h = (h < 10) ? "0" + h : h;
   m = (m < 10) ? "0" + m : m;
   s = (s < 10) ? "0" + s : s;
   
-  var time = h + ":" + m + ":" + s + " " + session;
+  var time = h + ":" + m + ":" + s + " " + session + " " + light;
 
   var year = date.getFullYear();
   var day = date.getUTCDate();

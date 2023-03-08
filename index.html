@@ -32,12 +32,13 @@
 	<header class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
 		<div class="container">
 			<div class="relative flex items-center justify-between">
-				<div class="px-4">
+				<div class="px-4 inline-flex">
 					<a href="#home" class="py-2 font-bold text-md text-primary block ">My Site xD</a>
+					<p class="text-secondary font-semibold text-xs place-self-end">v0.4</p>
 				</div>
 
 				<div>
-					<div id="MyClockDisplay" class="clock text-black dark:text-white text-sm" onload="showTime()"></div>
+					<div id="MyClockDisplay" class="clock text-black dark:text-white text-sm font-mono" onload="showTime()"></div>
 				</div>
 
 				<div class="flex items-center px-4">
@@ -104,11 +105,11 @@
 		</div>
 	</header>
 	<!-- Header End -->
-
+	
 	<!-- Hero Section Start -->
-	<section id="home" class="pt-36 pb-16 dark:bg-dark">
+	<section id="home" class="bg-lime-50 pt-36 pb-36 dark:bg-dark">
 		<div class="container">
-			<div class="flex flex-wrap lg:mx-64">
+			<div class="flex flex-wrap xl:mx-64 lg:mx-16 md:mx-10">
 				<div class="w-full self-center px-4 lg:w-1/2">
 					<h1 class="text-base font-semibold text-primary md:text-xl">Profil</h1>
 					<span class="font-bold text-dark text-4xl dark:text-white">N. Christ</span>
@@ -140,19 +141,22 @@
 					</button>
 
 					<h2 class="font-medium text-secondary text-lg mb-3">Warga negara Indonesia</h2>
-					<p class="c31-text-base  text-secondary mb-2 leading-relaxed">Suka balapan sim maupun simcade seperti rFactor2,
-						AC:Competizione, dan Codemaster F1 game series</p>
+					<p class="c31-text-base  text-secondary mb-2 leading-relaxed">Suka hal yang berkaitan dengan teknologi</p>
 					<p class="c31-text-base  text-secondary mb-10 leading-relaxed">Suka main game rhythm seperti osu!, Stepmania,
 						dan Project Diva</p>
 
 					<!-- Social Media saya -->
-					<section class="flex w-full">
-						<span class="w-fit h-fit">
+					<section>
+						<p class="text-base font-semibold text-primary pb-1">Social Media</p> 
+					</section>
+
+					<section class="flex flex-wrap gap-2"> 
+						<!-- osu! Profile Link -->
+						<span class="w-fit h-[25px]">
 							<a href="https://osu.ppy.sh/users/5167846"
-								class="block mr-2 px-3 py-1 bg-[#e32373] text-white c31-text-base rounded-full max-h-10">
-								<span>
-									<svg xmlns="http://www.w3.org/2000/svg" class="inline-flex align-middle"
-										xmlns:xlink="http://www.w3.org/1999/xlink" height="25" viewBox="25 25 300 300"
+								class="flex h-full px-3 bg-color-osu! text-white font-bold c31-text-base rounded-full box-border hover:brightness-125 duration-500 hover:scale-105 hover:rotate-1" target="_blank">
+								<span class="self-center">
+									<svg xmlns="http://www.w3.org/2000/svg" class="h-[22px]" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="25 25 300 300"
 										preserveAspectRatio="xMidYMid meet">
 										<style>
 											.st1 {
@@ -227,8 +231,7 @@
 												<path class="st9" d="M298.7 485.7 396 317.2l97.2 168.5z" />
 												<path class="st8" d="m108.4 621.4 48.6-84.2 48.7 84.2z" />
 												<path class="st11" d="m278.7 305.9 48.6-84.2 48.6 84.2zM46.2 400l97.3-168.5L240.8 400z" />
-												<path class="st5"
-													d="M108.8-86.6 36.5 38.6h194.6L158.8-86.6zm213.2 0-23.6 40.9h97.3L372-86.6z" />
+												<path class="st5" d="M108.8-86.6 36.5 38.6h194.6L158.8-86.6zm213.2 0-23.6 40.9h97.3L372-86.6z" />
 												<path class="st12" d="M35.3 332.5 132.6 164l97.3 168.5z" />
 												<path class="st5" d="m236.1 369.2 97.2-168.5 97.3 168.5z" />
 												<path class="st8" d="m-51.9 428.8 48.1-83.3 48.1 83.3z" />
@@ -279,16 +282,16 @@
 											d="M175 25C92.2 25 25 92.2 25 175s67.2 150 150 150 150-67.2 150-150S257.8 25 175 25zm0 285c-74.6 0-135-60.4-135-135S100.4 40 175 40s135 60.4 135 135-60.4 135-135 135z" />
 									</svg>
 								</span>
-								<span class="align-middle">Christ31</span>
+								<span class="pl-1 self-center">Christ31</span>
 							</a>
 						</span>
 
-						<span class="w-fit h-fit">
+						<!-- Steam Profile Link -->
+						<span class="w-fit h-[25px]">
 							<a href="https://steamcommunity.com/profiles/76561198154068318/"
-								class="block mr-2 px-3 py-1 bg-[#223246] c31-text-base text-white rounded-full">
-								<span>
-									<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 233 233"
-										class="inline-flex align-middle" height="25" preserveAspectRatio="xMidYMid meet">
+								class="flex px-3 bg-color-steam c31-text-base font-bold text-white rounded-full hover:brightness-125 duration-500 hover:scale-105 hover:rotate-1" target="_blank">
+								<span class="self-center">
+									<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 233 233" class="w-[25px]" preserveAspectRatio="xMidYMid meet">
 										<defs>
 											<linearGradient id="a" x2="50%" x1="50%" y2="100%">
 												<stop stop-color="#111D2E" offset="0" />
@@ -306,33 +309,67 @@
 											d="m110.5 87.322c0 0.196 0 0.392 0.01 0.576l-28.508 41.412c-4.618-0.21-9.252 0.6-13.646 2.41-1.937 0.79-3.752 1.76-5.455 2.88l-62.599-25.77c0.00049 0-1.4485 23.83 4.588 41.59l44.254 18.26c2.222 9.93 9.034 18.64 19.084 22.83 16.443 6.87 35.402-0.96 42.242-17.41 1.78-4.3 2.61-8.81 2.49-13.31l40.79-29.15c0.33 0.01 0.67 0.02 1 0.02 24.41 0 44.25-19.9 44.25-44.338 0-24.44-19.84-44.322-44.25-44.322-24.4 0-44.25 19.882-44.25 44.322zm-6.84 83.918c-5.294 12.71-19.9 18.74-32.596 13.45-5.857-2.44-10.279-6.91-12.83-12.24l14.405 5.97c9.363 3.9 20.105-0.54 23.997-9.9 3.904-9.37-0.525-20.13-9.883-24.03l-14.891-6.17c5.746-2.18 12.278-2.26 18.381 0.28 6.153 2.56 10.927 7.38 13.457 13.54s2.52 12.96-0.04 19.1m51.09-54.38c-16.25 0-29.48-13.25-29.48-29.538 0-16.275 13.23-29.529 29.48-29.529 16.26 0 29.49 13.254 29.49 29.529 0 16.288-13.23 29.538-29.49 29.538m-22.09-29.583c0-12.253 9.92-22.191 22.14-22.191 12.23 0 22.15 9.938 22.15 22.191 0 12.254-9.92 22.183-22.15 22.183-12.22 0-22.14-9.929-22.14-22.183z" />
 									</svg>
 								</span>
-								<span class="align-middle">Christ</span>
+								<span class="pl-1 self-center">C31</span>
 							</a>
 						</span>
 
-						<span class="w-fit h-fit">
+						<!-- Youtube Profile Link -->
+						<span class="w-fit h-[25px]">
 							<a href="https://www.youtube.com/channel/UCSFcKGHJO7e5cLtS9nU98Kw"
-								class="block mr-2 px-3 py-1 bg-[#FFFFFF] c31-text-base text-black rounded-full" target="_blank">
-								<span>
+								class="flex h-full px-3 bg-[#FFFFFF] c31-text-base font-bold text-black rounded-full border border-color-yt hover:brightness-125 duration-500 hover:scale-105 hover:rotate-1" target="_blank">
+								<span class="self-center">
 									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-										id="Layer_1" x="0px" y="0px" viewBox="0 0 461.001 461.001" width="25" class="inline" preserveAspectRatio="xMidYMid meet"
+										id="Layer_1" x="0px" y="0px" viewBox="0 0 461.001 461.001" class="fill-color-yt w-[25px]" preserveAspectRatio="xMidYMid meet"
 										style="enable-background:new 0 0 461.001 461.001;" xml:space="preserve">
 										<g>
-											<path style="fill:#F61C0D;"
+											<path 
 												d="M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728   c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137   C461.001,110.259,418.135,67.393,365.257,67.393z M300.506,237.056l-126.06,60.123c-3.359,1.602-7.239-0.847-7.239-4.568V168.607   c0-3.774,3.982-6.22,7.348-4.514l126.06,63.881C304.363,229.873,304.298,235.248,300.506,237.056z" />
 										</g>
 									</svg>
 								</span>
-								<span class="align-middle">Christ31</span>
+								<span class="pl-1 self-center">Christ31</span>
 							</a>
 						</span>
+	
+						<!-- Discord Profile Link -->
+						<span class="w-fit h-[25px]">
+							<a href=""
+								class="flex h-full px-3 bg-color-discord c31-text-base font-bold text-white rounded-full hover:brightness-125 duration-500 hover:scale-105 hover:rotate-1" target="_blank">
+								<span class="self-center">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+										id="Layer_1" x="0px" y="0px" viewBox="0 0 127.14 96.36"  class="fill-white h-[22px] w-[25px]" preserveAspectRatio="xMidYMid meet"
+										style="enable-background:new 0 0 461.001 461.001;" xml:space="preserve">
+										<g>
+											<path
+												d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z" />
+										</g>
+									</svg>
+								</span>
+								<span class="pl-1 self-center">C31#1328</span>
+							</a>
+						</span>
+
+						<!-- GitHub Profile -->
+						<span class="w-fit h-[25px]">
+							<a href="https://github.com/christ31"
+								class="flex h-full px-3 bg-[#FFFFFF] c31-text-base font-bold text-black rounded-full border border-black hover:brightness-125 duration-500 hover:scale-105 hover:rotate-1" target="_blank">
+								<span class="self-center">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-[22px] w-[25px]" preserveAspectRatio="xMidYMid meet">
+										<path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+									</svg>
+								</span>
+								<span class="pl-1 self-center">Christ31</span>
+							</a>
+						</span>
+
 					</section>
+
 				</div>
 				<div class="w-full self-end px-4 lg:w-1/2">
 					<!-- lg:w-1/2 digunakan apabila ukuran layar = lg (large), maka w-1/2 dan self-end (Taruh di kanan)-->
 					<div class="relative mt-20 lg:mt-9 lg:right-0">
 						<!-- Untuk container parent, apabila terdapat child Absolute, jangan lupa parent dikasih Relative -->
-						<img src="dist/img/HM Inside.jpeg" alt="Image HM Inside" class="relative max-w-full mx-auto z-10" />
+						<img src="dist/img/HM_Inside-removebg-preview.png" alt="Image HM Inside" class="relative max-w-full mx-auto z-10" />
 						<span class="absolute -bottom-20 left-1/2 -translate-x-1/2">
 							<svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
 								<path fill="#14b8a6"
@@ -342,64 +379,29 @@
 						</span>
 					</div>
 				</div>
-
 			</div>
 		</div>
 	</section>
 	<!-- Hero Section End -->
 
-	<!-- About Section Start -->
-	<section id="about" class="pt-16 pb-32 dark:bg-dark">
-		<div class="container">
-			<div class="flex flex-wrap">
-				<div class="w-full px-4 mb-10 lg:w-1/2">
-					<h4 class="font-bold text-primary mb-3">Tentang Saya</h4>
-					<h2 class="font-bold text-dark text-3xl mb-5 max-w-lg lg:text-4xl dark:text-white">Mencoba web programming di
-						Youtube WPU</h2>
-					<p class="font-medium text-base text-secondary lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing
-						elit. Beatae voluptas consequuntur aspernatur quo sapiente repellendus repellat!</p>
-				</div>
-				<div class="w-full px-4 lg:w-1/2">
-					<h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10 dark:text-white">Mari berteman</h3>
-					<p class="font-medium text-base text-secondary mb-6 lg:text-lg">Lorem ipsum dolor sit amet consectetur
-						adipisicing elit. Numquam molestiae perferendis adipisci reiciendis odit odio tempora dignissimos
-						recusandae!</p>
-					<div class="flex items-center dark:text-white">
-						<a class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-[#0B57A4] hover:text-[#0B57A4] duration-100 "
-							href="https://getfedora.org/" target="blank">
-							<svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-								<title>Fedora</title>
-								<path
-									d="M12.001 0C5.376 0 .008 5.369.004 11.992H.002v9.287h.002A2.726 2.726 0 0 0 2.73 24h9.275c6.626-.004 11.993-5.372 11.993-11.997C23.998 5.375 18.628 0 12 0zm2.431 4.94c2.015 0 3.917 1.543 3.917 3.671 0 .197.001.395-.03.619a1.002 1.002 0 0 1-1.137.893 1.002 1.002 0 0 1-.842-1.175 2.61 2.61 0 0 0 .013-.337c0-1.207-.987-1.672-1.92-1.672-.934 0-1.775.784-1.777 1.672.016 1.027 0 2.046 0 3.07l1.732-.012c1.352-.028 1.368 2.009.016 1.998l-1.748.013c-.004.826.006.677.002 1.093 0 0 .015 1.01-.016 1.776-.209 2.25-2.124 4.046-4.424 4.046-2.438 0-4.448-1.993-4.448-4.437.073-2.515 2.078-4.492 4.603-4.469l1.409-.01v1.996l-1.409.013h-.007c-1.388.04-2.577.984-2.6 2.47a2.438 2.438 0 0 0 2.452 2.439c1.356 0 2.441-.987 2.441-2.437l-.001-7.557c0-.14.005-.252.02-.407.23-1.848 1.883-3.256 3.754-3.256z" />
-							</svg>
-						</a>
-						<a class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-[#FF0000] hover:text-[#FF0000] duration-100"
-							href="https://youtu.be/8Ea4oq8qFtM" target="blank">
-							<svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-								<title>YouTube</title>
-								<path
-									d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-							</svg>
-						</a>
-						<a class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-[#E95420] hover:text-[#E95420] duration-100"
-							href="https://youtu.be/8Ea4oq8qFtM" target="blank">
-							<svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-								<title>Ubuntu</title>
-								<path
-									d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12S0 18.623 0 12 5.377 0 12 0zm3.279 17.68c-.766.441-1.029 1.422-.586 2.189.441.765 1.422 1.028 2.188.584.766-.441 1.029-1.422.585-2.189-.441-.765-1.421-1.028-2.187-.584zm-3.279-1c-.705 0-1.373-.157-1.971-.435L8.916 18.24c.93.459 1.978.721 3.084.721.646 0 1.268-.091 1.86-.256.104-.643.485-1.234 1.095-1.587.609-.351 1.313-.386 1.92-.156 1.186-1.163 1.957-2.749 2.07-4.515l-2.285-.033c-.21 2.391-2.215 4.266-4.66 4.266zM7.32 12c0-1.583.787-2.981 1.99-3.83L8.14 6.209c-1.404.93-2.445 2.369-2.881 4.035.506.404.83 1.034.83 1.74 0 .704-.324 1.319-.83 1.739.436 1.665 1.477 3.104 2.881 4.034l1.17-1.965C8.107 14.97 7.32 13.574 7.32 12zm-3.48-1.602c-.885 0-1.602.717-1.602 1.602s.717 1.602 1.602 1.602S5.441 12.885 5.441 12s-.716-1.602-1.601-1.602zM12 7.32c2.445 0 4.45 1.875 4.66 4.265l2.285-.034c-.113-1.765-.885-3.35-2.07-4.516-.609.232-1.313.194-1.92-.154-.609-.352-.99-.945-1.095-1.591-.594-.16-1.214-.25-1.86-.25-1.11 0-2.155.26-3.084.72l1.113 1.995c.6-.279 1.268-.435 1.971-.435zm3.279-1.001c.765.442 1.746.181 2.189-.585.441-.765.181-1.746-.588-2.19-.765-.44-1.746-.179-2.189.589-.441.764-.18 1.744.588 2.186z" />
-							</svg>
-						</a>
-					</div>
-				</div>
+	<!-- 
+	<section id="playground" class="pt-36 pb-36 bg-slate-500">
+		<h1>Padding Top 36, Padding Bottom 36</h1>
+		<h1 class="text-center font-bold text-xl">Di bawah ini ada 'container'</h1>
+		<div class="container bg-slate-300">
+			<h2>Playground</h2>
+			<div class="">
 			</div>
 		</div>
 	</section>
-	<!-- About Section End -->
 
+	 -->
 	<!-- Portfolio Section Start -->
+
+	<!-- 
 	<section id="utilities" class="pt-36 pb-16 bg-slate-100 dark:bg-slate-800">
 		<div class="container">
-			<div class="w-full px-4">
+			<div class="px-4">
 				<div class="mx-auto text-center mb-16">
 					<h4 class="font-semibold text-lg text-primary mb-2">Utilities</h4>
 					<h2 class="font-bold text-dark text-3xl mb-4 sm:text-xl lg:text-5xl dark:text-white">Website yang Worth IT
@@ -410,45 +412,86 @@
 				</div>
 			</div>
 
-			<div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
-				<div class=" mb-12 p-4 md:w-1/2">
-					<div class="rounded-md shadow-md overflow-hidden">
-						<img src="dist/img/utilities/1-l.png" alt="Gambar Website no.1" width="w-full">
-					</div>
-					<h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Website blobmaker.app</h3>
-					<p class="font-medium text-base text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-						Nisi, aspernatur!</p>
-				</div>
+			<div class="overflow-x-auto bg-red-700 flex-col">
+			<div class="bg-white rounded-xl w-fit mx-4">
+				Test Item 1
+			</div>
 
-				<div class="mb-12 p-4 md:w-1/2">
-					<div class="rounded-md shadow-md overflow-hidden">
-						<img src="dist/img/utilities/2.png" alt="Gambar Website no.2" width="w-full">
-					</div>
-					<h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Website simpleicons.org</h3>
-					<p class="font-medium text-base text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-						Nisi, aspernatur!</p>
-				</div>
+			<div class="bg-white rounded-xl w-fit mx-4">
+				Test Item 1
+			</div>
 
-				<div class="mb-12 p-4 md:w-1/2">
-					<div class="rounded-md shadow-md overflow-hidden">
-						<img src="dist/img/utilities/3.png" alt="Gambar Website no.3" width="w-full">
-					</div>
-					<h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Website remove.bg</h3>
-					<p class="font-medium text-base text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-						Nisi, aspernatur!</p>
-				</div>
+			<div class="bg-white rounded-xl w-fit mx-4">
+				Test Item 1
+			</div>
 
-				<div class="mb-12 p-4 md:w-1/2">
-					<div class="rounded-md shadow-md overflow-hidden">
-						<img src="dist/img/utilities/4.png" alt="Gambar Website no.4" width="w-full">
+			<div class="bg-white rounded-xl w-fit mx-4">
+				Test Item 1
+			</div>
+
+			<div class="bg-white rounded-xl w-fit mx-4">
+				Test Item 1
+			</div>
+
+			<div class="bg-white rounded-xl w-fit mx-4">
+				Test Item 1
+			</div>
+
+			<div class="bg-white rounded-xl w-fit mx-4">
+				Test Item 1
+			</div>
+
+			<div class="bg-white rounded-xl w-fit mx-4">
+				Test Item 1
+			</div>
+
+
+			</div>
+
+			<div class="overflow-x-scroll bg-red-700">
+				<div class="">
+					<div class="mb-12 p-4 ">
+						<div class="rounded-md shadow-md">
+							<img src="dist/img/utilities/1-l.png" alt="Gambar Website no.1" width="w-full">
+						</div>
+						<h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Website blobmaker.app</h3>
+						<p class="font-medium text-base text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+							Nisi, aspernatur!</p>
 					</div>
-					<h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Website schemecolor.com</h3>
-					<p class="font-medium text-base text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-						Nisi, aspernatur!</p>
+
+					<div class="mb-12 p-4">
+						<div class="rounded-md shadow-md">
+							<img src="dist/img/utilities/2.png" alt="Gambar Website no.2" width="w-full">
+						</div>
+						<h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Website simpleicons.org</h3>
+						<p class="font-medium text-base text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+							Nisi, aspernatur!</p>
+					</div>
+
+					<div class="mb-12 p-4">
+						<div class="rounded-md shadow-md">
+							<img src="dist/img/utilities/3.png" alt="Gambar Website no.3" width="w-full">
+						</div>
+						<h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Website remove.bg</h3>
+						<p class="font-medium text-base text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+							Nisi, aspernatur!</p>
+					</div>
+
+					<div class="mb-12 p-4">
+						<div class="rounded-md shadow-md">
+							<img src="dist/img/utilities/4.png" alt="Gambar Website no.4" width="w-full">
+						</div>
+						<h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Website schemecolor.com</h3>
+						<p class="font-medium text-base text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+							Nisi, aspernatur!</p>
+					</div>
+
 				</div>
 			</div>
 		</div>
 	</section>
+	 -->
+
 	<!-- Portfolio Section End -->
 
 	<!-- Hardware Section Start -->
@@ -466,11 +509,18 @@
 				</div>
 			</div>
 
-			<div class="w-full px-4">
+			<p class="text-white text-center">
+				<span class="text-[#ff353f] font-black">NOTEBOOK</span class="font-black">CHECK:<span>
+					<a class="hover:text-[#CC2028]" href="https://www.notebookcheck.net/Asus-ROG-Strix-GL553VD-7700HQ-FHD-GTX-1050-Laptop-Review.200646.0.html">
+						Asus ROG Strix GL553VD</a></span>
+			</p>
+
+			<div class="w-full px-4 bg-lime-50">
 				<div class="flex flex-wrap items-center justify-center">
 					<a href="#"
-						class="max-w-[120px] mx-4 py-4 grayscale opacity-70 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-						<img src="dist/img/hardware/ROG.svg" class="h-[60px] brightness-200" alt="Google">
+						class=" flex fill-zinc-800 w-8 max-w-[120px] mx-4 py-4 opacity-70 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"> 
+						<svg clip-rule="evenodd" fill-rule="evenodd" height="120" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" viewBox="-5.3 -.02 8666.25 5080.49" width="120" xmlns="http://www.w3.org/2000/svg">
+							<path d="m5201.05 641.04c-13.53 3.96-17.03 10.03-30.44 21.5-10.8 9.23-19.91 15.78-30.39 24.8-23.98 20.65-38.04 33.42-59.13 51.15-104.65 88.04-246.64 225.21-349.23 321.27-159.15 149.02-302.58 292.53-455.26 440.74-287.94 279.51-614.24 615.13-902.44 884.6-238.17 222.69-442.45 422.69-691.34 645.32-95.12 85.08-155.04 162.58-284.55 167.06-213.73 7.38-495.66-174.55-639.84-257.27-125.99-72.28-460.62-269.07-621.94-274.53l118.19 162.36c84.51 128.95 226.6 409.82 294.84 546.49 234.45 469.54 550.96 961.22 953.8 1288.28 103 83.62 196.33 153.92 327.16 233.08 57.39 34.72 115.94 63.6 180.12 99.93 22.25 12.59 176.55 84.65 195.57 84.61-42.26-42.35-85.73-94.09-120.07-134.47-153.36-180.35-494.52-531.02-596.99-710-86.04-150.27-105.81-242.3-10.2-393.13 109.3-172.42 364.18-385.78 524.07-522.54 389.11-332.8 740.02-634.22 1147.14-950.19 192.9-149.71 393.46-302.43 600.91-450.46 203.51-145.21 408.06-285.1 620.51-425.53l320.79-204.14c29.76-17.07 321.94-191.02 326.61-196.85l285.9-157.72c96.02-54.24 189.26-99.52 290.94-154.28 298.37-160.67 890.92-422.55 1230.48-542.34 111.46-39.32 217.67-76.46 330.41-114.98l337.89-105.84c-27.34-14.06-400.68-17.93-469.46-17.94-276.82-.04-446.66 7.68-710.93 28.56-202.26 15.98-578.64 57.5-762.57 101.97-33.11 8-72.31 11.42-105.65 20.2-63.77 16.8-136.77 28.36-202.08 44.62-134.67 33.53-256.94 71.52-383.51 109.26-130.28 38.84-248.11 84.88-364.66 132.83-68.86 28.33-276.96 167.45-294.64 203.59zm2703.87 668.67 245.7-125.47c85.23-40.58 173.38-87.23 253.65-126.46 162.87-79.59 256.68-337.47 254.31-502.79-28.76 1.21-145.77 56.67-177.53 68.3-21.84 7.99-42 14.87-62.46 23.57-145.1 61.65-338.81 134.55-476.35 199.46-39.94 18.85-78.54 34.44-118.96 51.78-31.73 13.61-101.69 41.06-114.73 57.25-43.66-2.22-932.65 438.32-1043.46 495.62-157.77 81.58-356.17 179.36-507.81 263.73-17.96 9.99-480.25 254.66-498.67 278.22-30.44 5.08-347.32 193.25-397.89 221.79-627.03 353.81-1321.46 798.9-1922.06 1206.24-166.91 113.21-380.1 261.73-547.86 388.13l-134.66 100.52c-15.48 11.8-33.74 19.62-42.66 37.33 59.88 51.54 456.55 214.98 551.18 249.09 531.13 191.42 1028.25 324.79 1587.07 420.7l354.64 54.24 279.34 24.64-227.51-20.07c43.42 4.94 86.52 12 128.76 16.04 62.48 5.97 124.46 11.06 188.81 17.51 121.2 12.16 261.93 20.44 386.52 22.64 154.89 2.72 240.23 10.63 367.22-43 98.44-41.57 178.56-93.28 256.81-153.25 291.46-223.35 550.76-572.68 757.62-888.83 216.49-330.86 411.48-700.53 579.56-1066.77 85.61-186.53 165.92-381.15 241.55-579.41 38.33-100.49 71.57-197.54 106.19-304.17 19.17-59.03 88.92-274.54 94.23-322.69-79.51 10.86-1469.62 760.88-1601.89 831.89-179.39 96.31-351.17 196.63-525.22 291.16-169.14 91.87-348.06 200.44-516.36 293.98-341.95 190.05-686.31 401.75-1027.78 599.46-58.55 33.9-493.37 288.09-508.99 305.96 29.23-4.69 1407.81-596.72 1441.19-610.51 65.01-26.88 1418.57-607.72 1440.77-608.69-7.78 31.3-91.56 187.71-112.71 233.68-35.24 76.6-77.73 163.78-116.24 239.96-218.27 431.79-455.16 950.26-931.72 1141.65l-28.63 17.19c-25.54.58-95.31 28.94-126.08 37.39-46.32 12.72-91.09 21.55-137.78 31.11-219.65 44.98-551.71 21.53-780.61-14.28-261.02-40.84-443.79-86.66-696.8-147.82-60.4-14.6-496.94-137.23-522.16-153.89 14.22-24.79 263.88-184.77 285.73-199.95 483.07-335.77 1285.47-829.17 1807.31-1126.07 55.23-31.43 106.56-59.98 157.06-88.92 41.98-24.06 118.82-64.17 152.73-88.81l244.16-133.92c82.56-45.8 158.37-85.48 245.33-135.11 164.4-93.81 330.97-172.45 492.78-263.6 23.79-13.4 947.81-498.95 1005.34-515.74zm-6281.42 2534.49c-9.6-20.39-176.45-197.43-209.6-234.44-210.42-234.95-414.41-453.8-625.9-700.64-147.34-171.96-278.59-330.41-403.81-482.34-52.4-63.57-339.95-424.53-383.88-498.13-5.61 14.15 66.78 310.04 77.47 348.92 16.39 59.64 29.07 113.99 45.79 174.85 163.4 594.9 326.69 820.03 889.36 1107.54 69.31 35.41 573.16 279.12 610.57 284.24z" /></svg>
 					</a>
 					<a href="#"
 						class="max-w-[120px] mx-4 py-4 grayscale opacity-70 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
@@ -489,7 +539,7 @@
 						<img src="dist/img/hardware/logitechG.svg" class="h-[60px]" alt="Google">
 					</a>
 					<a href="#"
-						class="max-w-[120px]  mx-4 py-4 grayscale opacity-70 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+						class="max-w-[120px] mx-4 py-4 grayscale opacity-70 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
 						<img src="dist/img/hardware/samsung.svg" class="h-[60px] brightness-200" alt="Google">
 					</a>
 				</div>
@@ -567,58 +617,287 @@
 
 	<!-- Footer Section Start -->
 	<footer class="bg-dark pt-24 pb-12">
-		<div class="container">
+		<div class="container ">
+			<!-- Using Flex wrap -->
 			<div class="flex flex-wrap">
+
 				<div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
-					<h2 class="font-bold text-4xl text-white mb-5">--</h2>
-					<h3 class="font-bold text-2xl mb-2">Hubungi Saya</h3>
-					<p>xyz@c31.com</p>
-					<p>Jl. Di. mana saja</p>
-					<p>Batam, Indonesia</p>
+					<div class="mx-auto">
+						<div class="flex flex-row mx-auto w-fit">
+							<div>
+								<div class="bg-orange-500 w-[10px] h-full mr-4"></div>
+							</div>
+
+							<div class="h-full"> 
+								<h2 class="font-bold text-xl text-white mb-5">Hubungi Saya</h2>
+
+								<div class="flex flex-col place-items-end bg-gray-300 rounded-lg p-1">
+
+									<!-- osu! Profile Link -->
+									<span class="w-full h-[25px] mb-2">
+										<a href="https://osu.ppy.sh/users/5167846"
+											class="flex h-full px-3 bg-color-osu! text-white font-bold c31-text-base rounded-full box-border hover:brightness-125 duration-500 hover:scale-105 hover:rotate-1" target="_blank">
+											<span class="self-center">
+												<svg xmlns="http://www.w3.org/2000/svg" class="h-[22px]" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="25 25 300 300"
+													preserveAspectRatio="xMidYMid meet">
+													<style>
+														.st1 {
+															opacity: .15
+														}
+			
+														.st3 {
+															fill: #f1f1f2
+														}
+			
+														.st4 {
+															fill: #231f20
+														}
+			
+														.st5 {
+															fill: #808184
+														}
+			
+														.st8 {
+															fill: #59595c
+														}
+			
+														.st9 {
+															fill: #a7a8ab
+														}
+			
+														.st10 {
+															fill: #6d6e70
+														}
+			
+														.st11 {
+															fill: #221f1f
+														}
+			
+														.st12 {
+															fill: #404041
+														}
+			
+														.st13 {
+															fill: #58595b
+														}
+			
+														.st14 {
+															fill: #bbbdbf
+														}
+			
+														.st15 {
+															fill: #fff
+														}
+			
+														.st16 {
+															fill: #a6a8ab
+														}
+													</style>
+													<circle cx="175" cy="175" r="143.7" fill="#f6a" />
+													<g class="st1" id="Triangles">
+														<defs>
+															<circle id="a" class="st1" cx="175" cy="175" r="150" />
+														</defs>
+														<clipPath id="b">
+															<use xlink:href="#a" overflow="visible" />
+														</clipPath>
+														<g clip-path="url(#b)">
+															<path class="st3" d="M-81.2 336.9 175-106.9l256.2 443.8z" />
+															<path class="st4" d="M68.8 443.7 325 0l256.2 443.7z" />
+															<path class="st5" d="m-409.8 363.4 256.2-443.7 256.2 443.7z" />
+															<path d="m61.4 158.2 256.2-443.8 256.2 443.8z" fill="#929497" />
+															<path d="M-222.4 380 33.8-63.7 290 380z" fill="#636466" />
+															<path class="st8" d="m-100.1 646.9 256.2-443.8 256.2 443.8z" />
+															<path class="st9" d="m-164.9 147.2 97.3-168.5 97.3 168.5zm81.5 376.6 97.3-168.5 97.3 168.5z" />
+															<path class="st10" d="m134.3 220.8 97.3-168.5 97.3 168.5z" />
+															<path class="st9" d="M298.7 485.7 396 317.2l97.2 168.5z" />
+															<path class="st8" d="m108.4 621.4 48.6-84.2 48.7 84.2z" />
+															<path class="st11" d="m278.7 305.9 48.6-84.2 48.6 84.2zM46.2 400l97.3-168.5L240.8 400z" />
+															<path class="st5" d="M108.8-86.6 36.5 38.6h194.6L158.8-86.6zm213.2 0-23.6 40.9h97.3L372-86.6z" />
+															<path class="st12" d="M35.3 332.5 132.6 164l97.3 168.5z" />
+															<path class="st5" d="m236.1 369.2 97.2-168.5 97.3 168.5z" />
+															<path class="st8" d="m-51.9 428.8 48.1-83.3 48.1 83.3z" />
+															<path class="st13" d="m123.2 104.8 48.1-83.3 48.1 83.3z" />
+															<path class="st11" d="m283 90.2 48.1-83.3 48.1 83.3z" />
+															<path class="st5" d="m-61.9 331.6 24.1-41.7 24 41.7z" />
+															<path class="st8" d="m132.5 621.6 24-41.7 24.1 41.7zm84.2-156 24-41.7 24 41.7z" />
+															<path class="st12" d="m197.1 259.7 48.1-83.3 48.1 83.3z" />
+															<path class="st3" d="m283 239.3 48.1-83.3 48.1 83.3z" />
+															<path class="st9" d="M-49.5 78.8-1.4-4.5l48.1 83.3zm-48.4 146.6 48.1-83.3 48.1 83.3z" />
+															<path class="st5" d="m288.2-20 24-41.6L336.3-20z" />
+															<path class="st14" d="m187.2 116.2 24.1-41.6 24 41.6z" />
+															<path class="st15" d="m231.9 63.8 6.4-11 6.4 11z" />
+															<path class="st10" d="M28.9 117.8 77 34.5l48.1 83.3z" />
+															<path class="st16" d="m110.8 331.9 48.1-83.3 48.1 83.3z" />
+															<path class="st4" d="m107 263.1 18.1-31.4 18 31.4z" />
+															<path class="st9" d="m214 285.3 24-41.7 24.1 41.7zm-5.4-118.1 24-41.6 24.1 41.6z" />
+															<path class="st3" d="m226 102.8 48.1-83.3 48 83.3z" />
+															<path class="st16" d="m1.2 143.6 48.1-83.3 48.1 83.3z" />
+															<path class="st8" d="m14 272.2 18.3-31.8 18.3 31.8z" />
+															<path class="st16" d="m265.4 230.6 18.3-31.8 18.3 31.8z" />
+															<path class="st15" d="M156.7 84.8 175 53.1l18.3 31.7z" />
+															<path class="st13" d="m156.7 282.1 18.3-31.8 18.3 31.8z" />
+															<path class="st8" d="m-19.7 88 18.3-31.8L17 88zm258.1 272.2 18.3-31.7 18.3 31.7z" />
+															<path class="st5" d="m307.5 135.6 18.3-31.8 18.3 31.8z" />
+															<path class="st14" d="m45.3 233.1 18.3-31.8L82 233.1z" />
+															<path class="st3" d="m72.3 295.1 18.3-31.8 18.4 31.8zM27.6 167.7 46 136l18.3 31.7z" />
+															<path class="st8" d="m113.7 123.7 9.1-15.8 9.2 15.8z" />
+															<path class="st14" d="m50.8 152.9 9.1-15.8 9.2 15.8z" />
+															<path d="m107.7 84.4 9.2-15.9 9.2 15.9z" fill="#e6e7e8" />
+															<path class="st11" d="m69 360.2 18.3-31.7 18.3 31.7z" />
+															<path class="st8" d="m112.2 419.2 18.3-31.8 18.3 31.8zm404.5-131.1 18.4-31.8 18.3 31.8z" />
+															<path class="st5" d="M187.7 61.9 206 30.1l18.4 31.8z" />
+															<path class="st15" d="m283.4 128.2 18.3-31.7 18.3 31.7z" />
+															<path class="st8" d="m316.6 622.1 9.2-15.9 9.2 15.9z" />
+															<path class="st9" d="m262.4 411.2 9.2-15.8 9.1 15.8z" />
+															<path class="st8" d="m577.5 394.4 9.2-15.9 9.2 15.9z" />
+															<path class="st5" d="m-97.4 339.9 18.3-31.7 18.4 31.7zm375.1-24.4 18.4-31.8 18.3 31.8z" />
+															<path class="st9" d="m286.9 268.6 9.2-15.9 9.1 15.9z" />
+															<path d="m210.1 128.5 10.9-18.9 10.9 18.9z" fill="#d0d2d3" />
+															<path class="st5" d="M94.9-41.1 104-57l9.2 15.9z" />
+															<path class="st8" d="M386.7 121.9 405 90.2l18.4 31.7zM463 336.8l9.2-15.9 9.2 15.9z" />
+														</g>
+													</g>
+													<path class="st15"
+														d="M100.1 206.4c-4.7 0-8.8-.8-12.3-2.3-3.5-1.5-6.4-3.7-8.6-6.4-2.3-2.7-4-5.9-5.2-9.6-1.2-3.7-1.7-7.6-1.7-11.9 0-4.3.6-8.3 1.7-12 1.2-3.7 2.9-7 5.2-9.7 2.3-2.7 5.2-4.9 8.6-6.5 3.5-1.6 7.6-2.4 12.3-2.4s8.8.8 12.3 2.4c3.5 1.6 6.4 3.7 8.8 6.5 2.3 2.7 4 6 5.2 9.7 1.1 3.7 1.7 7.7 1.7 12s-.6 8.2-1.7 11.9c-1.1 3.7-2.8 6.9-5.2 9.6-2.3 2.7-5.2 4.9-8.8 6.4-3.4 1.6-7.6 2.3-12.3 2.3zm0-12.1c4.2 0 7.2-1.6 9-4.7 1.8-3.1 2.7-7.6 2.7-13.4 0-5.8-.9-10.3-2.7-13.4-1.8-3.1-4.8-4.7-9-4.7-4.1 0-7.1 1.6-8.9 4.7-1.8 3.1-2.8 7.6-2.8 13.4 0 5.8.9 10.3 2.8 13.4 1.8 3.2 4.8 4.7 8.9 4.7zm51.8-14.5c-4.2-1.2-7.5-3-9.8-5.3-2.4-2.4-3.5-5.9-3.5-10.6 0-5.7 2-10.1 6.1-13.4 4.1-3.2 9.6-4.8 16.7-4.8a49.13 49.13 0 0 1 17.2 3.2c-.2 1.9-.5 4-1.1 6.1-.6 2.1-1.3 3.9-2.1 5.5-1.8-.7-3.8-1.4-5.9-2-2.2-.6-4.5-.8-6.8-.8-2.5 0-4.5.4-5.9 1.2-1.4.8-2.1 2-2.1 3.8 0 1.6.5 2.8 1.5 3.5 1 .7 2.4 1.3 4.3 1.9l6.4 1.9c2.1.6 4 1.3 5.7 2.2 1.7.9 3.1 1.9 4.3 3.2 1.2 1.3 2.1 2.8 2.8 4.7.7 1.9 1 4.2 1 6.8 0 2.8-.6 5.3-1.7 7.7a17.6 17.6 0 0 1-5 6.2c-2.2 1.8-4.9 3.1-8 4.2a35 35 0 0 1-10.7 1.5c-1.8 0-3.4-.1-4.9-.2-1.5-.1-2.9-.3-4.3-.6s-2.7-.6-4.1-1c-1.3-.4-2.8-.9-4.4-1.5.1-2 .5-4.1 1.1-6.1.6-2.1 1.3-4.1 2.2-6 2.5 1 4.8 1.7 7 2.2 2.2.5 4.5.7 6.9.7 1 0 2.2-.1 3.4-.3 1.2-.2 2.4-.5 3.4-1s1.9-1.1 2.6-1.9c.7-.8 1.1-1.8 1.1-3.1 0-1.8-.5-3.1-1.6-3.9-1.1-.8-2.6-1.5-4.5-2.1l-7.3-1.9zm39.3-32.7c2.7-.4 5.3-.7 8-.7 2.6 0 5.3.2 8 .7v30.7c0 3.1.2 5.6.7 7.6.5 2 1.2 3.6 2.2 4.7 1 1.2 2.3 2 3.8 2.5s3.3.7 5.3.7c2.8 0 5.1-.3 7-.8v-45.4c2.7-.4 5.3-.7 7.9-.7 2.6 0 5.3.2 8 .7v55.8c-2.4.8-5.6 1.6-9.5 2.4a65.33 65.33 0 0 1-23.3.3c-3.5-.6-6.6-1.9-9.3-3.8-2.7-1.9-4.8-4.8-6.3-8.5-1.6-3.7-2.4-8.7-2.4-14.9v-31.3zm65.9 58c-.4-2.8-.7-5.5-.7-8.2 0-2.7.2-5.5.7-8.3 2.8-.4 5.5-.7 8.2-.7 2.7 0 5.5.2 8.3.7.4 2.8.7 5.6.7 8.2 0 2.8-.2 5.5-.7 8.3-2.8.4-5.6.7-8.2.7-2.8-.1-5.5-.3-8.3-.7zm-.4-80.7c2.9-.4 5.8-.7 8.6-.7 2.9 0 5.8.2 8.8.7l-1.1 54.9c-2.6.4-5.1.7-7.5.7-2.5 0-5.1-.2-7.6-.7l-1.2-54.9z" />
+													<path class="st15"
+														d="M175 25C92.2 25 25 92.2 25 175s67.2 150 150 150 150-67.2 150-150S257.8 25 175 25zm0 285c-74.6 0-135-60.4-135-135S100.4 40 175 40s135 60.4 135 135-60.4 135-135 135z" />
+												</svg>
+											</span>
+											<span class="pl-1 self-center">Christ31</span>
+										</a>
+									</span>
+
+									<!-- Steam Profile Link -->
+									<span class="w-full h-[25px] mb-2">
+										<a href="https://steamcommunity.com/profiles/76561198154068318/"
+											class="flex px-3 bg-color-steam c31-text-base font-bold text-white rounded-full hover:brightness-125 duration-500 hover:scale-105 hover:rotate-1" target="_blank">
+											<span class="self-center">
+												<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 233 233" class="w-[25px]" preserveAspectRatio="xMidYMid meet">
+													<defs>
+														<linearGradient id="a" x2="50%" x1="50%" y2="100%">
+															<stop stop-color="#111D2E" offset="0" />
+															<stop stop-color="#051839" offset=".21248" />
+															<stop stop-color="#0A1B48" offset=".40695" />
+															<stop stop-color="#132E62" offset=".58110" />
+															<stop stop-color="#144B7E" offset=".73760" />
+															<stop stop-color="#136497" offset=".87279" />
+															<stop stop-color="#1387B8" offset="1" />
+														</linearGradient>
+													</defs>
+													<path fill="url(#a)"
+														d="m4.8911 150.01c14.393 48.01 58.916 82.99 111.61 82.99 64.34 0 116.5-52.16 116.5-116.5 0-64.341-52.16-116.5-116.5-116.5-61.741 0-112.26 48.029-116.25 108.76 7.5391 12.66 10.481 20.49 4.6411 41.25z" />
+													<path fill="#fff"
+														d="m110.5 87.322c0 0.196 0 0.392 0.01 0.576l-28.508 41.412c-4.618-0.21-9.252 0.6-13.646 2.41-1.937 0.79-3.752 1.76-5.455 2.88l-62.599-25.77c0.00049 0-1.4485 23.83 4.588 41.59l44.254 18.26c2.222 9.93 9.034 18.64 19.084 22.83 16.443 6.87 35.402-0.96 42.242-17.41 1.78-4.3 2.61-8.81 2.49-13.31l40.79-29.15c0.33 0.01 0.67 0.02 1 0.02 24.41 0 44.25-19.9 44.25-44.338 0-24.44-19.84-44.322-44.25-44.322-24.4 0-44.25 19.882-44.25 44.322zm-6.84 83.918c-5.294 12.71-19.9 18.74-32.596 13.45-5.857-2.44-10.279-6.91-12.83-12.24l14.405 5.97c9.363 3.9 20.105-0.54 23.997-9.9 3.904-9.37-0.525-20.13-9.883-24.03l-14.891-6.17c5.746-2.18 12.278-2.26 18.381 0.28 6.153 2.56 10.927 7.38 13.457 13.54s2.52 12.96-0.04 19.1m51.09-54.38c-16.25 0-29.48-13.25-29.48-29.538 0-16.275 13.23-29.529 29.48-29.529 16.26 0 29.49 13.254 29.49 29.529 0 16.288-13.23 29.538-29.49 29.538m-22.09-29.583c0-12.253 9.92-22.191 22.14-22.191 12.23 0 22.15 9.938 22.15 22.191 0 12.254-9.92 22.183-22.15 22.183-12.22 0-22.14-9.929-22.14-22.183z" />
+												</svg>
+											</span>
+											<span class="pl-1 self-center">C31</span>
+										</a>
+									</span>
+			
+									<!-- Youtube Profile Link -->
+									<span class="w-full h-[25px] mb-2">
+										<a href="https://www.youtube.com/channel/UCSFcKGHJO7e5cLtS9nU98Kw"
+											class="flex h-full px-3 bg-[#FFFFFF] c31-text-base font-bold text-black rounded-full border border-color-yt hover:brightness-125 duration-500 hover:scale-105 hover:rotate-1" target="_blank">
+											<span class="self-center">
+												<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+													id="Layer_1" x="0px" y="0px" viewBox="0 0 461.001 461.001" class="fill-color-yt w-[25px]" preserveAspectRatio="xMidYMid meet"
+													style="enable-background:new 0 0 461.001 461.001;" xml:space="preserve">
+													<g>
+														<path 
+															d="M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728   c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137   C461.001,110.259,418.135,67.393,365.257,67.393z M300.506,237.056l-126.06,60.123c-3.359,1.602-7.239-0.847-7.239-4.568V168.607   c0-3.774,3.982-6.22,7.348-4.514l126.06,63.881C304.363,229.873,304.298,235.248,300.506,237.056z" />
+													</g>
+												</svg>
+											</span>
+											<span class="pl-1 self-center">Christ31</span>
+										</a>
+									</span>
+				
+									<!-- Discord Profile Link -->
+									<span class="w-full h-[25px] mb-2">
+										<a href=""
+											class="flex h-full px-3 bg-color-discord c31-text-base font-bold text-white rounded-full hover:brightness-125 duration-500 hover:scale-105 hover:rotate-1" target="_blank">
+											<span class="self-center">
+												<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+													id="Layer_1" x="0px" y="0px" viewBox="0 0 127.14 96.36"  class="fill-white h-[22px] w-[25px]" preserveAspectRatio="xMidYMid meet"
+													style="enable-background:new 0 0 461.001 461.001;" xml:space="preserve">
+													<g>
+														<path
+															d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z" />
+													</g>
+												</svg>
+											</span>
+											<span class="pl-1 self-center">C31#1328</span>
+										</a>
+									</span>
+			
+									<!-- GitHub Profile -->
+									<span class="w-full h-[25px]">
+										<a href="https://github.com/christ31"
+											class="flex h-full px-3 bg-[#FFFFFF] c31-text-base font-bold text-black rounded-full border border-black hover:brightness-125 duration-500 hover:scale-105 hover:rotate-1" target="_blank">
+											<span class="self-center">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-[22px] w-[25px]" preserveAspectRatio="xMidYMid meet">
+													<path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+												</svg>
+											</span>
+											<span class="pl-1 self-center">Christ31</span>
+										</a>
+									</span>
+								</div>
+
+								<section class="flex pt-3">
+							</div>
+						</div>
+					</div>
 				</div>
 
 				<div class="w-full px-4 mb-12 md:w-1/3">
-					<h3 class="font-semibold text-xl text-white mb-5">
-						Support
-					</h3>
-					<ul class="text-slate-300">
-						<li>
-							<a href="#" class="inline-block text-base hover:text-primary mb-3">Web Programming UNPAS (WPU)</a>
-						</li>
-						<li>
-							<a href="#" class="inline-block text-base hover:text-primary mb-3">Tailwindcss</a>
-						</li>
-						<li>
-							<a href="#" class="inline-block text-base hover:text-primary mb-3">Visual Studio Code</a>
-						</li>
-					</ul>
+					<div class="mx-auto w-fit">
+						<h3 class="font-semibold text-xl text-white mb-5">
+							Support
+						</h3>
+						<ul class="text-slate-300">
+							<li>
+								<a href="#" class="inline-block text-base hover:text-primary mb-3">Web Programming UNPAS (WPU)</a>
+							</li>
+							<li>
+								<a href="#" class="inline-block text-base hover:text-primary mb-3">Tailwindcss</a>
+							</li>
+							<li>
+								<a href="#" class="inline-block text-base hover:text-primary mb-3">Visual Studio Code</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 
-
-				<div class="w-full px-4 mb-12 md:w-1/3">
-					<h3 class="font-semibold text-xl text-white mb-5">
-						Tautan
-					</h3>
-					<ul class="text-slate-300">
-						<li>
-							<a href="#home" class="inline-block text-base hover:text-primary mb-3">Beranda</a>
-						</li>
-						<li>
-							<a href="#about" class="inline-block text-base hover:text-primary mb-3">Tentang Saya</a>
-						</li>
-						<li>
-							<a href="#utilities" class="inline-block text-base hover:text-primary mb-3">Utilities</a>
-						</li>
-						<li>
-							<a href="#hardware" class="inline-block text-base hover:text-primary mb-3">Hardware</a>
-						</li>
-						<li>
-							<a href="#blog" class="inline-block text-base hover:text-primary mb-3">Blog</a>
-						</li>
-						<li>
-							<a href="#contact" class="inline-block text-base hover:text-primary mb-3">Contact</a>
-						</li>
-					</ul>
+				<div class="w-fit mb-12 md:w-1/3">
+				<!-- This class need to be centered -->
+					<div class="mx-auto w-fit"> 
+						<h3 class="font-semibold text-xl text-white mb-5">
+							Tautan
+						</h3>
+						<ul class="text-slate-300">
+							<li>
+								<a href="#home" class="inline-block text-base hover:text-primary mb-3">Beranda</a>
+							</li>
+							<li>
+								<a href="#about" class="inline-block text-base hover:text-primary mb-3">Tentang Saya</a>
+							</li>
+							<li>
+								<a href="#utilities" class="inline-block text-base hover:text-primary mb-3">Utilities</a>
+							</li>
+							<li>
+								<a href="#hardware" class="inline-block text-base hover:text-primary mb-3">Hardware</a>
+							</li>
+							<li>
+								<a href="#blog" class="inline-block text-base hover:text-primary mb-3">Blog</a>
+							</li>
+							<li>
+								<a href="#contact" class="inline-block text-base hover:text-primary mb-3">Contact</a>
+							</li>
+						</ul>
+					</div>
+					
 				</div>
 
 			</div>
@@ -666,30 +945,26 @@
 				<p class="font-extrabold text-slate-500 font-mono">v0.1 'Hello World'</p>
 				<p class="font-extrabold text-slate-500 font-mono">v0.2 'Dark Mode'</p>
 				<p class="font-extrabold text-slate-500 font-mono">v0.3 'Content Update'</p>
+				<p class="font-extrabold text-slate-500 font-mono">v0.4 'Personalize Web'</p>
+
 			</div>
-
-
 		</div>
 	</footer>
 	<!-- Footer Section Stop -->
 
 	<!-- Back to top Start -->
 	<a id="to-top" href="#home"
-		class="flex fixed justify-center items-center z-[9999] bottom-4 right-4 h-10 w-10 bg-primary rounded-sm hover:bottom-5 duration-300 ease-in-out">
+		class="flex fixed justify-center items-center z-[9999] -bottom-5 right-4 h-10 w-10 bg-primary rounded-sm hover:-translate-y-1 duration-300 ease-in-out">
 		<span class="fixed h-5 mx-auto w-5 border-t-4 border-l-4 rotate-45"></span>
 		<span class="fixed h-5 mt-5 w-5 border-t-4 border-l-4 rotate-45"></span>
 	</a>
 	<!-- Back to top End -->
-
 
 	<!-- Script buat ngehubungi JS -->
 	<script src="dist/js/script.js"></script>
 </body>
 
 </html>
-
-
-
 <!-- Unused -->
 
 <!-- 
