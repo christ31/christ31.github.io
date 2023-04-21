@@ -79,6 +79,10 @@ function showTime(){
   var h = date.getHours(); // 0 - 23
   var m = date.getMinutes(); // 0 - 59
   var s = date.getSeconds(); // 0 - 59
+
+  var width = window.innerWidth;
+  var height = window.innerHeight;
+
   var session = "AM";
   var light = "🌞";
 
@@ -95,6 +99,8 @@ function showTime(){
   }
 
   if(h>5 && session == "PM"){
+    light = "🌙";
+  } else if(h<5 && session == "AM"){
     light = "🌙";
   }
   
@@ -113,9 +119,9 @@ function showTime(){
   
 
   // document.getElementById("MyClockDisplay").innerText = date+time;
-  document.getElementById("MyClockDisplay").textContent = fulldate + " | " +time;
+  document.getElementById("MyClockDisplay").textContent = fulldate + " | " +time + " | " + width + " x " + height;
   
-  setTimeout(showTime, 1000);
+  setTimeout(showTime, 50);
   
 }
 

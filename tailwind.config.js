@@ -17,7 +17,7 @@ module.exports = {
         'color-discord': '#5865f2'
       },
       screens: {
-        '2xl': '1320px',
+        '2xl': '1320px'
       },
     },
   },

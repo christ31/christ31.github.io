@@ -7,9 +7,8 @@
 }
 
 body{
-  @apply transition-colors duration-1000;
+  @apply transition-colors duration-1000 box-border;
   font-family: 'Inter', sans-serif;
-  box-sizing: border-box;
 }
 
 .c31-dummy{

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Portofolio Dengan Tailwind CSS </title>
   <!-- <link rel="stylesheet" href="dist/css/final.css" /> -->
   <link rel="stylesheet" href="dist/output.css" />
@@ -108,18 +108,17 @@
   <section id="home" class="bg-lime-50 h-[100vh] dark:bg-dark transition-all">
     <div class="container h-full">
 
-      <div class="flex flex-wrap w-full h-full">
+      <div class="flex flex-wrap h-full w-full pt-[50px] lg:py-0 trasition-all">
 
         <!--! Hero Left Side -->
-        <div
-          class="w-full self-center lg:w-2/3 border-4 border-solid border-[#14b8a6] rounded-xl bg-slate-800 bg-opacity-95 backdrop-blur-2xl transition-all hover:shadow-[0_0px_20px_#14b8a6] hover:cursor-pointer">
+        <div class="w-full self-center lg:w-2/3 border-4 border-solid border-[#14b8a6] rounded-xl bg-slate-800 bg-opacity-95 backdrop-blur-2xl transition-all hover:shadow-[0_0px_20px_#14b8a6]">
 
           <!--* Content Wrapper  -->
           <div class="contentwrapper py-10 px-10">
 
             <!--* Title Name -->
             <div class="flex">
-              <span class="font-bold text-white text-[62px] pb-0 mb-0">N. Christ</span>
+              <span class="font-bold text-white text-[31px] lg:text-[62px] pb-0 mb-0">N. Christ</span>
               <button class="ml-2 self-end ">
                 <svg xmlns="http://www.w3.org/2000/svg" class="flex" xmlns:xlink="http://www.w3.org/1999/xlink"
                   width="40" zoomAndPan="magnify" viewBox="0 0 30 30.000001" preserveAspectRatio="xMidYMid meet"
@@ -150,8 +149,8 @@
             </div>
 
             <!--* Content -->
-            <p class="text-[24px] text-gray-300 mb-0">> Sedang Belajar Front-End Development</p>
-            <p class="text-[24px] text-gray-300 mb-10">> Tertarik dengan game emulation sejak 2014</p>
+            <p class="text-[18px] lg:text-[24px] text-gray-300 mb-0">> Sedang Belajar Front-End Development</p>
+            <p class="text-[18px] lg:text-[24px] text-gray-300 mb-5 lg:mb-10">> Tertarik dengan game emulation sejak 2014</p>
 
             <!--* Social Media -->
             <section class="flex flex-wrap gap-2">
@@ -384,7 +383,8 @@
         </div>
 
         <!--! Hero Right Side -->
-        <div class="w-full self-center lg:w-1/3 h-[500px] relative">
+        <!-- TODO: Child overflow parent -->
+        <div class="w-full self-center lg:w-1/3 h-[400px] lg:h-full relative">
           <!--* Image HM Inside -->
           <img src="dist/img/HM_Inside-removebg-preview.png" alt="Image HM Inside"
             class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-full mx-auto z-10 " />
@@ -417,7 +417,7 @@
 	</section>
 
 	 -->
-  <!-- Portfolio Section Start -->
+  <!--! Portfolio Section Start -->
 
   <!-- 
 	<section id="utilities" class="pt-36 pb-16 bg-slate-100 dark:bg-slate-800">
@@ -516,12 +516,12 @@
   <!-- Portfolio Section End -->
 
   <!--! Hardware Section Start -->
-  <section id="perangkat" class="bg-slate-800 pt-36 pb-32 dark:bg-slate-600 transition-all">
+  <section id="perangkat" class="bg-slate-800 pt-14 pb-14 lg:pt-36 lg:pb-32 dark:bg-slate-600 transition-all">
     <div class="container">
       <div class="w-full px-4 mb-7">
         <div class="max-w-xl mx-auto text-center">
           <h4 class="font-semibold text-lg text-primary mb-2">Hardware</h4>
-          <h2 class="font-bold text-white text-3xl mb-4 sm:text-xl lg:text-5xl ">Spesifikasi Komputer yang digunakan
+          <h2 class="font-bold text-white text-3xl mb-4 lg:text-5xl ">Spesifikasi Komputer yang digunakan
           </h2>
           <p class="font-medium text-md text-white">Menggunakan laptop ROG GL553V yang ditenagai oleh Intel® Core™
             i7 Generasi 7 dengan kinerja grafis dari Nvidia GeForce® GTX 10 series. Mendukung operating sistem Fedora.
@@ -541,10 +541,11 @@
         </div>
       </div>
 
-      <div class="bg-lime-100 w-fit mx-auto rounded-full border-4">
-        <div class="flex flex-wrap items-center justify-center">
+      <!-- TODO: Use scrollbar, Update Icon -->
+      <div class="bg-lime-100 lg:w-fit mx-auto rounded-full border-4">
+        <div class="flex items-center justify-center overflow-x-scroll">
           <a href="#"
-            class=" flex fill-zinc-700 mx-4 py-4 transition duration-500 hover:fill-[#e50007] lg:mx-6 xl:mx-8">
+            class="max-w-[120px] fill-zinc-700 mx-4 py-4 transition duration-500 hover:fill-[#e50007] lg:mx-6 xl:mx-8">
             <svg clip-rule="evenodd" fill-rule="evenodd" height="60px" image-rendering="optimizeQuality"
               shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
               viewBox="-5.3 -.02 8666.25 5080.49" xmlns="http://www.w3.org/2000/svg">
@@ -564,7 +565,7 @@
           </a>
 
           <a href="#"
-            class="max-w-[120px] fill-zinc-700 mx-4 py-4 transition duration-500 hover:fill-[#77B900] hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+            class="max-w-[120px] fill-zinc-700 mx-4 py-4 transition duration-500 hover:fill-[#77B900] lg:mx-6 xl:mx-8">
             <svg version="1.1" id="svg2" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="60px"
               viewBox="35.188 31.512 351.46 258.785" enable-background="new 35.188 31.512 351.46 258.785"
@@ -597,18 +598,18 @@
           </a>
 
           <a href="#"
-            class="max-w-[120px] mx-4 py-4 grayscale opacity-70 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-            <img src="dist/img/hardware/Fedora_logo.svg" class="h-[60px]" alt="Google">
+            class="max-w-[120px] mx-4 py-4 grayscale opacity-70 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8 aspect-square">
+            <img src="dist/img/hardware/Fedora_logo.svg" class="h-[60px]" alt="" srcset="">
           </a>
 
-          <a href="https://www.google.com" target="blank"
-            class="max-w-[120px] mx-4 py-4 grayscale opacity-70 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-            <img src="dist/img/hardware/logitechG.svg" class="h-[60px]" alt="Google">
+          <a href="#"
+            class="max-w-[120px] mx-4 py-4 grayscale opacity-70 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8 aspect-square">
+            <img src="dist/img/hardware/logitechG.svg" class="h-[60px]" alt="Logitech">
           </a>
 
           <a href="#"
             class="max-w-[120px] mx-4 py-4 grayscale opacity-70 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-            <img src="dist/img/hardware/samsung.svg" class="h-[60px] brightness-200" alt="Google">
+            <img src="dist/img/hardware/samsung.svg" class="h-[60px] brightness-200" alt="Samsung">
           </a>
         </div>
       </div>
@@ -617,12 +618,12 @@
   <!-- Hardware Section Stop -->
 
   <!--! Blog Section Start -->
-  <section id="blog" class="pt-36 pb-32 bg-slate-100 dark:bg-slate-700 transition-all">
+  <section id="blog" class="pt-14 pb-14 lg:pt-36 lg:pb-32 bg-slate-100 dark:bg-slate-700 transition-all">
     <div class="container">
       <div class="w-full px-4">
         <div class="mx-auto text-center mb-16">
           <h4 class="font-semibold text-lg text-primary mb-2">Blog</h4>
-          <h2 class="font-bold text-dark text-3xl mb-4 sm:text-xl lg:text-5xl dark:text-white">Tulisan Saya</h2>
+          <h2 class="font-bold text-dark mb-4 text-3xl lg:text-5xl dark:text-white ">Tulisan Saya</h2>
           <div class="bg-[#21759b] inline-block p-2 rounded-full hover:scale-x-105 transition-all">
             <a href="http://c31project.wordpress.com" target="_blank">
               <span class="">
@@ -726,13 +727,14 @@
       <div class="mt-20 bg-black">
         <p class="text-slate-500"></p>
         <p class="text-slate-500 font-mono">[christ@fedora portofolio-tailwind-css] $ porto --history-version</p>
-        <p class="font-extrabold text-slate-500 font-mono">Porto-Tailwind-WPU v0.5 | Build '21 April 2023'</p>
+        <p class="font-extrabold text-slate-500 font-mono">christ31.github.io v0.6 | Build '22 April 2023'</p>
         <p class="font-extrabold text-slate-500 font-mono">v0.1 'Hello World'</p>
         <p class="font-extrabold text-slate-500 font-mono">v0.2 'Dark Mode'</p>
         <p class="font-extrabold text-slate-500 font-mono">v0.3 'Content Update'</p>
         <p class="font-extrabold text-slate-500 font-mono">v0.4 'Personalize Web'</p>
         <p class="font-extrabold text-slate-500 font-mono">v0.4a 'Tidy Up & Bug Fixes'</p>
         <p class="font-extrabold text-slate-500 font-mono">v0.5 'Simplified'</p>
+        <p class="font-extrabold text-slate-500 font-mono">v0.6 'It's a mobile'</p>
       </div>
     </div>
   </footer>
