@@ -100,7 +100,7 @@ function showTime(){
 
   if(h>5 && session == "PM"){
     light = "🌙";
-  } else if(h<5 && session == "AM"){
+  } else if(h==12 || h<5 && session == "AM"){
     light = "🌙";
   }
   
@@ -108,7 +108,7 @@ function showTime(){
   m = (m < 10) ? "0" + m : m;
   s = (s < 10) ? "0" + s : s;
   
-  var time = h + ":" + m + ":" + s + " " + session + " " + light;
+  var time = h + ":" + m + " " + session + " " + light;
 
   var year = date.getFullYear();
   var day = date.getUTCDate();
@@ -119,7 +119,7 @@ function showTime(){
   
 
   // document.getElementById("MyClockDisplay").innerText = date+time;
-  document.getElementById("MyClockDisplay").textContent = fulldate + " | " +time + " | " + width + " x " + height;
+  document.getElementById("MyClockDisplay").textContent = fulldate + " | " +time;
   
   setTimeout(showTime, 50);
   
