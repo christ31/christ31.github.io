@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Portofolio Dengan Tailwind CSS </title>
+  <title>C31 Website</title>
   <!-- <link rel="stylesheet" href="dist/css/final.css" /> -->
   <link rel="stylesheet" href="dist/output.css" />
   <script>
@@ -34,7 +34,7 @@
       <div class="relative flex items-center justify-between flex-row">
         <div class="pl-4 inline-flex">
           <a href="#home" class="py-2 font-bold text-[12px] md:text-base text-primary block ">My Site xD</a>
-          <p class="text-secondary font-semibold text-[10px] md:text-xs place-self-end">v0.6</p>
+          <p class="text-secondary font-semibold text-[10px] md:text-xs place-self-end">v0.7 <span class="text-orange-700"></span></p>
         </div>
 
         <div class="text-center">
@@ -59,7 +59,6 @@
               <li class="group self-center text-center relative">
                 <a href="#portfolio"
                   class="c31-text-nav text-dark font-semibold py-2 mx-3 flex group-hover:text- dark:text-white">Portofolio</a>
-                <span class="opacity-0 absolute left-[50%] translate-x-[-50%] top-10 w-[120px] group-hover:visible group-hover:top-12 p-2 group-hover:opacity-100 border-white border-2 text-white rounded-lg transition-all bg-black/80">Coming Soon</span>
               </li>
                 <a href="#perangkat"
                   class="c31-text-nav text-dark font-semibold py-2 mx-3 flex group-hover:text- dark:text-white">Perangkat</a>
@@ -364,7 +363,7 @@
               <!-- GitHub Profile -->
               <span class="w-fit h-[35px]">
                 <a href="https://github.com/christ31"
-                  class="flex h-full px-3 bg-[#171515] c31-text-base font-bold text-white rounded-full border border-black hover:brightness-125 duration-500 hover:scale-105 hover:rotate-1"
+                  class="flex h-full px-3 bg-color-github c31-text-base font-bold text-white rounded-full border border-black hover:brightness-125 duration-500 hover:scale-105 hover:rotate-1"
                   target="_blank">
                   <span class="self-center">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-[22px] w-[25px] fill-white"
@@ -383,14 +382,14 @@
         </div>
 
         <!--! Hero Right Side -->
-        <div class="w-full self-center lg:w-1/3 h-[400px] lg:h-full relative">
+        <div class="w-full self-center lg:w-1/3 h-[400px] lg:h-full relative overflow-hidden">
           <!--* Image HM Inside -->
           <img src="dist/img/HM_Inside-removebg-preview.png" alt="Image HM Inside"
             class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[180px] lg:h-[240px] lg:max-w-full mx-auto z-10 " />
-
+          
           <!--* Blob -->
-          <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="lg:scale-125">
+          <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 overflow-hidden"> 
+            <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="object-center scale-100 lg:scale-125">
               <path fill="#14b8a6"
                 d="M49.1,-61.6C57,-52,52,-30.1,52.2,-11.7C52.5,6.7,58,21.7,54.7,35.5C51.4,49.4,39.3,62.1,25.4,65.3C11.4,68.6,-4.5,62.2,-17.9,54.9C-31.4,47.6,-42.4,39.2,-49,28.1C-55.6,17,-57.9,3.2,-55.6,-9.8C-53.3,-22.8,-46.4,-35,-36.4,-44.2C-26.4,-53.5,-13.2,-59.7,3.7,-64.2C20.6,-68.6,41.3,-71.2,49.1,-61.6Z"
                 transform="translate(100 100)"></path>
@@ -416,101 +415,76 @@
 	</section>
 
 	 -->
-  <!--! Portfolio Section Start -->
 
-  <!-- 
-	<section id="utilities" class="pt-36 pb-16 bg-slate-100 dark:bg-slate-800">
+  <!--! Portfolio Section Start -->
+	<section id="portfolio" class="pt-14 pb-14 lg:pt-36 lg:pb-32 bg-slate-100 dark:bg-slate-800 transition-all">
 		<div class="container">
 			<div class="px-4">
-				<div class="mx-auto text-center mb-16">
-					<h4 class="font-semibold text-lg text-primary mb-2">Utilities</h4>
-					<h2 class="font-bold text-dark text-3xl mb-4 sm:text-xl lg:text-5xl dark:text-white">Website yang Worth IT
-						untuk dilihat</h2>
-					<p class="font-medium text-md text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing
-						elit. Saepe
-						eos ad architecto dicta aliquam?</p>
+				<div class="mx-auto text-center">
+					<h4 class="font-semibold text-lg text-primary mb-2">Portofolio</h4>
+					<h2 class="font-bold text-dark text-3xl mb-4 sm:text-xl lg:text-5xl dark:text-white">Projek Saya</h2>
 				</div>
 			</div>
 
-			<div class="overflow-x-auto bg-red-700 flex-col">
-			<div class="bg-white rounded-xl w-fit mx-4">
-				Test Item 1
-			</div>
+			<div class="p-4 rounded-xl w-full h-fit"> <!-- TODO: Unused outer layer -->
+				<div class="flex flex-row lg:gap-6 overflow-x-scroll lg:overflow-visible">
 
-			<div class="bg-white rounded-xl w-fit mx-4">
-				Test Item 1
-			</div>
-
-			<div class="bg-white rounded-xl w-fit mx-4">
-				Test Item 1
-			</div>
-
-			<div class="bg-white rounded-xl w-fit mx-4">
-				Test Item 1
-			</div>
-
-			<div class="bg-white rounded-xl w-fit mx-4">
-				Test Item 1
-			</div>
-
-			<div class="bg-white rounded-xl w-fit mx-4">
-				Test Item 1
-			</div>
-
-			<div class="bg-white rounded-xl w-fit mx-4">
-				Test Item 1
-			</div>
-
-			<div class="bg-white rounded-xl w-fit mx-4">
-				Test Item 1
-			</div>
-
-
-			</div>
-
-			<div class="overflow-x-scroll bg-red-700">
-				<div class="">
-					<div class="mb-12 p-4 ">
-						<div class="rounded-md shadow-md">
-							<img src="dist/img/utilities/1-l.png" alt="Gambar Website no.1" width="w-full">
+					<div class="flex-none lg:flex-initial shadow-lg rounded-2xl bg-purple-800 w-full h-fit lg:w-1/2 transition-all hover:shadow-[0_0px_20px_#6b21a8] lg:hover:scale-[101%]">
+						<div class="rounded-2xl aspect-video overflow-hidden bg-white">
+							<img class="object-cover object-top aspect-video w-full" src="dist/img/porto/KalkulatorJS-1.png" alt="Gambar Website no.1">
 						</div>
-						<h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Website blobmaker.app</h3>
-						<p class="font-medium text-base text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-							Nisi, aspernatur!</p>
+            <div class="px-4 h-fit">
+              <h3 class="font-semibold text-xl text-white mt-5 mb-3">Kalkulator 
+                <span><img src="dist/img/icon/html-5-svgrepo-com.svg" alt="" srcset="" class="inline-block h-[30px]"></span>
+                <span><img src="dist/img/icon/css-3-svgrepo-com.svg" alt="" srcset="" class="inline-block h-[30px]"></span>
+                <span><img src="dist/img/icon/javascript-svgrepo-com (1).svg" alt="" srcset="" class="inline-block h-[30px]"></span>
+              </h3>
+              <div class="flex w-full">
+                <div class="flex-none w-[100px] text-white font-black">Tech:</div>
+                <div class="flex-auto text-white">HTML, CSS, JavaScript</div>
+              </div>
+
+              <div class="flex w-full">
+                <div class="flex-none w-[100px] text-white font-black">Penjelasan:</div>
+                <div class="flex-auto text-white">Kalkulator fungsional dibuat menggunakan pure HTML, CSS, dan JavaScript. Dibuat menyerupai kalkulator pada Gnome 43</div>
+              </div>
+
+              <div class="flex w-full">
+                <div class="flex-none w-[100px] text-white font-black">Fitur</div>
+                <div class="flex-auto text-white">
+                  <ul class="list-disc">
+                    <li>Ubah Background</li>
+                    <li>Ubah Desain Kalkulator (2 desain)</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="w-full mt-5 flex justify-center gap-2">
+                <a class="flex gap-1 bg-color-github rounded-full p-2 mb-4 outline-blue-300 hover:outline hover:outline-2 hover:outline-blue-300 transition-all" href="https://github.com/christ31/TugasKalkulator-JS" target="_blank">
+                  <span class="flex"><img class="h-[23px] self-center" src="dist/img/icon/github-142-svgrepo-com(white).svg" alt=""></span> 
+                  <span class="self-center text-white">
+                    Github
+                  </span>
+                </a>
+                <a class="bg-white p-2 mb-4 rounded-full outline-blue-300 hover:outline hover:outline-2 hover:outline-blue-300 transition-all" href="http://c31.web.id/TugasKalkulator-JS/" target="_blank">Buka Website</a>
+              </div>
+            </div>
 					</div>
 
-					<div class="mb-12 p-4">
-						<div class="rounded-md shadow-md">
-							<img src="dist/img/utilities/2.png" alt="Gambar Website no.2" width="w-full">
+					<div class="flex-none lg:flex-initial rounded-xl bg-orange-800 w-full h-full lg:w-1/2 hover:shadow-[0_0px_20px_#9a3412] lg:hover:scale-[101%] transition-all">
+						<div class="rounded-xl shadow-md aspect-video overflow-hidden"> 
+							<img src="dist/img/utilities/2.png" class="object-contain w-full blur-3xl" alt="Gambar Website no.2">
 						</div>
-						<h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Website simpleicons.org</h3>
-						<p class="font-medium text-base text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-							Nisi, aspernatur!</p>
-					</div>
+            <div class="px-4">
+              <h3 class="font-semibold text-xl text-white mt-5 mb-3">Coming Soon</h3>
 
-					<div class="mb-12 p-4">
-						<div class="rounded-md shadow-md">
-							<img src="dist/img/utilities/3.png" alt="Gambar Website no.3" width="w-full">
-						</div>
-						<h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Website remove.bg</h3>
-						<p class="font-medium text-base text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-							Nisi, aspernatur!</p>
-					</div>
-
-					<div class="mb-12 p-4">
-						<div class="rounded-md shadow-md">
-							<img src="dist/img/utilities/4.png" alt="Gambar Website no.4" width="w-full">
-						</div>
-						<h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Website schemecolor.com</h3>
-						<p class="font-medium text-base text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-							Nisi, aspernatur!</p>
+            </div>
 					</div>
 
 				</div>
 			</div>
 		</div>
 	</section>
-	 -->
 
   <!-- Portfolio Section End -->
 
@@ -520,7 +494,7 @@
       <div class="w-full px-4 mb-7">
         <div class="max-w-xl mx-auto text-center">
           <h4 class="font-semibold text-lg text-primary mb-2">Hardware</h4>
-          <h2 class="font-bold text-white text-3xl mb-4 lg:text-5xl ">Spesifikasi Komputer yang digunakan
+          <h2 class="font-bold text-white text-3xl mb-4 lg:text-5xl ">Spesifikasi Komputer
           </h2>
           <p class="font-medium text-md text-white">Menggunakan laptop ROG GL553V yang ditenagai oleh Intel® Core™
             i7 Generasi 7 dengan kinerja grafis dari Nvidia GeForce® GTX 10 series. Mendukung operating sistem Fedora.
@@ -726,14 +700,14 @@
       <div class="mt-20 bg-black">
         <p class="text-slate-500"></p>
         <p class="text-slate-500 font-mono">[christ@fedora portofolio-tailwind-css] $ porto --history-version</p>
-        <p class="font-extrabold text-slate-500 font-mono">christ31.github.io v0.6 | Build '23 April 2023'</p>
+        <p class="font-extrabold text-slate-500 font-mono">christ31.github.io v0.7 | Build '1 Mei 2023'</p>
         <p class="font-extrabold text-slate-500 font-mono">v0.1 'Hello World'</p>
         <p class="font-extrabold text-slate-500 font-mono">v0.2 'Dark Mode'</p>
         <p class="font-extrabold text-slate-500 font-mono">v0.3 'Content Update'</p>
         <p class="font-extrabold text-slate-500 font-mono">v0.4 'Personalize Web'</p>
-        <p class="font-extrabold text-slate-500 font-mono">v0.4a 'Tidy Up & Bug Fixes'</p>
         <p class="font-extrabold text-slate-500 font-mono">v0.5 'Simplified'</p>
         <p class="font-extrabold text-slate-500 font-mono">v0.6 'It's a mobile'</p>
+        <p class="font-extrabold text-slate-500 font-mono">v0.7 'Display My Works'</p>
       </div>
     </div>
   </footer>
@@ -752,16 +726,17 @@
 </body>
 
 </html>
-<!-- Unused -->
+
+<!--! Unused -->
 
 <!-- 
-					<a href="#"
-						class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 duration-200 ease-in-out">Hubungi
-						Saya</a>
+  <a href="#"
+    class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 duration-200 ease-in-out">Hubungi
+    Saya</a>
  -->
 
 
-<!-- Contact Section Start -->
+<!--! Contact Section Start -->
 <!--
 	<section id="contact" class="pt-36 pb-32 bg-primary">
 		<div class="container">
@@ -801,3 +776,68 @@
 	</section>
 	-->
 <!-- Contact Section Stop -->
+
+<!--! Old Portfolio Section Start -->
+<!--
+	<section id="portfolio" class="pt-14 pb-14 lg:pt-36 lg:pb-32 bg-slate-100 dark:bg-slate-800">
+		<div class="container">
+			<div class="px-4">
+				<div class="mx-auto text-center mb-16">
+					<h4 class="font-semibold text-lg text-primary mb-2">Portofolio</h4>
+					<h2 class="font-bold text-dark text-3xl mb-4 sm:text-xl lg:text-5xl dark:text-white">Kumpulan website yang sudah dibuat</h2>
+					<p class="font-medium text-md text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing
+						elit. Saepe
+						eos ad architecto dicta aliquam?</p>
+				</div>
+			</div>
+
+			<div class="bg-gray-100 p-4 rounded-xl w-full">
+				<div class="flex flex-row overflow-x-scroll h-[500px]">
+
+					<div class="flex-none p-4 bg-pink-500 w-full">
+						<div class="rounded-md shadow-md overflow-hidden bg-white">
+							<img class="object-contain h-[300px] w-full" src="dist/img/utilities/1-l.png" alt="Gambar Website no.1">
+						</div>
+						<h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Website blobmaker.app</h3>
+						<p class="font-medium text-base text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+							Nisi, aspernatur!</p>
+					</div>
+
+					<div class="flex-none p-4 bg-orange-400 w-full">
+						<div class="rounded-md shadow-md overflow-hidden"> 
+							<img src="dist/img/utilities/2.png" class="object-contain" alt="Gambar Website no.2">
+						</div>
+						<h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Website simpleicons.org</h3>
+						<p class="font-medium text-base text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+							Nisi, aspernatur!</p>
+					</div>
+
+					<div class="flex-none p-4 w-[600px]">
+						<div class="rounded-md shadow-md">
+							<img src="dist/img/utilities/3.png" alt="Gambar Website no.3" width="w-full">
+						</div>
+						<h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Website remove.bg</h3>
+						<p class="font-medium text-base text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+							Nisi, aspernatur!</p>
+					</div>
+
+					<div class="flex-none mb-12 p-4 w-[600px]">
+						<div class="rounded-md shadow-md">
+							<img src="dist/img/utilities/4.png" alt="Gambar Website no.4" width="w-full">
+						</div>
+						<h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Website schemecolor.com</h3>
+						<p class="font-medium text-base text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+							Nisi, aspernatur!</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+  -->
+  <!-- Portfolio Section End -->
+
+  <!--! Coming Soon Hover Effect -->
+  <!--
+    <span class="opacity-0 absolute left-[50%] translate-x-[-50%] top-10 w-[120px] group-hover:visible group-hover:top-12 p-2 group-hover:opacity-100 border-white border-2 text-white rounded-lg transition-all bg-black/80">Coming Soon</span>
+  -->

@@ -14,7 +14,8 @@ module.exports = {
         'color-yt': '#F61C0D',
         'color-osu!': '#e32373',
         'color-steam': '#223246',
-        'color-discord': '#5865f2'
+        'color-discord': '#5865f2',
+        'color-github': '#171515'
       },
       screens: {
         '2xl': '1320px'

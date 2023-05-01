@@ -76,7 +76,7 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
 // Thanks to Aaron Farrar https://codepen.io/afarrar/pen/JRaEjP
 function showTime(){
   var date = new Date();
-  var h = date.getHours(); // 0 - 23
+  var h = date.getHours(); // 1 - 12
   var m = date.getMinutes(); // 0 - 59
   var s = date.getSeconds(); // 0 - 59
 
@@ -84,10 +84,10 @@ function showTime(){
   var height = window.innerHeight;
 
   var session = "AM";
-  var light = "🌞";
+  var light = "🌞";  
 
   const monthNames = ["January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December"];
+  "July", "August", "September", "October","November", "December"];
   
   if(h == 0){
       h = 12;
@@ -98,9 +98,9 @@ function showTime(){
       session = "PM";
   }
 
-  if(h>5 && session == "PM"){
+  if((h>5 && h<12) && session == "PM"){
     light = "🌙";
-  } else if(h==12 || h<5 && session == "AM"){
+  } else if((h==12 || h<5) && session == "AM"){
     light = "🌙";
   }
   
