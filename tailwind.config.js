@@ -15,7 +15,8 @@ module.exports = {
         'color-osu!': '#e32373',
         'color-steam': '#223246',
         'color-discord': '#5865f2',
-        'color-github': '#171515'
+        'color-github': '#171515',
+        'color-miku': '#14b8a6',
       },
       screens: {
         '2xl': '1320px'

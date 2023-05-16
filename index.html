@@ -104,13 +104,12 @@
   <!-- Header End -->
 
   <!--! Hero Section Start -->
-  <section id="home" class="bg-lime-50 lg:h-[100vh] dark:bg-dark transition-all">
+  <section id="home" class="relative bg-lime-50 lg:h-[100vh] dark:bg-dark transition-all">
     <div class="container h-full">
-
       <div class="flex flex-wrap h-full w-full pt-[40px] lg:py-0 trasition-all">
 
         <!--! Hero Left Side -->
-        <div class="w-full self-center lg:w-2/3 border-4 border-solid border-[#14b8a6] rounded-xl bg-slate-800 bg-opacity-95 backdrop-blur-2xl transition-all hover:shadow-[0_0px_20px_#14b8a6]">
+        <div class="w-full self-center lg:w-2/3 border-4 border-solid border-[#14b8a6] rounded-xl bg-slate-800 bg-opacity-95 backdrop-blur-2xl transition-all hover:shadow-[0_0px_20px] hover:shadow-color-miku">
 
           <!--* Content Wrapper  -->
           <div class="contentwrapper py-10 px-10">
@@ -148,8 +147,8 @@
             </div>
 
             <!--* Content -->
-            <p class="text-[18px] lg:text-[24px] text-gray-300 mb-0">> Sedang Belajar Front-End Development</p>
-            <p class="text-[18px] lg:text-[24px] text-gray-300 mb-5 lg:mb-10">> Tertarik dengan game emulation sejak 2014</p>
+            <p class="text-[18px] lg:text-[20px] text-gray-300 mb-0">> Sedang Belajar Front-End Development</p>
+            <p class="text-[18px] lg:text-[20px] text-gray-300 mb-5 lg:mb-10">> Tertarik dengan game emulation sejak 2014</p>
 
             <!--* Social Media -->
             <section class="flex flex-wrap gap-2">
@@ -388,9 +387,9 @@
             class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[180px] lg:h-[240px] lg:max-w-full mx-auto z-10 " />
           
           <!--* Blob -->
-          <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 overflow-hidden"> 
+          <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 overflow-hidden fill-color-miku"> 
             <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="object-center scale-100 lg:scale-125">
-              <path fill="#14b8a6"
+              <path
                 d="M49.1,-61.6C57,-52,52,-30.1,52.2,-11.7C52.5,6.7,58,21.7,54.7,35.5C51.4,49.4,39.3,62.1,25.4,65.3C11.4,68.6,-4.5,62.2,-17.9,54.9C-31.4,47.6,-42.4,39.2,-49,28.1C-55.6,17,-57.9,3.2,-55.6,-9.8C-53.3,-22.8,-46.4,-35,-36.4,-44.2C-26.4,-53.5,-13.2,-59.7,3.7,-64.2C20.6,-68.6,41.3,-71.2,49.1,-61.6Z"
                 transform="translate(100 100)"></path>
             </svg>
@@ -398,6 +397,11 @@
         </div>
 
       </div>
+    </div>
+
+    <!-- Waves -> https://getwaves.io/ -->
+    <div class="h-fit w-full absolute bottom-0 fill-slate-800">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill-opacity="1" d="M0,256L48,266.7C96,277,192,299,288,288C384,277,480,235,576,224C672,213,768,235,864,240C960,245,1056,235,1152,218.7C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     </div>
   </section>
 
@@ -417,7 +421,11 @@
 	 -->
 
   <!--! Portfolio Section Start -->
-	<section id="portfolio" class="pt-14 pb-14 lg:pt-36 lg:pb-32 bg-slate-100 dark:bg-slate-800 transition-all">
+	<section id="portfolio" class="relative pt-14 pb-14 lg:pt-36 lg:pb-32 bg-slate-100 dark:bg-slate-800 transition-all">
+    <!-- <div class="h-fit w-full absolute top-0 fill-slate-900 rotate-180">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill-opacity="1" d="M0,288L120,288C240,288,480,288,720,277.3C960,267,1200,245,1320,234.7L1440,224L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
+    </div> -->
+
 		<div class="container">
 			<div class="px-4">
 				<div class="mx-auto text-center">
@@ -427,14 +435,15 @@
 			</div>
 
 			<div class="p-4 rounded-xl w-full h-fit"> <!-- TODO: Unused outer layer -->
-				<div class="flex flex-row lg:gap-6 overflow-x-scroll lg:overflow-visible">
+				<div class="flex flex-row lg:gap-6 overflow-x-scroll lg:overflow-visible snap-x">
 
-					<div class="flex-none lg:flex-initial shadow-lg rounded-2xl bg-purple-800 w-full h-fit lg:w-1/2 transition-all hover:shadow-[0_0px_20px_#6b21a8] lg:hover:scale-[101%]">
+          <!--* Card 1 -->
+					<div class="flex-none lg:flex-initial shadow-lg rounded-2xl bg-gradient-to-br from-cyan-700 to-purple-800 bg-purple-800 snap-center w-full h-fit lg:max-w-[500px] lg:w-1/2 transition-all hover:shadow-[0_0px_20px_#6b21a8] lg:hover:scale-[101%]">
 						<div class="rounded-2xl aspect-video overflow-hidden bg-white">
 							<img class="object-cover object-top aspect-video w-full" src="dist/img/porto/KalkulatorJS-1.png" alt="Gambar Website no.1">
 						</div>
             <div class="px-4 h-fit">
-              <h3 class="font-semibold text-xl text-white mt-5 mb-3">Kalkulator 
+              <h3 class="text-center font-semibold text-xl text-white mt-5 mb-3">Kalkulator 
                 <span><img src="dist/img/icon/html-5-svgrepo-com.svg" alt="" srcset="" class="inline-block h-[30px]"></span>
                 <span><img src="dist/img/icon/css-3-svgrepo-com.svg" alt="" srcset="" class="inline-block h-[30px]"></span>
                 <span><img src="dist/img/icon/javascript-svgrepo-com (1).svg" alt="" srcset="" class="inline-block h-[30px]"></span>
@@ -452,7 +461,7 @@
               <div class="flex w-full">
                 <div class="flex-none w-[100px] text-white font-black">Fitur</div>
                 <div class="flex-auto text-white">
-                  <ul class="list-disc">
+                  <ul class="list-disc list-inside">
                     <li>Ubah Background</li>
                     <li>Ubah Desain Kalkulator (2 desain)</li>
                   </ul>
@@ -471,10 +480,22 @@
             </div>
 					</div>
 
-					<div class="flex-none lg:flex-initial rounded-xl bg-orange-800 w-full h-full lg:w-1/2 hover:shadow-[0_0px_20px_#9a3412] lg:hover:scale-[101%] transition-all">
+          <!--* Card 2 -->
+					<div class="flex-none lg:flex-initial rounded-xl bg-gradient-to-br from-blue-500 to-cyan-500 snap-center w-full h-full lg:max-w-[500px] lg:w-1/2 hover:shadow-[0_0px_20px_#9a3412] lg:hover:scale-[101%] transition-all">
 						<div class="rounded-xl shadow-md aspect-video overflow-hidden"> 
-							<img src="dist/img/utilities/2.png" class="object-contain w-full blur-3xl" alt="Gambar Website no.2">
-						</div>
+              <div class="w-full h-full bg-gradient-to-br from-cyan-400 to-purple-400"></div>
+            </div>
+            <div class="px-4">
+              <h3 class="font-semibold text-xl text-white mt-5 mb-3">Coming Soon</h3>
+
+            </div>
+					</div>
+
+          <!--* Card 2 -->
+					<div class="flex-none lg:flex-initial rounded-xl bg-gradient-to-br from-blue-500 to-cyan-500 snap-center w-full h-full lg:max-w-[500px] lg:w-1/2 hover:shadow-[0_0px_20px_#9a3412] lg:hover:scale-[101%] transition-all">
+						<div class="rounded-xl shadow-md aspect-video overflow-hidden"> 
+              <div class="w-full h-full bg-gradient-to-br from-cyan-400 to-purple-400"></div>
+            </div>
             <div class="px-4">
               <h3 class="font-semibold text-xl text-white mt-5 mb-3">Coming Soon</h3>
 
@@ -489,8 +510,8 @@
   <!-- Portfolio Section End -->
 
   <!--! Hardware Section Start -->
-  <section id="perangkat" class="bg-slate-800 pt-14 pb-14 lg:pt-36 lg:pb-32 dark:bg-slate-600 transition-all">
-    <div class="container">
+  <section id="perangkat" class="pt-14 pb-14 lg:pt-36 lg:pb-32 bg-slate-800 dark:bg-slate-600 transition-all">
+    <div class="container h-full flex flex-col place-content-center">
       <div class="w-full px-4 mb-7">
         <div class="max-w-xl mx-auto text-center">
           <h4 class="font-semibold text-lg text-primary mb-2">Hardware</h4>
@@ -669,7 +690,7 @@
   <!-- Blog Section Stop -->
 
   <!--! Footer Section Start -->
-  <footer class="bg-dark pt-24 pb-12">
+  <footer class="pt-24 pb-12 bg-dark ">
     <div class="container ">
 
       <div class="flex items-center justify-center mb-5">
@@ -700,7 +721,7 @@
       <div class="mt-20 bg-black">
         <p class="text-slate-500"></p>
         <p class="text-slate-500 font-mono">[christ@fedora portofolio-tailwind-css] $ porto --history-version</p>
-        <p class="font-extrabold text-slate-500 font-mono">christ31.github.io v0.7 | Build '1 Mei 2023'</p>
+        <p class="font-extrabold text-slate-500 font-mono">christ31.github.io v0.7 | Build '16 Mei 2023'</p>
         <p class="font-extrabold text-slate-500 font-mono">v0.1 'Hello World'</p>
         <p class="font-extrabold text-slate-500 font-mono">v0.2 'Dark Mode'</p>
         <p class="font-extrabold text-slate-500 font-mono">v0.3 'Content Update'</p>
