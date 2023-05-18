@@ -17,6 +17,7 @@ module.exports = {
         'color-discord': '#5865f2',
         'color-github': '#171515',
         'color-miku': '#14b8a6',
+        'color-wordpress': '#21759b',
         'color-c31-primary': '#23252e',
         'color-c31-secondary': '#4e5468',
         'color-getwaves-default': '#0066FF',
