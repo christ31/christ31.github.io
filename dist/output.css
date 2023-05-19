@@ -616,14 +616,6 @@ video {
   top: 100%;
 }
 
-.bottom-5 {
-  bottom: 1.25rem;
-}
-
-.bottom-3 {
-  bottom: 0.75rem;
-}
-
 .z-0 {
   z-index: 0;
 }
@@ -903,6 +895,14 @@ video {
   max-width: 36rem;
 }
 
+.max-w-\[650px\] {
+  max-width: 650px;
+}
+
+.max-w-\[550px\] {
+  max-width: 550px;
+}
+
 .flex-auto {
   flex: 1 1 auto;
 }
@@ -964,6 +964,10 @@ video {
 
 .snap-x {
   scroll-snap-type: x var(--tw-scroll-snap-strictness);
+}
+
+.snap-mandatory {
+  --tw-scroll-snap-strictness: mandatory;
 }
 
 .snap-center {
@@ -1113,11 +1117,6 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.bg-\[\#21759b\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(33 117 155 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#CC2028\] {
   --tw-bg-opacity: 1;
   background-color: rgb(204 32 40 / var(--tw-bg-opacity));
@@ -1135,11 +1134,6 @@ video {
 
 .bg-black\/80 {
   background-color: rgb(0 0 0 / 0.8);
-}
-
-.bg-blue-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(147 197 253 / var(--tw-bg-opacity));
 }
 
 .bg-color-c31-primary {
@@ -1162,11 +1156,6 @@ video {
   background-color: rgb(23 21 21 / var(--tw-bg-opacity));
 }
 
-.bg-color-miku {
-  --tw-bg-opacity: 1;
-  background-color: rgb(20 184 166 / var(--tw-bg-opacity));
-}
-
 .bg-color-osu\! {
   --tw-bg-opacity: 1;
   background-color: rgb(227 35 115 / var(--tw-bg-opacity));
@@ -1177,6 +1166,11 @@ video {
   background-color: rgb(34 50 70 / var(--tw-bg-opacity));
 }
 
+.bg-color-wordpress {
+  --tw-bg-opacity: 1;
+  background-color: rgb(33 117 155 / var(--tw-bg-opacity));
+}
+
 .bg-dark {
   --tw-bg-opacity: 1;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
@@ -1185,6 +1179,11 @@ video {
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.bg-gray-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
 }
 
 .bg-gray-800 {
@@ -1264,26 +1263,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-color-wordpress {
-  --tw-bg-opacity: 1;
-  background-color: rgb(33 117 155 / var(--tw-bg-opacity));
-}
-
-.bg-gray-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
-}
-
-.bg-gray-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
-}
-
-.bg-gray-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-40 {
@@ -1438,11 +1417,6 @@ video {
   padding-right: 1.25rem;
 }
 
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -1471,11 +1445,6 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .pb-0 {
@@ -1682,18 +1651,29 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-blue-500 {
-  --tw-shadow-color: #3b82f6;
+.shadow-2xl {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-red-500 {
+  --tw-shadow-color: #ef4444;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-black {
+  --tw-shadow-color: #000;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-gray-700 {
+  --tw-shadow-color: #374151;
   --tw-shadow: var(--tw-shadow-colored);
 }
 
 .outline-blue-300 {
   outline-color: #93c5fd;
-}
-
-.blur-xl {
-  --tw-blur: blur(24px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .blur-sm {
@@ -1703,6 +1683,21 @@ video {
 
 .brightness-200 {
   --tw-brightness: brightness(2);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.drop-shadow-xl {
+  --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.drop-shadow-lg {
+  --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.drop-shadow-md {
+  --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
@@ -1888,6 +1883,11 @@ body {
   border-color: rgb(255 0 0 / var(--tw-border-opacity));
 }
 
+.hover\:bg-color-miku:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(20 184 166 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-color-yt:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(246 28 13 / var(--tw-bg-opacity));
@@ -1896,16 +1896,6 @@ body {
 .hover\:bg-red-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(220 38 38 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-color-wordpress:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(33 117 155 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-color-miku:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(20 184 166 / var(--tw-bg-opacity));
 }
 
 .hover\:fill-\[\#0e7dc2\]:hover {
@@ -1922,16 +1912,6 @@ body {
 
 .hover\:fill-white:hover {
   fill: #fff;
-}
-
-.hover\:text-xl:hover {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.hover\:text-primary:hover {
-  --tw-text-opacity: 1;
-  color: rgb(20 184 166 / var(--tw-text-opacity));
 }
 
 .hover\:opacity-100:hover {
@@ -1966,13 +1946,13 @@ body {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.hover\:shadow-color-miku:hover {
-  --tw-shadow-color: #14b8a6;
+.hover\:shadow-blue-500:hover {
+  --tw-shadow-color: #3b82f6;
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-.hover\:shadow-blue-500:hover {
-  --tw-shadow-color: #3b82f6;
+.hover\:shadow-color-miku:hover {
+  --tw-shadow-color: #14b8a6;
   --tw-shadow: var(--tw-shadow-colored);
 }
 
