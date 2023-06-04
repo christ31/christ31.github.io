@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="icon" type="image/x-icon" href="dist/img/LogoC31v3(128px).png">
   <title>C31 Website</title>
   <!-- <link rel="stylesheet" href="dist/css/final.css" /> -->
   <link rel="stylesheet" href="dist/output.css" />
@@ -19,14 +20,10 @@
 </head>
 
 <body>
-  <!-- Unique things I do -->
-
   <!-- Kickstarter to initialize CSS in JS -->
   <div class="-bottom-10">
     <div class="bottom-4"></div>
   </div>
-
-  <!-- The end of Unique things I do -->
 
   <!--! Header Start -->
   <header class="absolute top-0 left-0 flex w-full items-center bg-transparent transition-all backdrop-blur-sm z-50">
@@ -54,18 +51,19 @@
               class="block lg:flex lg:shadow-md lg:bg-primary dark:lg:bg-darkSecondary lg:rounded-full p-1 transition-all">
               <li class="group self-center text-center">
                 <a href="#home"
-                  class="items-center c31-text-nav text-dark my-auto font-semibold py-2 mx-3 flex group-hover:text- dark:text-white">Profil</a>
+                  class="items-center c31-text-nav text-dark my-auto font-semibold py-2 mx-3 flex group-hover:text-lime-200 dark:text-white">Profil</a>
               </li>
-              <li class="group self-center text-center relative">
+              <li class="group self-center text-center">
                 <a href="#portfolio"
-                  class="c31-text-nav text-dark font-semibold py-2 mx-3 flex group-hover:text- dark:text-white">Portofolio</a>
+                  class="c31-text-nav text-dark font-semibold py-2 mx-3 flex group-hover:text-lime-200 dark:text-white">Portofolio</a>
               </li>
-                <a href="#perangkat"
-                  class="c31-text-nav text-dark font-semibold py-2 mx-3 flex group-hover:text- dark:text-white">Perangkat</a>
+              <li class="group self-center text-center">
+              <a href="#perangkat"
+                  class="c31-text-nav text-dark font-semibold py-2 mx-3 flex group-hover:text-lime-200 dark:text-white">Perangkat</a>
               </li>
               <li class="group self-center text-center">
                 <a href="#blog"
-                  class="c31-text-nav text-dark font-semibold py-2 mx-3 flex group-hover:text- dark:text-white">Blog</a>
+                  class="c31-text-nav text-dark font-semibold py-2 mx-3 flex group-hover:text-lime-200 dark:text-white">Blog</a>
               </li>
               <li class="flex items-center justify-center">
                 <div class="flex items-center">
@@ -404,21 +402,7 @@
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill-opacity="1" d="M0,256L48,266.7C96,277,192,299,288,288C384,277,480,235,576,224C672,213,768,235,864,240C960,245,1056,235,1152,218.7C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     </div>
   </section>
-
   <!-- Hero Section End -->
-
-  <!-- 
-	<section id="playground" class="pt-36 pb-36 bg-slate-500">
-		<h1>Padding Top 36, Padding Bottom 36</h1>
-		<h1 class="text-center font-bold text-xl">Di bawah ini ada 'container'</h1>
-		<div class="container bg-slate-300">
-			<h2>Playground</h2>
-			<div class="">
-			</div>
-		</div>
-	</section>
-
-	 -->
 
   <!--! Portfolio Section Start -->
 	<section id="portfolio" class="relative pt-14 pb-14 lg:pt-36 lg:pb-32 bg-slate-100 dark:bg-slate-800 transition-all">
@@ -439,7 +423,8 @@
 							<img class="object-cover object-top aspect-video w-full" src="dist/img/porto/KalkulatorJS-1.png" alt="Gambar Website no.1">
 						</div>
             <div class="px-4 h-fit">
-              <h3 class="w-fit mx-auto px-5 py-1 text-center bg-black bg-opacity-40 rounded-full font-semibold text-xl text-white mt-5 mb-3">Kalkulator 
+              <h3 class="flex w-fit mx-auto px-5 py-1 text-center bg-black bg-opacity-40 rounded-full font-semibold text-xl text-white mt-5 mb-3">
+                <span class="flex self-center w-fit">Kalkulator</span> 
                 <span><img src="dist/img/icon/html-5-svgrepo-com.svg" alt="" srcset="" class="inline-block h-[30px]"></span>
                 <span><img src="dist/img/icon/css-3-svgrepo-com.svg" alt="" srcset="" class="inline-block h-[30px]"></span>
                 <span><img src="dist/img/icon/javascript-svgrepo-com (1).svg" alt="" srcset="" class="inline-block h-[30px]"></span>
@@ -464,14 +449,19 @@
                 </div>
               </div>
 
+              
               <div class="w-full mt-5 flex justify-center gap-2">
-                <a class="flex gap-1 bg-color-github rounded-full p-2 mb-4 outline-blue-300 hover:outline hover:outline-2 hover:outline-blue-300 transition-all" href="https://github.com/christ31/TugasKalkulator-JS" target="_blank">
-                  <span class="flex"><img class="h-[23px] self-center" src="dist/img/icon/github-142-svgrepo-com(white).svg" alt=""></span> 
-                  <span class="self-center text-white">
+                <a class="bg-color-github c31-button" href="https://github.com/christ31/TugasKalkulator-JS" target="_blank">
+                  <span class="flex"><img class="h-[30px] self-center" src="dist/img/icon/github-142-svgrepo-com(white).svg" alt=""></span> 
+                  <span class="mx-2 self-center text-white">
                     Github
                   </span>
                 </a>
-                <a class="bg-white p-2 mb-4 rounded-full outline-blue-300 hover:outline hover:outline-2 hover:outline-blue-300 transition-all" href="http://c31.web.id/TugasKalkulator-JS/" target="_blank">Buka Website</a>
+                <a class="bg-white c31-button" href="http://c31.web.id/TugasKalkulator-JS/" target="_blank">
+                  <span class="mx-2 self-center">
+                    Buka Website
+                  </span>
+                </a>
               </div>
             </div>
 					</div>
@@ -506,7 +496,6 @@
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill-opacity="1" d="M0,256L80,261.3C160,267,320,277,480,282.7C640,288,800,288,960,266.7C1120,245,1280,203,1360,181.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
     </div>
 	</section>
-
   <!-- Portfolio Section End -->
 
   <!--! Hardware Section Start -->
@@ -637,8 +626,8 @@
           
           <div class="flex justify-center gap-2">
 
-            <a href="http://c31project.wordpress.com" target="_blank" class="bg-color-wordpress flex p-2 rounded-full hover:scale-x-105 transition-all">
-              <span class="">
+            <a href="http://c31project.wordpress.com" target="_blank" class="c31-button bg-color-wordpress">
+              <span class="w-[30px]">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-[30px] inline-block fill-white" viewBox="0 0 122.52 122.523"><g><path d="m8.708 61.26c0 20.802 12.089 38.779 29.619 47.298l-25.069-68.686c-2.916 6.536-4.55 13.769-4.55 21.388z"/><path d="m96.74 58.608c0-6.495-2.333-10.993-4.334-14.494-2.664-4.329-5.161-7.995-5.161-12.324 0-4.831 3.664-9.328 8.825-9.328.233 0 .454.029.681.042-9.35-8.566-21.807-13.796-35.489-13.796-18.36 0-34.513 9.42-43.91 23.688 1.233.037 2.395.063 3.382.063 5.497 0 14.006-.667 14.006-.667 2.833-.167 3.167 3.994.337 4.329 0 0-2.847.335-6.015.501l19.138 56.925 11.501-34.493-8.188-22.434c-2.83-.166-5.511-.501-5.511-.501-2.832-.166-2.5-4.496.332-4.329 0 0 8.679.667 13.843.667 5.496 0 14.006-.667 14.006-.667 2.835-.167 3.168 3.994.337 4.329 0 0-2.853.335-6.015.501l18.992 56.494 5.242-17.517c2.272-7.269 4.001-12.49 4.001-16.989z"/><path d="m62.184 65.857-15.768 45.819c4.708 1.384 9.687 2.141 14.846 2.141 6.12 0 11.989-1.058 17.452-2.979-.141-.225-.269-.464-.374-.724z"/><path d="m107.376 36.046c.226 1.674.354 3.471.354 5.404 0 5.333-.996 11.328-3.996 18.824l-16.053 46.413c15.624-9.111 26.133-26.038 26.133-45.426.001-9.137-2.333-17.729-6.438-25.215z"/><path d="m61.262 0c-33.779 0-61.262 27.481-61.262 61.26 0 33.783 27.483 61.263 61.262 61.263 33.778 0 61.265-27.48 61.265-61.263-.001-33.779-27.487-61.26-61.265-61.26zm0 119.715c-32.23 0-58.453-26.223-58.453-58.455 0-32.23 26.222-58.451 58.453-58.451 32.229 0 58.45 26.221 58.45 58.451 0 32.232-26.221 58.455-58.45 58.455z"/></g></svg>
               </span>
               <span class="mx-2 self-center text-white">
@@ -646,8 +635,8 @@
               </span>
             </a>
   
-            <a href="http://c31.web.id/c31-blog" target="_blank" class="bg-color-miku flex w-fit py-2 px-3 rounded-full hover:scale-x-105 transition-all">
-              <span>
+            <a href="http://c31.web.id/c31-blog" target="_blank" class="c31-button bg-color-miku">
+              <span class="w-[30px]">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-[22px] h-[30px] inline-block fill-white" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M410.3 231l11.3-11.3-33.9-33.9-62.1-62.1L291.7 89.8l-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L387.7 253.7 410.3 231zM160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9L59.4 452l23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1v32c0 8.8 7.2 16 16 16h32zM362.7 18.7L348.3 33.2 325.7 55.8 314.3 67.1l33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5L453.3 18.7c-25-25-65.5-25-90.5 0zm-47.4 168l-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z"/></svg>
               </span>
               <span class="mx-2 self-center text-white">
@@ -659,64 +648,92 @@
         </div>
       </div>
 
-      <div class="flex flex-wrap justify-center">
-        <!--* Cards Start Here -->
-        <!-- https://c31project.wordpress.com/2020/03/01/apa-itu-emulator/ -->
-        <div class="w-full px-4 md:w-1/2 xl:w-1/3 hover:scale-105 transition-all">
-          <div class="relative h-[400px] bg-white rounded-xl shadow-xl overflow-hidden mb-10">
-            <img src="dist/img/post/bluestack-4.160.webp" alt="programming" class="lg:w-full max-h-[300px]" />
-            <div class="mt-4 mx-3">
-              <h3 class="block mb-3 font-semibold text-xl text-dark truncate transition duration-100">
-                Apa itu Emulator?
-              </h3>
-              <p class="font-medium text-secondary mb-4">"Emulator? Yang buat PUBG itu ya?" - Teman Saya</p>
-            </div>
-            <a class="absolute bottom-0 bg-color-wordpress flex w-full justify-center hover:bg-color-miku transition-all" href="https://c31project.wordpress.com/2020/03/01/apa-itu-emulator/" target="_blank">
-              <div class="px-3 py-2 text-white">
-                Baca di Wordpress
-              </div>
-            </a>
+      <div class="c31-blog-card-container">
+        <div class="c31-blog-card">
+          <img src="dist/img/post/bluestack-4.160.webp" alt="bluestack, an android emulator" class="lg:w-full max-h-[300px]" />
+          <div class="mt-4 mx-3">
+            <h3 class="block mb-3 font-semibold text-xl text-dark truncate transition duration-100">
+              Apa itu Emulator?
+            </h3>
+            <p class="font-medium text-secondary mb-4">"Emulator? Yang buat PUBG itu ya?" - Teman Saya</p>
           </div>
+          <a class="absolute bottom-0 bg-color-wordpress flex w-full justify-center hover:bg-color-miku transition-all" href="https://c31project.wordpress.com/2020/03/01/apa-itu-emulator/" target="_blank">
+            <div class="px-3 py-2 text-white">
+              Baca di Wordpress
+            </div>
+          </a>
         </div>
 
-        <div class="w-full px-4 md:w-1/2 xl:w-1/3 hover:scale-105 transition-all">
-          <div class="relative h-[400px] bg-white rounded-xl shadow-xl overflow-hidden mb-10">
-            <div class="bg-gray-800 aspect-video ">
-              <img src="dist/img/post/f710-gallery-2.webp" alt="programming" class="object-contain w-full h-full bg-gray-400"/>
-            </div>
-            <div class="mt-4 mx-3">
-              <h3 class="block mb-3 font-semibold text-xl text-dark truncate transition duration-100">
-                Review Gamepad Logitech F710
-              </h3>
-              <p class="font-medium text-secondary mb-4">Siapa sih yang gak pernah pakai Joystick? Tunggu dulu…</p>
-            </div>
-            <a class="absolute bottom-0 bg-color-wordpress flex w-full justify-center hover:bg-color-miku transition-all" href="https://c31project.wordpress.com/2020/03/07/review-gamepad-logitech-f710/" target="_blank">
-              <div class="px-3 py-2 text-white">
-                Baca di Wordpress
-              </div>
-            </a>
+        <div class="c31-blog-card">
+          <div class="bg-gray-800 aspect-video ">
+            <img src="dist/img/post/f710-gallery-2.webp" alt="programming" class="object-contain w-full h-full bg-gray-400"/>
           </div>
+          <div class="mt-4 mx-3">
+            <h3 class="block mb-3 font-semibold text-xl text-dark truncate transition duration-100">
+              Review Gamepad Logitech F710
+            </h3>
+            <p class="font-medium text-secondary mb-4">Siapa sih yang gak pernah pakai Joystick? Tunggu dulu…</p>
+          </div>
+          <a class="absolute bottom-0 bg-color-wordpress flex w-full justify-center hover:bg-color-miku transition-all" href="https://c31project.wordpress.com/2020/03/07/review-gamepad-logitech-f710/" target="_blank">
+            <div class="px-3 py-2 text-white">
+              Baca di Wordpress
+            </div>
+          </a>
         </div>
 
-        <div class="w-full px-4 md:w-1/2 xl:w-1/3 hover:scale-105 transition-all">
-          <div class="relative h-[400px] bg-white rounded-xl shadow-xl overflow-hidden mb-10">
-            <div class="bg-gray-800 aspect-video">
-              <img src="dist/img/post/wordMerah.png" alt="programming" class="object-contain w-full h-full bg-red-300"/>
-            </div>
-            <div class="mt-4 mx-3">
-              <h3 class="block mb-3 font-semibold text-xl text-dark truncate transition duration-100">
-                Tutorial Menghilangkan Garis Merah di Word 2016
-              </h3>
-              <p class="font-medium text-secondary mb-4">Kamu pernah membuka suatu dokumen, dan tiba-tiba muncul garis-garis merah di setiap katanya?</p>
-            </div>
-            <a class="absolute bottom-0 bg-color-wordpress flex w-full justify-center hover:bg-color-miku transition-all" href="https://c31project.wordpress.com/2020/03/06/tutorial-menghilangkan-garis-merah-di-word-2016/" target="_blank">
-              <div class="px-3 py-2 text-white">
-                Baca di Wordpress
-              </div>
-            </a>
+        <div class="c31-blog-card">
+          <div class="bg-gray-800 aspect-video">
+            <img src="dist/img/post/wordMerah.png" alt="programming" class="object-contain w-full h-full bg-red-300"/>
           </div>
+          <div class="mt-4 mx-3">
+            <h3 class="block mb-3 font-semibold text-xl text-dark truncate transition duration-100">
+              Tutorial Menghilangkan Garis Merah di Word 2016
+            </h3>
+            <p class="font-medium text-secondary mb-4">Kamu pernah membuka suatu dokumen, dan tiba-tiba muncul garis-garis merah di setiap katanya?</p>
+          </div>
+          <a class="absolute bottom-0 bg-color-wordpress flex w-full justify-center hover:bg-color-miku transition-all" href="https://c31project.wordpress.com/2020/03/06/tutorial-menghilangkan-garis-merah-di-word-2016/" target="_blank">
+            <div class="px-3 py-2 text-white">
+              Baca di Wordpress
+            </div>
+          </a>
         </div>
-       
+
+        <div class="c31-blog-card">
+          <div class="bg-gray-800 aspect-video">
+            <img src="dist/img/post/intel_core_i7_11700k_chip.jpeg" alt="CPU" class="object-contain w-full h-full bg-green-950"/>
+          </div>
+          <div class="mt-4 mx-3">
+            <h3 class="block mb-3 font-semibold text-xl text-dark truncate transition duration-100">
+              Apa itu CPU?  
+            </h3>
+            <p class="font-medium text-secondary mb-4">
+              Apa itu CPU? Kalian pasti sudah tidak asing lagi dengan istilah CPU ini
+            </p>
+          </div>
+          <a class="absolute bottom-0 bg-color-miku flex w-full justify-center hover:bg-color-miku-secondary transition-all" href="https://c31project.wordpress.com/2020/03/06/tutorial-menghilangkan-garis-merah-di-word-2016/" target="_blank">
+            <div class="px-3 py-2 text-white">
+              Baca di c31-blog
+            </div>
+          </a>
+        </div>
+
+        <div class="c31-blog-card">
+          <div class="bg-gray-800 aspect-video">
+            <img src="dist/img/post/BannerROG-1024x576.png" alt="banner ROG" class="object-contain w-full h-full bg-red-300"/>
+          </div>
+          <div class="mt-4 mx-3">
+            <h3 class="block mb-3 font-semibold text-xl text-dark truncate transition duration-100">
+              Review 5 Tahun Asus GL553VD
+            </h3>
+            <p class="font-medium text-secondary mb-4">Sebuah laptop gaming yang sudah menemani saya sejak 2017</p>
+          </div>
+          <a class="absolute bottom-0 bg-color-miku flex w-full justify-center hover:bg-color-miku-secondary transition-all" href="https://c31project.wordpress.com/2020/03/06/tutorial-menghilangkan-garis-merah-di-word-2016/" target="_blank">
+            <div class="px-3 py-2 text-white">
+              Baca di Wordpress
+            </div>
+          </a>
+        </div>
+        
       </div>
     </div>
   </section>
@@ -750,38 +767,38 @@
           class="font-semibold text-[#38bdf8]"> TailwindCSS</a>
       </p>
 
-      <div class="mx-4 mt-20 bg-black bg-opacity-70 backdrop-blur-xl max-w-[650px] rounded-lg drop-shadow-lg md:mx-auto overflow-hidden">
+      <div class="c31-window-container">
 
         <!--* Title Bar -->
-        <div class="flex w-full h-[30px] justify-between bg-color-c31-primary">
+        <div class="c31-window-titlebar">
           <!-- Left side -->
           <div class="w-[50px]">
           </div>
 
           <!-- Center side -->
           <div class="flex">
-            <div class="self-center text-white text-sm">christ@fedora:~</div>
+            <div class="c31-window-titlebar-title">christ@fedora:~</div>
           </div>
 
           <!-- Right side -->
-          <div class="flex gap-1 mr-2">
-            <div class="self-center rounded-full w-3 h-3 bg-color-c31-secondary"></div>
-            <div class="self-center rounded-full w-3 h-3 bg-color-c31-secondary"></div>
-            <div class="self-center rounded-full w-3 h-3 bg-red-600"></div>
+          <div class="c31-window-titlebar-button">
+            <div class="c31-window-titlebar-button-minimize"></div>
+            <div class="c31-window-titlebar-button-maximize"></div>
+            <div class="c31-window-titlebar-button-close"></div>
           </div>
         </div>
 
         <!--* Content -->
         <div class="p-5">
-          <p class="text-slate-300 font-mono text-sm">[christ@fedora ~]$ porto --history-version</p>
-          <p class="text-slate-300 font-mono font-extrabold text-sm">christ31.github.io v0.7 | Build '22 Mei 2023'</p>
-          <p class="text-slate-300 font-mono text-sm">v0.1 'Hello World'</p>
-          <p class="text-slate-300 font-mono text-sm">v0.2 'Dark Mode'</p>
-          <p class="text-slate-300 font-mono text-sm">v0.3 'Content Update'</p>
-          <p class="text-slate-300 font-mono text-sm">v0.4 'Personalize Web'</p>
-          <p class="text-slate-300 font-mono text-sm">v0.5 'Simplified'</p>
-          <p class="text-slate-300 font-mono text-sm">v0.6 'It's a mobile'</p>
-          <p class="text-slate-300 font-mono text-sm">v0.7 'Display My Works'</p>
+          <p class="c31-window-content-font">[christ@fedora ~]$ porto --history-version</p>
+          <p class="c31-window-content-font font-extrabold ">christ31.github.io v0.8alpha1 | Build '4 Juni 2023'</p>
+          <p class="c31-window-content-font">v0.1 'Hello World'</p>
+          <p class="c31-window-content-font">v0.2 'Dark Mode'</p>
+          <p class="c31-window-content-font">v0.3 'Content Update'</p>
+          <p class="c31-window-content-font">v0.4 'Personalize Web'</p>
+          <p class="c31-window-content-font">v0.5 'Simplified'</p>
+          <p class="c31-window-content-font">v0.6 'It's a mobile'</p>
+          <p class="c31-window-content-font">v0.7 'Display My Works'</p>
         </div>
       </div>
     </div>
@@ -795,7 +812,7 @@
 
   <!--! Back to top Start -->
   <a id="to-top" href="#home"
-    class="flex fixed justify-center items-center z-[9999] border-2 border-white -bottom-5 right-4 h-10 w-10 bg-primary rounded-md hover:-translate-y-1 duration-300 ease-in-out">
+    class="c31-back-to-top -bottom-5">
     <span class="fixed h-5 mx-auto w-5 border-t-4 border-l-4 rotate-45"></span>
     <span class="fixed h-5 mt-5 w-5 border-t-4 border-l-4 rotate-45"></span>
   </a>
@@ -806,116 +823,6 @@
 </body>
 
 </html>
-
-<!--! Unused -->
-
-<!-- 
-  <a href="#"
-    class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 duration-200 ease-in-out">Hubungi
-    Saya</a>
- -->
-
-
-<!--! Contact Section Start -->
-<!--
-	<section id="contact" class="pt-36 pb-32 bg-primary">
-		<div class="container">
-			<div class="w-full px4 lg:w-2/3 lg:mx-auto">
-				<div class="mx-auto text-center mb-16">
-					<h4 class="font-semibold text-lg text-primary mb-2">Blog</h4>
-					<h2 class="font-bold text-white text-3xl mb-4 sm:text-xl lg:text-5xl">Hubungi Saya</h2>
-					<p class="font-medium text-md text-gray-200 md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing
-						elit. Minus animi veritatis, perspiciatis nesciunt consequatur rem optio ut.</p>
-				</div>
-			</div>
-
-			<form>
-				<div class="w-full lg:w-2/3 lg:mx-auto">
-					<div class="w-full px-4 mb-8">
-						<label for="name" class="text-base text-white font-bold">Nama</label>
-						<input type="text" id="name"
-							class="w-full bg-white p-3 rounded-md focus:outline-none focus:ring-orange-400 focus:ring-1 focus:border-orange-400">
-					</div>
-					<div class="w-full px-4 mb-8">
-						<label for="email" class="text-base text-white font-bold">Email</label>
-						<input type="email" id="email"
-							class="w-full bg-white p-3 rounded-md focus:outline-none focus:ring-orange-400 focus:ring-1 focus:border-orange-400">
-					</div>
-					<div class="w-full px-4 mb-8">
-						<label for="message" class="text-base text-white font-bold">Pesan</label>
-						<textarea type="email" id="email"
-							class="w-full bg-white p-3 rounded-md focus:outline-none focus:ring-orange-400 focus:ring-1 focus:border-orange-400"></textarea>
-					</div>
-					<div class="w-full px-4">
-						<button
-							class="text-base font-semibold text-white bg-orange-600 py-3 px-8 rounded-full w-full shadow-md hover:brightness-110 transition duration-500">Send</button>
-					</div>
-				</div>
-			</form>
-		</div>
-	</section>
-	-->
-<!-- Contact Section Stop -->
-
-<!--! Old Portfolio Section Start -->
-<!--
-	<section id="portfolio" class="pt-14 pb-14 lg:pt-36 lg:pb-32 bg-slate-100 dark:bg-slate-800">
-		<div class="container">
-			<div class="px-4">
-				<div class="mx-auto text-center mb-16">
-					<h4 class="font-semibold text-lg text-primary mb-2">Portofolio</h4>
-					<h2 class="font-bold text-dark text-3xl mb-4 sm:text-xl lg:text-5xl dark:text-white">Kumpulan website yang sudah dibuat</h2>
-					<p class="font-medium text-md text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing
-						elit. Saepe
-						eos ad architecto dicta aliquam?</p>
-				</div>
-			</div>
-
-			<div class="bg-gray-100 p-4 rounded-xl w-full">
-				<div class="flex flex-row overflow-x-scroll h-[500px]">
-
-					<div class="flex-none p-4 bg-pink-500 w-full">
-						<div class="rounded-md shadow-md overflow-hidden bg-white">
-							<img class="object-contain h-[300px] w-full" src="dist/img/utilities/1-l.png" alt="Gambar Website no.1">
-						</div>
-						<h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Website blobmaker.app</h3>
-						<p class="font-medium text-base text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-							Nisi, aspernatur!</p>
-					</div>
-
-					<div class="flex-none p-4 bg-orange-400 w-full">
-						<div class="rounded-md shadow-md overflow-hidden"> 
-							<img src="dist/img/utilities/2.png" class="object-contain" alt="Gambar Website no.2">
-						</div>
-						<h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Website simpleicons.org</h3>
-						<p class="font-medium text-base text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-							Nisi, aspernatur!</p>
-					</div>
-
-					<div class="flex-none p-4 w-[600px]">
-						<div class="rounded-md shadow-md">
-							<img src="dist/img/utilities/3.png" alt="Gambar Website no.3" width="w-full">
-						</div>
-						<h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Website remove.bg</h3>
-						<p class="font-medium text-base text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-							Nisi, aspernatur!</p>
-					</div>
-
-					<div class="flex-none mb-12 p-4 w-[600px]">
-						<div class="rounded-md shadow-md">
-							<img src="dist/img/utilities/4.png" alt="Gambar Website no.4" width="w-full">
-						</div>
-						<h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Website schemecolor.com</h3>
-						<p class="font-medium text-base text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-							Nisi, aspernatur!</p>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</section>
-  -->
-  <!-- Portfolio Section End -->
 
 <!--! Coming Soon Hover Effect -->
 <!--
