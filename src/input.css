@@ -82,7 +82,7 @@ body{
 
 /*! Misc Section */
 .c31-button{
-  @apply flex p-2 rounded-full hover:scale-x-105 transition-all;
+  @apply flex p-1 rounded-full hover:scale-x-105 transition-all;
 }
 
 .c31-window-container{
