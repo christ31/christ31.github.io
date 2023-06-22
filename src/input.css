@@ -79,15 +79,66 @@ body{
   hover:scale-105 transition-all overflow-hidden snap-center;
 }
 
+/*! Portfolio Section */
+.c31-portfolio-card-container{
+  @apply flex flex-row gap-4 lg:gap-6 py-5 
+  overflow-x-scroll lg:overflow-x-scroll snap-x snap-mandatory;
+}
+
+.c31-portfolio-card{
+  @apply flex-none lg:flex-none snap-center w-full xl:max-w-[410px] lg:w-[46%] 
+  rounded-xl 
+  hover:shadow-[0_0px_20px] lg:hover:scale-[101%] transition-all;
+}
+
+.c31-portfolio-card-content-container{
+  @apply flex flex-col w-full h-full;
+}
+
+.c31-portfolio-card-header-img{
+  @apply rounded-xl shadow-md aspect-video overflow-hidden;
+}
+
+.c31-portfolio-card-header-date{
+  @apply absolute right-2 bottom-2 px-2 
+  bg-color-miku text-white text-sm font-bold rounded-full;
+}
+
+.c31-portfolio-card-header-title{
+  @apply flex justify-center px-3 my-3 py-1 text-center 
+  bg-black bg-opacity-30 rounded-lg font-semibold text-xl text-white;
+}
+
+.c31-portfolio-card-button-container{
+  @apply flex flex-auto flex-wrap w-full my-2 gap-2 
+  items-center justify-center;
+}
+
+.c31-portfolio-flex-table{
+  @apply flex w-full;
+}
+
+.c31-portfolio-flex-table-left{
+  @apply flex-none w-[100px] text-white font-black;
+}
+
+.c31-portfolio-flex-table-right{
+  @apply flex-auto text-white;
+}
 
 /*! Misc Section */
 .c31-button{
-  @apply flex p-1 rounded-full hover:scale-x-105 transition-all;
+  @apply flex h-[35px] p-1 
+  rounded-full hover:scale-x-105 transition-all;
+}
+
+.c31-button span{
+  @apply font-semibold;
 }
 
 .c31-window-container{
-  @apply mx-4 md:mx-auto mt-20 max-w-[650px] 
-  bg-black bg-opacity-70 backdrop-blur-xl rounded-lg drop-shadow-lg 
+  @apply mx-4 md:mx-auto mt-24 max-w-[650px] 
+  bg-black bg-opacity-40 backdrop-blur-xl rounded-lg drop-shadow-lg 
   overflow-hidden;
 }
 
