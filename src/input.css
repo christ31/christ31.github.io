@@ -81,8 +81,9 @@ body{
 
 /*! Portfolio Section */
 .c31-portfolio-card-container{
-  @apply flex flex-row gap-4 lg:gap-6 py-5 
-  overflow-x-scroll lg:overflow-x-scroll snap-x snap-mandatory;
+  @apply flex flex-row gap-4 lg:gap-6 p-5 
+  shadow-inner shadow-gray-300 rounded-lg
+  overflow-x-auto snap-x snap-mandatory;
 }
 
 .c31-portfolio-card{
@@ -106,7 +107,7 @@ body{
 
 .c31-portfolio-card-header-title{
   @apply flex justify-center px-3 my-3 py-1 text-center 
-  bg-black bg-opacity-30 rounded-lg font-semibold text-xl text-white;
+  bg-black bg-opacity-30 rounded-lg font-semibold  text-white;
 }
 
 .c31-portfolio-card-button-container{
@@ -119,11 +120,11 @@ body{
 }
 
 .c31-portfolio-flex-table-left{
-  @apply flex-none w-[100px] text-white font-black;
+  @apply flex-none w-[100px] text-white font-black text-sm;
 }
 
 .c31-portfolio-flex-table-right{
-  @apply flex-auto text-white;
+  @apply flex-auto text-white text-sm;
 }
 
 /*! Misc Section */
