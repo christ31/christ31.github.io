@@ -76,7 +76,7 @@ body{
 .c31-blog-card{
   @apply relative flex-none max-w-[400px] w-[500px] h-[400px] 
   bg-white rounded-xl shadow-xl
-  hover:scale-105 transition-all overflow-hidden snap-center;
+  transition-all overflow-hidden snap-center;
 }
 
 /*! Portfolio Section */
@@ -89,7 +89,7 @@ body{
 .c31-portfolio-card{
   @apply flex-none lg:flex-none snap-center w-full xl:max-w-[410px] lg:w-[46%] 
   rounded-xl 
-  hover:shadow-[0_0px_20px] lg:hover:scale-[101%] transition-all;
+  hover:shadow-[0_0px_20px] transition-all;
 }
 
 .c31-portfolio-card-content-container{
