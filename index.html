@@ -22,7 +22,7 @@
 <body>
 
   <!--! Header Start -->
-  <header class="absolute top-0 left-0 flex w-full items-center bg-transparent transition-all backdrop-blur-sm z-50">
+  <header class="absolute top-0 left-0 flex w-full items-center transition-all backdrop-blur-sm z-50 bg-transparent">
     <div class="container">
       <div class="relative flex items-center justify-between flex-row">
         <div class="pl-4 inline-flex">
@@ -41,25 +41,23 @@
             <span class="origin-bottom-left hamburger-line transition duration-300 ease-in-out"></span>
           </button>
 
-          <nav id="nav-menu"
-            class="hidden absolute py-2 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark lg:dark:bg-transparent dark:shadow-orange-900">
-            <ul
-              class="block lg:flex lg:shadow-md lg:bg-primary dark:lg:bg-darkSecondary lg:rounded-full p-1 transition-all">
-              <li class="group self-center text-center">
+          <nav id="nav-menu" class="c31-nav-menu hidden">
+            <ul class="c31-nav-menu-ul">
+              <li class="c31-nav-menu-li">
                 <a href="#home"
-                  class="items-center c31-text-nav text-dark my-auto font-semibold py-2 mx-3 flex group-hover:text-lime-200 dark:text-white">Profil</a>
+                  class="c31-text-nav font-semibold py-2 mx-3 flex text-white">Profil</a>
               </li>
-              <li class="group self-center text-center">
+              <li class="c31-nav-menu-li">
                 <a href="#portfolio"
-                  class="c31-text-nav text-dark font-semibold py-2 mx-3 flex group-hover:text-lime-200 dark:text-white">Portofolio</a>
+                  class="c31-text-nav font-semibold py-2 mx-3 flex text-white">Portofolio</a>
               </li>
-              <li class="group self-center text-center">
+              <li class="c31-nav-menu-li">
                 <a href="#blog"
-                  class="c31-text-nav text-dark font-semibold py-2 mx-3 flex group-hover:text-lime-200 dark:text-white">Blog</a>
+                  class="c31-text-nav font-semibold py-2 mx-3 flex text-white">Blog</a>
               </li>
               <li class="flex items-center justify-center">
-                <div class="flex items-center">
-                  <span class="mr-2 text-xl text-black dark:text-white">
+                <div class="flex items-center mx-2">
+                  <span class="mr-2 text-xl text-white">
                     <svg role="img" width="20px" class="fill-current" viewBox="0 0 24 24"
                       xmlns="http://www.w3.org/2000/svg" aria-labelledby="color-scheme-light">
                       <path
@@ -75,7 +73,7 @@
                       </div>
                     </div>
                   </label>
-                  <span class="ml-2 text-xl dark:text-white mx-3">
+                  <span class="ml-2 text-xl text-white">
                     <svg role="img" width="20px" class="fill-current" viewBox="0 0 24 24"
                       xmlns="http://www.w3.org/2000/svg" aria-labelledby="color-scheme-dark">
                       <path
@@ -94,7 +92,7 @@
   <!-- Header End -->
 
   <!--! Hero Section Start -->
-  <section id="home" class="relative bg-lime-50 lg:h-[100vh] dark:bg-dark transition-all">
+  <section id="home" class="relative bg-slate-100 lg:h-[100vh] dark:bg-dark transition-all">
     <div class="relative container h-full z-10">
       <div class="flex flex-wrap h-full w-full pt-[40px] lg:py-0 trasition-all">
 
@@ -383,19 +381,19 @@
     </div>
 
     <!-- Waves -> https://getwaves.io/ -->
-    <div class="h-fit w-full absolute bottom-0 fill-slate-100 dark:fill-slate-800 transition-all">
+    <div class="h-fit w-full absolute bottom-0 fill-slate-200 dark:fill-slate-800 transition-all">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill-opacity="1" d="M0,256L48,266.7C96,277,192,299,288,288C384,277,480,235,576,224C672,213,768,235,864,240C960,245,1056,235,1152,218.7C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     </div>
   </section>
   <!-- Hero Section End -->
 
   <!--! Portfolio Section Start -->
-  <section id="portfolio" class="relative pt-14 pb-14 lg:pt-36 lg:pb-32 bg-slate-100 dark:bg-slate-800 transition-all">
+  <section id="portfolio" class="relative pt-14 pb-14 lg:pt-36 lg:pb-32 bg-slate-200 dark:bg-slate-800 transition-all">
     <div class="relative container z-10">
       <div class="px-4">
         <div class="mx-auto text-center">
           <h4 class="font-semibold text-lg text-primary mb-2">Portofolio</h4>
-          <h2 class="font-bold text-dark text-3xl mb-4 sm:text-xl lg:text-5xl dark:text-white">Projek Saya</h2>
+          <h2 class="font-bold text-3xl mb-4 sm:text-xl lg:text-5xl dark:text-white">Projek Saya</h2>
           <div class="flex justify-center gap-2">
 
             <a href="http://c31.web.id/c31-experiment" target="_blank" class="c31-button bg-darkSecondary">

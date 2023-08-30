@@ -64,6 +64,23 @@ body{
 }
 
 /*! Header Section */
+.c31-nav-menu{
+  @apply absolute py-2  max-w-[250px] w-full right-0 top-full 
+  lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none 
+  bg-primary dark:bg-dark lg:dark:bg-transparent dark:shadow-orange-900
+  shadow-lg rounded-lg;
+}
+
+.c31-nav-menu-ul{
+  @apply block p-1 lg:flex 
+  lg:bg-primary dark:lg:bg-darkSecondary lg:rounded-full 
+  lg:shadow-md 
+  transition-all;
+}
+
+.c31-nav-menu-li{
+  @apply self-center text-center rounded-full hover:bg-white hover:bg-opacity-10;
+}
 
 
 /*! Blog Post Section */
